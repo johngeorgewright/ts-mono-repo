@@ -1,0 +1,46 @@
+{
+  "name": "@johngeorgewright/ts-mono-repo",
+  "version": "0.0.0",
+  "description": "The MOL Ads mono-repo",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "build": "lerna run --stream --no-private build && lerna run --stream --scope=@johngeorgewright/mol-gpt build",
+    "build:generator": "lerna --scope=@johngeorgewright/generator run build",
+    "commit": "git-cz",
+    "generate:package": "yo ./packages/generator/generators/package",
+    "postgenerate:package": "lerna bootstrap",
+    "start": "lerna run --stream --parallel --ignore=generator start",
+    "test": "lerna run --stream test"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "@commitlint/config-lerna-scopes": "^9.0.1",
+    "commitizen": "^4.1.2",
+    "cz-lerna-changelog": "^2.0.3",
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "yo": "^3.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
+      "prettier --ignore-path .gitignore --write"
+    ]
+  }
+}

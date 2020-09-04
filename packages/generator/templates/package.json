@@ -1,0 +1,28 @@
+{
+  "name": "@johngeorgewright/<%= name %>",
+  "version": "0.0.0",
+  "description": "<%= description %>",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "start": "tsc --watch --preserveWatchOutput",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "jest": "^26.1.0",
+    "redux": "^4.0.5",
+    "redux-event": "^1.0.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.5"
+  },
+  "peerDependencies": {
+    "redux": "^4.0.5",
+    "redux-event": "^1.0.0"
+  }
+}
