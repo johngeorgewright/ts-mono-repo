@@ -24,9 +24,5 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^26.1.1",
     "typescript": "^3.9.5"
-  },
-  "peerDependencies": {
-    "redux": "^4.0.5",
-    "redux-event": "^1.0.0"
   }
 }
