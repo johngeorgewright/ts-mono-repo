@@ -11,7 +11,11 @@
     "test": "jest"
   },
   "author": "",
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/ts-mono-repo/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/ts-mono-repo#readme",
   "devDependencies": {
     "@types/jest": "^26.0.3",
     "jest": "^26.1.0",
