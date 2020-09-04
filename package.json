@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "build": "lerna run --stream --no-private build && lerna run --stream --scope=@johngeorgewright/mol-gpt build",
+    "build": "lerna run --stream --no-private build",
     "build:generator": "lerna --scope=@johngeorgewright/generator run build",
     "commit": "git-cz",
     "generate:package": "yo ./packages/generator/generators/package",

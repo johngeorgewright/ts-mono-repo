@@ -70,6 +70,12 @@ export = class PluginGenerator extends Generator {
       this.destinationPath('src/index.ts'),
       context
     )
+
+    this.fs.copyTpl(
+      this.templatePath('package-src/index.test.ts.template'),
+      this.destinationPath('src/index.test.ts'),
+      context
+    )
   }
 
   install() {}
