@@ -60,6 +60,12 @@ export = class PluginGenerator extends Generator {
     )
 
     this.fs.copyTpl(
+      this.templatePath('README.md'),
+      this.destinationPath('README.md'),
+      context
+    )
+
+    this.fs.copyTpl(
       this.templatePath('package-src/index.ts.template'),
       this.destinationPath('src/index.ts'),
       context
