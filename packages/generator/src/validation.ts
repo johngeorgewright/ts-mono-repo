@@ -5,7 +5,7 @@ export function validateGenerationFromRoot(generator: Generator) {
   const path = pathHelper.join(process.cwd(), 'packages', 'generator')
   if (path !== pathHelper.resolve(__dirname, '..')) {
     generator.log(
-      'You can only run this script from the root of the GPT project.'
+      'You can only run this script from the root of the mono repo.'
     )
     process.exit(1)
   }
