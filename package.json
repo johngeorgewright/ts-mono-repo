@@ -15,6 +15,10 @@
   },
   "author": "",
   "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/ts-mono-repo/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/ts-mono-repo#readme",
   "devDependencies": {
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",

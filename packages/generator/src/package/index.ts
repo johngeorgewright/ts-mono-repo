@@ -59,6 +59,11 @@ export = class PluginGenerator extends Generator {
       this.destinationPath('jest.config.json')
     )
 
+    this.fs.copy(
+      this.templatePath('LICENCE.md'),
+      this.destinationPath('LICENCE.md')
+    )
+
     this.fs.copyTpl(
       this.templatePath('README.md'),
       this.destinationPath('README.md'),
