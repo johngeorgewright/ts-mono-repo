@@ -17,15 +17,15 @@
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@types/jest": "^26.0.3",
-    "@types/yeoman-generator": "^3.1.4",
-    "jest": "^26.1.0",
+    "@types/jest": "^26.0.13",
+    "@types/yeoman-generator": "4",
+    "jest": "^26.4.2",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.1.1",
-    "typescript": "^3.9.6"
+    "ts-jest": "^26.3.0",
+    "typescript": "4"
   },
   "dependencies": {
     "change-case": "^4.1.1",
-    "yeoman-generator": "^4.11.0"
+    "yeoman-generator": "^4.12.0"
   }
 }
