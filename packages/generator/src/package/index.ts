@@ -4,7 +4,7 @@ import { validateGenerationFromRoot } from '../validation'
 import * as path from 'path'
 
 export = class PluginGenerator extends Generator {
-  private answers: { description?: string; name?: string }
+  private answers: { description?: string; name?: string; public?: boolean }
 
   constructor(args: string | string[], opts: Record<string, unknown>) {
     super(args, opts)
@@ -29,6 +29,11 @@ export = class PluginGenerator extends Generator {
         name: 'description',
         type: 'input',
       },
+      {
+        message: 'Will this package be published publically?',
+        name: 'public',
+        type: 'confirm',
+      },
     ])
   }
 
@@ -41,10 +46,11 @@ export = class PluginGenerator extends Generator {
     const context = {
       description: this.answers.description || '',
       name: paramCase(this.answers.name!),
+      public: this.answers.public,
     }
 
     this.fs.copyTpl(
-      this.templatePath('package.json'),
+      this.templatePath('package.json.template'),
       this.destinationPath('package.json'),
       context
     )
@@ -80,5 +86,11 @@ export = class PluginGenerator extends Generator {
     )
   }
 
-  install() {}
+  install() {
+    if (this.answers.public) {
+      this.spawnCommandSync('npm', ['publish', '--access', 'public'], {
+        cwd: this.destinationPath(),
+      })
+    }
+  }
 }
