@@ -2,4 +2,11 @@
 dist
 *.log
 node_modules
+.pnp.*
 *.validator.ts
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
