@@ -88,7 +88,7 @@ export = class PluginGenerator extends Generator {
 
   install() {
     if (this.answers.public) {
-      this.spawnCommandSync('npm', ['publish', '--access', 'public'], {
+      this.spawnCommandSync('yarn', ['publish', '--access', 'public'], {
         cwd: this.destinationPath(),
       })
     }

@@ -18,12 +18,14 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
+      - name: Install Dependencies
+        run: yarn --immutable
       - name: Test
-        run: npm install-ci-test
+        run: yarn test
       - name: Build
-        run: npm run build
+        run: yarn build
       - name: Release
-        run: npm run release
+        run: yarn publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
