@@ -11,7 +11,7 @@
     "build:generator": "yarn workspace @johngeorgewright/generator run build",
     "commit": "yarn git-cz",
     "generate:package": "yarn yo ./packages/generator/generators/package && yarn",
-    "release": "yarn workspaces foreach --no-private yarn semantic-release -e semantic-release-monorepo",
+    "release": "yarn workspaces foreach --no-private yarn run semantic-release -e semantic-release-monorepo",
     "start": "yarn workspaces foreach --topological-dev --no-private run start",
     "test": "yarn workspaces foreach run test"
   },
