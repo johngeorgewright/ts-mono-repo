@@ -40,15 +40,9 @@
       "path": "./node_modules/cz-lerna-changelog"
     }
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
-      "prettier --ignore-path .gitignore --write"
+      "yarn prettier --ignore-path .gitignore --write"
     ]
   }
 }
