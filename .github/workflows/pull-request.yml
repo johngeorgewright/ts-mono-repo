@@ -20,9 +20,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
-        run: |
-          yarn set version berry
-          yarn --immutable
+        run: yarn --immutable
       - name: Build
         run: yarn build
       - name: Test

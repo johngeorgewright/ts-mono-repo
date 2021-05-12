@@ -19,9 +19,7 @@ jobs:
         with:
           node-version: 12
       - name: Install Dependencies
-        run: |
-          yarn set version berry
-          yarn --immutable
+        run: yarn --immutable
       - name: Test
         run: yarn test
       - name: Build
