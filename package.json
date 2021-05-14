@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "yarn workspaces foreach --topological-dev --exclude @johngeorgewright/generator run build",
+    "clean": "yarn workspaces foreach run clean",
     "build:generator": "yarn workspace @johngeorgewright/generator run build",
     "commit": "yarn git-cz",
     "generate:package": "yarn yo ./packages/generator/generators/package",
