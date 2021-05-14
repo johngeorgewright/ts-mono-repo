@@ -1,6 +1,5 @@
 {
   "name": "@johngeorgewright/ts-mono-repo",
-  "private": false,
   "version": "0.0.0",
   "description": "The MOL Ads mono-repo",
   "main": "index.js",
@@ -13,7 +12,7 @@
     "build:generator": "yarn workspace @johngeorgewright/generator run build",
     "commit": "yarn git-cz",
     "generate:package": "yarn yo ./packages/generator/generators/package",
-    "release": "yarn workspaces foreach --no-private --topological-dev run yarn semantic-release -e semantic-release-monorepo",
+    "release": "yarn workspaces foreach --no-private --topological-dev run release",
     "start": "yarn build && yarn workspaces foreach --no-private --parallel --interlaced run start",
     "test": "yarn workspaces foreach run test"
   },
@@ -33,8 +32,6 @@
     "lerna": "^4.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0",
-    "semantic-release": "^17.4.2",
-    "semantic-release-monorepo": "^7.0.5",
     "yo": "^4.1.0"
   },
   "config": {
