@@ -9,5 +9,4 @@ node_modules
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
-!.yarn/versions589cfee49781e49231bd58251865853e5a616e6f
-
+!.yarn/versions
