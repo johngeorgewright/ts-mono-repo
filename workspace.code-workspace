@@ -20,7 +20,8 @@
     },
     "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
     "typescript.tsdk": ".yarn/sdks/typescript/lib",
-    "typescript.enablePromptUseWorkspaceTsdk": true
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "jest.jestCommandLine": "yarn test"
   },
   "extensions": {
     "recommendations": ["arcanis.vscode-zipfs", "esbenp.prettier-vscode"]
