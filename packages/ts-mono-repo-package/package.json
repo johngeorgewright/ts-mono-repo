@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "An example package in the @johngeorgewright/ts-mono-repo template",
   "main": "dist/index.js",
+  "private": true,
   "scripts": {
     "build": "yarn clean && yarn tsc && yarn rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "clean": "yarn rimraf dist",

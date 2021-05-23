@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "The MOL Ads mono-repo",
   "main": "index.js",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
