@@ -15,6 +15,7 @@
   ],
   "settings": {
     "search.exclude": {
+      "**/dist": true,
       "**/.yarn": true,
       "**/.pnp.*": true
     },
