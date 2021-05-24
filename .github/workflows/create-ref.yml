@@ -1,19 +1,12 @@
-name: Dependency Pull Request
+name: Create Ref
 
-on:
-  pull_request:
-    branches: [master]
-    paths:
-      - '**/package.json'
-      - '!.yarn/**'
-      - '!yarn.lock'
-      - '!.pnp.js'
+on: create
 
 jobs:
   check-cache:
     name: Check Yarn Cache
     runs-on: ubuntu-latest
-    if: github.actor != 'dependabot[bot]' && github.actor != 'dependabot-preview[bot]'
+    if: contains(github.ref, "/dependabot/npm_and_yarn/")
     steps:
       - name: Checkout project
         uses: actions/checkout@v2
