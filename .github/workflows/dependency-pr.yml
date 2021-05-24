@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout project
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PUSH_TOKEN }}
       - name: Use Node.js
         uses: actions/setup-node@v2
         with:
