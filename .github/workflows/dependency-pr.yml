@@ -12,6 +12,8 @@ on:
 jobs:
   check-cache:
     name: Check Yarn Cache
+    # See dependabot workflow
+    if: github.actor != 'dependabot[bot]' && github.actor != 'dependabot-preview[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project
