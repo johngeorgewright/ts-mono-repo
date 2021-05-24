@@ -13,8 +13,7 @@ jobs:
   check-cache:
     name: Check Yarn Cache
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    permissions: write-all
     steps:
       - name: Checkout project
         uses: actions/checkout@v2
