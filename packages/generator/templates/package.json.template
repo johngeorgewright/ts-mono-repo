@@ -8,7 +8,7 @@
     "build": "yarn clean && yarn tsc && yarn rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "clean": "yarn rimraf dist",
     "start": "yarn tsc --watch --preserveWatchOutput",
-    "release": "yarn semantic-release -e semantic-release-monorepo",
+    "release": "yarn semantic-release -e semantic-release-monorepo<% if (public) { %> && yarn npm publish<% } %>",
     "test": "yarn jest"
   },
   "author": "",
