@@ -137,7 +137,7 @@ export = class PluginGenerator extends Generator {
     if (this.answers.public) {
       this.spawnCommandSync('yarn', [
         'workspace',
-        `@plugola/${paramCase(this.answers.name!)}`,
+        `@johngeorgewright/${paramCase(this.answers.name!)}`,
         'npm',
         'publish',
         '--access',
