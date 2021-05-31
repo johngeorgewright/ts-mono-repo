@@ -963,7 +963,7 @@ __metadata:
   resolution: "@johngeorgewright/generator@workspace:packages/generator"
   dependencies:
     "@semantic-release/commit-analyzer": 8.0.1
-    "@semantic-release/git": ^9.0.0
+    "@semantic-release/git": 9.0.0
     "@semantic-release/github": 7.2.3
     "@semantic-release/release-notes-generator": 9.0.2
     "@types/jest": 26.0.23
@@ -985,7 +985,7 @@ __metadata:
   resolution: "@johngeorgewright/ts-mono-repo-package@workspace:packages/ts-mono-repo-package"
   dependencies:
     "@semantic-release/commit-analyzer": 8.0.1
-    "@semantic-release/git": ^9.0.0
+    "@semantic-release/git": 9.0.0
     "@semantic-release/github": 7.2.3
     "@semantic-release/release-notes-generator": 9.0.2
     "@types/jest": 26.0.23
@@ -1006,19 +1006,19 @@ __metadata:
     "@commitlint/cli": 12.1.4
     "@commitlint/config-conventional": 12.1.4
     "@semantic-release/commit-analyzer": 8.0.1
-    "@semantic-release/git": ^9.0.0
+    "@semantic-release/git": 9.0.0
     "@semantic-release/github": 7.2.3
     "@semantic-release/release-notes-generator": 9.0.2
     commitizen: 4.2.4
     cz-conventional-changelog: 3.3.0
     husky: 6.0.0
-    jest-runner: ^27.0.3
+    jest-runner: 27.0.3
     lerna: 4.0.0
     lint-staged: 11.0.0
     prettier: 2.3.0
     semantic-release: 17.4.3
     semantic-release-monorepo: 7.0.5
-    slash: 3
+    slash: 3.0.0
     tslib: 2.2.0
     typescript: 4.2.4
     yo: 4.2.0
@@ -2170,7 +2170,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/git@npm:^9.0.0":
+"@semantic-release/git@npm:9.0.0":
   version: 9.0.0
   resolution: "@semantic-release/git@npm:9.0.0"
   dependencies:
@@ -7521,6 +7521,34 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
+"jest-runner@npm:27.0.3":
+  version: 27.0.3
+  resolution: "jest-runner@npm:27.0.3"
+  dependencies:
+    "@jest/console": ^27.0.2
+    "@jest/environment": ^27.0.3
+    "@jest/test-result": ^27.0.2
+    "@jest/transform": ^27.0.2
+    "@jest/types": ^27.0.2
+    "@types/node": "*"
+    chalk: ^4.0.0
+    emittery: ^0.8.1
+    exit: ^0.1.2
+    graceful-fs: ^4.2.4
+    jest-docblock: ^27.0.1
+    jest-haste-map: ^27.0.2
+    jest-leak-detector: ^27.0.2
+    jest-message-util: ^27.0.2
+    jest-resolve: ^27.0.2
+    jest-runtime: ^27.0.3
+    jest-util: ^27.0.2
+    jest-worker: ^27.0.2
+    source-map-support: ^0.5.6
+    throat: ^6.0.1
+  checksum: 3ae5186fd6b6bedf4fbc62196e99ad98036875f18c46a60fc75b06c05f6ee5b5739bf53a398b6424084e3f7ddb1b4acbd9e0633032de04399c957280396cebb4
+  languageName: node
+  linkType: hard
+
 "jest-runner@npm:^27.0.1":
   version: 27.0.1
   resolution: "jest-runner@npm:27.0.1"
@@ -7547,34 +7575,6 @@ fsevents@^2.3.2:
     source-map-support: ^0.5.6
     throat: ^6.0.1
   checksum: d995589a37cdbb82cbdd956927193f76800b2c744cc4908dae475882d83a34b13c8d2e8af639ca153414582d36371c7884a773e937fcbb915bc30924d73e836b
-  languageName: node
-  linkType: hard
-
-"jest-runner@npm:^27.0.3":
-  version: 27.0.3
-  resolution: "jest-runner@npm:27.0.3"
-  dependencies:
-    "@jest/console": ^27.0.2
-    "@jest/environment": ^27.0.3
-    "@jest/test-result": ^27.0.2
-    "@jest/transform": ^27.0.2
-    "@jest/types": ^27.0.2
-    "@types/node": "*"
-    chalk: ^4.0.0
-    emittery: ^0.8.1
-    exit: ^0.1.2
-    graceful-fs: ^4.2.4
-    jest-docblock: ^27.0.1
-    jest-haste-map: ^27.0.2
-    jest-leak-detector: ^27.0.2
-    jest-message-util: ^27.0.2
-    jest-resolve: ^27.0.2
-    jest-runtime: ^27.0.3
-    jest-util: ^27.0.2
-    jest-worker: ^27.0.2
-    source-map-support: ^0.5.6
-    throat: ^6.0.1
-  checksum: 3ae5186fd6b6bedf4fbc62196e99ad98036875f18c46a60fc75b06c05f6ee5b5739bf53a398b6424084e3f7ddb1b4acbd9e0633032de04399c957280396cebb4
   languageName: node
   linkType: hard
 
@@ -11518,7 +11518,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"slash@npm:3, slash@npm:^3.0.0":
+"slash@npm:3.0.0, slash@npm:^3.0.0":
   version: 3.0.0
   resolution: "slash@npm:3.0.0"
   checksum: fc3e8597d822ee3ba6cd76e9b001cd5be315f9b81c3a03a29bb611c003d1484e3b29a9e7bc020298fa669b585ff7c9268f44513f60c186216eb6af3111a3e838
