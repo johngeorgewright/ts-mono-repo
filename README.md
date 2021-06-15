@@ -11,3 +11,11 @@ This is a template repository for creating a TypeScript mono repo.
 1. Use the generator package to create new packages
 1. If using VSCode, open the workspace and install recommended extensions
 1. Commit changes with `yarn commit`
+
+## Known issues
+
+### Dependabot doesn't support Yarn2
+
+If you need to use dependabot, you'll noticed that it doesn't update the "zero-install" cache. You'll have to make sure to do that yourself.
+
+We recommend using Renovate instead.
