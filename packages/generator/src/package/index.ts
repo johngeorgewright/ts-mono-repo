@@ -2,24 +2,31 @@ import Generator from 'yeoman-generator'
 import { paramCase } from 'change-case'
 import { validateGenerationFromRoot } from '../validation'
 import * as path from 'path'
+import prettier from 'prettier'
 
 export = class PluginGenerator extends Generator {
-  private answers: { description?: string; name?: string; public?: boolean }
+  #namespace = '@johngeorgewright'
+  #vsCodeWS = 'ts-mono-repo.workspace'
+  #answers: { description?: string; name?: string; public?: boolean } = {}
 
   constructor(args: string | string[], opts: Record<string, unknown>) {
     super(args, opts)
-    this.answers = {}
   }
 
   initializing() {
     validateGenerationFromRoot(this)
   }
 
+  get #relativeDestinationRoot() {
+    return `packages/${paramCase(this.#answers.name!)}`
+  }
+
   async prompting() {
-    this.answers = await this.prompt([
+    this.#answers = await this.prompt([
       {
-        message:
-          "What is the packages's name? (Minus the @johngeorgewright namespace)",
+        message: `What is the packages's name? (Minus the ${
+          this.#namespace
+        } namespace)`,
         name: 'name',
         type: 'input',
         validate: (x) => !!x || 'You must supply a name',
@@ -38,23 +45,23 @@ export = class PluginGenerator extends Generator {
   }
 
   configuring() {
-    this.destinationRoot(`packages/${paramCase(this.answers.name!)}`)
+    this.destinationRoot(this.#relativeDestinationRoot)
     this.sourceRoot(path.resolve(__dirname, '..', '..', 'templates'))
   }
 
   async writing() {
     const context = {
-      description: this.answers.description || '',
-      name: paramCase(this.answers.name!),
-      public: this.answers.public,
+      description: this.#answers.description || '',
+      name: paramCase(this.#answers.name!),
+      public: this.#answers.public,
     }
 
-    this.packageJson.set('name', `@johngeorgewright/${this.answers.name}`)
+    this.packageJson.set('name', `${this.#namespace}/${this.#answers.name}`)
     this.packageJson.set('version', '0.0.0')
-    this.packageJson.set('description', this.answers.description)
+    this.packageJson.set('description', this.#answers.description)
     this.packageJson.set('main', 'dist/main.js')
 
-    if (!this.answers.public) {
+    if (!this.#answers.public) {
       this.packageJson.set('private', true)
     }
 
@@ -86,7 +93,7 @@ export = class PluginGenerator extends Generator {
       'typescript',
     ]
 
-    if (this.answers.public) {
+    if (this.#answers.public) {
       devDependencies.push(
         '@semantic-release/commit-analyzer',
         '@semantic-release/git',
@@ -129,15 +136,38 @@ export = class PluginGenerator extends Generator {
       this.destinationPath('src/index.test.ts'),
       context
     )
+
+    await this.#updateVSCodeWS(this.#vsCodeWS)
+  }
+
+  async #updateVSCodeWS(file: string) {
+    const vsCodeWS = JSON.parse(this.fs.read(file))
+
+    vsCodeWS.folders.push({
+      name: `📦 ${this.#namespace}/${this.#answers.name}`,
+      path: this.#relativeDestinationRoot,
+    })
+
+    vsCodeWS.folders.sort((a: any, b: any) =>
+      a.name === b.name ? 0 : a.name < b.name ? -1 : 0
+    )
+
+    const prettierOptions = (await prettier.resolveConfig(file)) || {}
+    prettierOptions.parser = 'json'
+
+    this.fs.write(
+      file,
+      prettier.format(JSON.stringify(vsCodeWS), prettierOptions)
+    )
   }
 
   async install() {
     this.spawnCommandSync('yarn', [])
 
-    if (this.answers.public) {
+    if (this.#answers.public) {
       this.spawnCommandSync('yarn', [
         'workspace',
-        `@johngeorgewright/${paramCase(this.answers.name!)}`,
+        `${this.#namespace}/${paramCase(this.#answers.name!)}`,
         'npm',
         'publish',
         '--access',
