@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-runner", "npm:27.0.4"],
             ["lerna", "npm:4.0.0"],
             ["lint-staged", "npm:11.0.0"],
-            ["prettier", "npm:2.3.0"],
+            ["prettier", "npm:2.3.1"],
             ["semantic-release", "npm:17.4.3"],
             ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:7.0.5"],
             ["slash", "npm:3.0.0"],
@@ -1386,7 +1386,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-runner", "npm:27.0.4"],
             ["lerna", "npm:4.0.0"],
             ["lint-staged", "npm:11.0.0"],
-            ["prettier", "npm:2.3.0"],
+            ["prettier", "npm:2.3.1"],
             ["semantic-release", "npm:17.4.3"],
             ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:7.0.5"],
             ["slash", "npm:3.0.0"],
@@ -5091,7 +5091,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:3.12.1", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.12.1-6d1063bc86/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.12.1-6d1063bc86-8b1d05579e.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.12.1"]
           ],
@@ -11787,13 +11787,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["prettier", [
-        ["npm:2.3.0", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.3.0-29ef37e8b6-652640cc8b.zip/node_modules/prettier/",
-          "packageDependencies": [
-            ["prettier", "npm:2.3.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:2.3.1", {
           "packageLocation": "./.yarn/cache/prettier-npm-2.3.1-f8593fac45-9b4a695b87.zip/node_modules/prettier/",
           "packageDependencies": [
@@ -13099,7 +13092,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["spawn-sync", [
         ["npm:1.0.15", {
-          "packageLocation": "./.yarn/unplugged/spawn-sync-npm-1.0.15-ae144228c0/node_modules/spawn-sync/",
+          "packageLocation": "./.yarn/cache/spawn-sync-npm-1.0.15-ae144228c0-c31c84dd8b.zip/node_modules/spawn-sync/",
           "packageDependencies": [
             ["spawn-sync", "npm:1.0.15"],
             ["concat-stream", "npm:1.6.2"],
@@ -15046,7 +15039,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["yo", [
         ["npm:4.2.0", {
-          "packageLocation": "./.yarn/unplugged/yo-npm-4.2.0-fd8fdd1e1a/node_modules/yo/",
+          "packageLocation": "./.yarn/cache/yo-npm-4.2.0-fd8fdd1e1a-134d56a0f7.zip/node_modules/yo/",
           "packageDependencies": [
             ["yo", "npm:4.2.0"],
             ["async", "npm:2.6.3"],
