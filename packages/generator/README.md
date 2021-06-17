@@ -8,3 +8,5 @@ From the root of the mono-repo run:
 
 1. `yarn build:generator` (this only needs to be run on first checking out the project and any modifications made to this package)
 1. `yarn generate:package`
+
+To remove a package, run `yarn remove:package`
