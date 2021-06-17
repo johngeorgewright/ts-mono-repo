@@ -895,25 +895,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@johngeorgewright/ts-mono-repo-package@workspace:packages/ts-mono-repo-package":
-  version: 0.0.0-use.local
-  resolution: "@johngeorgewright/ts-mono-repo-package@workspace:packages/ts-mono-repo-package"
-  dependencies:
-    "@semantic-release/commit-analyzer": 8.0.1
-    "@semantic-release/git": 9.0.0
-    "@semantic-release/github": 7.2.3
-    "@semantic-release/release-notes-generator": 9.0.3
-    "@types/jest": 26.0.23
-    jest: 27.0.4
-    rimraf: 3.0.2
-    semantic-release: 17.4.3
-    semantic-release-monorepo: 7.0.5
-    ts-jest: 27.0.2
-    tslib: 2.3.0
-    typescript: 4.3.2
-  languageName: unknown
-  linkType: soft
-
 "@johngeorgewright/ts-mono-repo@workspace:.":
   version: 0.0.0-use.local
   resolution: "@johngeorgewright/ts-mono-repo@workspace:."
