@@ -32,7 +32,7 @@ export = class RemovePackageGenerator extends Generator {
 
   async #getPackages() {
     return (await readdir(this.#packagesPath, { withFileTypes: true })).filter(
-      (entry) => entry.isDirectory()
+      (entry) => entry.isDirectory() && entry.name !== 'generator'
     )
   }
 
