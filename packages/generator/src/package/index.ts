@@ -54,6 +54,7 @@ export = class PluginGenerator extends Generator {
       description: this.#answers.description || '',
       name: paramCase(this.#answers.name!),
       public: this.#answers.public,
+      year: new Date().getFullYear(),
     }
 
     this.packageJson.set('name', `${this.#namespace}/${this.#answers.name}`)
@@ -118,7 +119,11 @@ export = class PluginGenerator extends Generator {
       this.destinationPath('jest.config.json')
     )
 
-    this.fs.copy(this.templatePath('LICENSE'), this.destinationPath('LICENSE'))
+    this.fs.copyTpl(
+      this.templatePath('LICENSE'),
+      this.destinationPath('LICENSE'),
+      context
+    )
 
     this.fs.copyTpl(
       this.templatePath('README.md'),
