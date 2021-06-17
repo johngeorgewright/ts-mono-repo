@@ -881,6 +881,7 @@ __metadata:
     "@semantic-release/release-notes-generator": 9.0.3
     "@types/jest": 26.0.23
     "@types/prettier": ^2.3.0
+    "@types/rimraf": ^3.0.0
     "@types/yeoman-generator": 5.0.0
     change-case: 4.1.2
     jest: 27.0.4
@@ -2440,6 +2441,16 @@ __metadata:
   version: 0.12.0
   resolution: "@types/retry@npm:0.12.0"
   checksum: 0755164f2c8d615a0385609c478aaa20b17e55bc8b16d5d56ffe6a5d30b0a9845d49452a2e8903ec7c43fa361f19daf5e68c60e7381ad10a95dd3d0bb5c9f7fd
+  languageName: node
+  linkType: hard
+
+"@types/rimraf@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@types/rimraf@npm:3.0.0"
+  dependencies:
+    "@types/glob": "*"
+    "@types/node": "*"
+  checksum: 00a00a430f838ddafdbc17386f08d928b1ae7aeada84d112f4369a7a89b4d47c1bb6849688f1d6ee404a08338ab52a80c742f0c3040d63ccc2aaec04bd1009f5
   languageName: node
   linkType: hard
 

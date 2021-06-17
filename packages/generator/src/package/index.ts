@@ -3,10 +3,11 @@ import { paramCase } from 'change-case'
 import { validateGenerationFromRoot } from '../validation'
 import * as path from 'path'
 import prettier from 'prettier'
+import { writeFile } from 'fs/promises'
 
-export = class PluginGenerator extends Generator {
+export = class PackageGenerator extends Generator {
   #namespace = '@johngeorgewright'
-  #vsCodeWS = 'ts-mono-repo.workspace'
+  #vsCodeWS = 'ts-mono-repo.code-workspace'
   #answers: { description?: string; name?: string; public?: boolean } = {}
 
   constructor(args: string | string[], opts: Record<string, unknown>) {
@@ -161,10 +162,7 @@ export = class PluginGenerator extends Generator {
     const prettierOptions = (await prettier.resolveConfig(file)) || {}
     prettierOptions.parser = 'json'
 
-    this.fs.write(
-      file,
-      prettier.format(JSON.stringify(vsCodeWS), prettierOptions)
-    )
+    writeFile(file, prettier.format(JSON.stringify(vsCodeWS), prettierOptions))
   }
 
   async install() {

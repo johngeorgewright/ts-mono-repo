@@ -13,6 +13,7 @@
     "build:generator": "yarn workspace @johngeorgewright/generator run build",
     "commit": "yarn git-cz",
     "generate:package": "yarn yo ./packages/generator/generators/package",
+    "remove:package": "yarn yo ./packages/generator/generators/remove-package",
     "release": "yarn workspaces foreach --no-private --topological-dev run release",
     "start": "yarn build && yarn workspaces foreach --no-private --parallel --interlaced run start",
     "test": "yarn workspaces foreach run test"
