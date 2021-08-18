@@ -850,7 +850,7 @@ __metadata:
     "@semantic-release/release-notes-generator": 9.0.3
     "@types/jest": 27.0.1
     "@types/prettier": 2.3.2
-    "@types/rimraf": 3.0.1
+    "@types/rimraf": 3.0.2
     "@types/yeoman-generator": 5.2.2
     change-case: 4.1.2
     jest: 27.0.6
@@ -2413,13 +2413,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/rimraf@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@types/rimraf@npm:3.0.1"
+"@types/rimraf@npm:3.0.2":
+  version: 3.0.2
+  resolution: "@types/rimraf@npm:3.0.2"
   dependencies:
     "@types/glob": "*"
     "@types/node": "*"
-  checksum: 7af952cc9368dad228a88264ffc89efef4dc202ff71556981ded7a461cc53c0e656e5c6a63a4fa46fc94364badbcb715b48c8d633dcd1c2af4a4a78854c1d9f0
+  checksum: 9446840037019eedc43d075d6a983316f9d155b2669e4552e7b33b0a7723d5e87a92210aab7990e81926830b6215167298a46cc52f534ad8dac59127c91b4fae
   languageName: node
   linkType: hard
 
