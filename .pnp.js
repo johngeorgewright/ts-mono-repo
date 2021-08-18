@@ -1320,7 +1320,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.3"],
             ["@types/jest", "npm:27.0.1"],
             ["@types/prettier", "npm:2.3.2"],
-            ["@types/rimraf", "npm:3.0.1"],
+            ["@types/rimraf", "npm:3.0.2"],
             ["@types/yeoman-generator", "npm:5.2.2"],
             ["change-case", "npm:4.1.2"],
             ["jest", "virtual:650a225ecefaa7a904069e5e75b461ae6d896206249c093443db6deca693117d3c65f93c0deaa38bb52c6e899dd769a530b4a01fccaa88bdd976e6e76b3ea50f#npm:27.0.6"],
@@ -3131,10 +3131,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/rimraf", [
-        ["npm:3.0.1", {
-          "packageLocation": "./.yarn/cache/@types-rimraf-npm-3.0.1-39e5da9c58-7af952cc93.zip/node_modules/@types/rimraf/",
+        ["npm:3.0.2", {
+          "packageLocation": "./.yarn/cache/@types-rimraf-npm-3.0.2-dd6eb5de99-9446840037.zip/node_modules/@types/rimraf/",
           "packageDependencies": [
-            ["@types/rimraf", "npm:3.0.1"],
+            ["@types/rimraf", "npm:3.0.2"],
             ["@types/glob", "npm:7.1.3"],
             ["@types/node", "npm:15.6.0"]
           ],
