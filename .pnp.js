@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:13.1.0"],
             ["@commitlint/config-conventional", "npm:13.1.0"],
             ["@semantic-release/commit-analyzer", "virtual:e2302b9d9fb151122517f0eb31913e06cb6e3d3277c31b8fb71663d9b065f663b24f4e3ae982a3f3a86f5c86da9e59f3708464945e1da3b8e756937b34464e0d#npm:8.0.1"],
-            ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.0"],
+            ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.1"],
             ["@semantic-release/github", "virtual:e2302b9d9fb151122517f0eb31913e06cb6e3d3277c31b8fb71663d9b065f663b24f4e3ae982a3f3a86f5c86da9e59f3708464945e1da3b8e756937b34464e0d#npm:7.2.3"],
             ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.3"],
             ["commitizen", "npm:4.2.4"],
@@ -1327,7 +1327,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@johngeorgewright/generator", "workspace:packages/generator"],
             ["@semantic-release/commit-analyzer", "virtual:e2302b9d9fb151122517f0eb31913e06cb6e3d3277c31b8fb71663d9b065f663b24f4e3ae982a3f3a86f5c86da9e59f3708464945e1da3b8e756937b34464e0d#npm:8.0.1"],
-            ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.0"],
+            ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.1"],
             ["@semantic-release/github", "virtual:e2302b9d9fb151122517f0eb31913e06cb6e3d3277c31b8fb71663d9b065f663b24f4e3ae982a3f3a86f5c86da9e59f3708464945e1da3b8e756937b34464e0d#npm:7.2.3"],
             ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.3"],
             ["@types/jest", "npm:27.0.1"],
@@ -1356,7 +1356,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:13.1.0"],
             ["@commitlint/config-conventional", "npm:13.1.0"],
             ["@semantic-release/commit-analyzer", "virtual:e2302b9d9fb151122517f0eb31913e06cb6e3d3277c31b8fb71663d9b065f663b24f4e3ae982a3f3a86f5c86da9e59f3708464945e1da3b8e756937b34464e0d#npm:8.0.1"],
-            ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.0"],
+            ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.1"],
             ["@semantic-release/github", "virtual:e2302b9d9fb151122517f0eb31913e06cb6e3d3277c31b8fb71663d9b065f663b24f4e3ae982a3f3a86f5c86da9e59f3708464945e1da3b8e756937b34464e0d#npm:7.2.3"],
             ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.3"],
             ["commitizen", "npm:4.2.4"],
@@ -2662,23 +2662,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@semantic-release/git", [
-        ["npm:9.0.0", {
-          "packageLocation": "../../../../../tmp/renovate-cache/others/berry/cache/@semantic-release-git-npm-9.0.0-28528be7a6-7.zip/node_modules/@semantic-release/git/",
+        ["npm:9.0.1", {
+          "packageLocation": "../../../../../tmp/renovate-cache/others/berry/cache/@semantic-release-git-npm-9.0.1-160f44aad5-7.zip/node_modules/@semantic-release/git/",
           "packageDependencies": [
-            ["@semantic-release/git", "npm:9.0.0"]
+            ["@semantic-release/git", "npm:9.0.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.0", {
-          "packageLocation": "./.yarn/$$virtual/@semantic-release-git-virtual-7cc7350368/6/tmp/renovate-cache/others/berry/cache/@semantic-release-git-npm-9.0.0-28528be7a6-7.zip/node_modules/@semantic-release/git/",
+        ["virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@semantic-release-git-virtual-89e11f4ccd/6/tmp/renovate-cache/others/berry/cache/@semantic-release-git-npm-9.0.1-160f44aad5-7.zip/node_modules/@semantic-release/git/",
           "packageDependencies": [
-            ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.0"],
+            ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.0.1"],
             ["@semantic-release/error", "npm:2.2.0"],
             ["@types/semantic-release", null],
             ["aggregate-error", "npm:3.1.0"],
             ["debug", "virtual:5dffae5dceca8d383e37ce1404983ff3eaf566153fb551aede58a16b625356caee63d9240a4386c2b8b44a2ff32b72c5d4444045ea31775b520ccbc9788f7985#npm:4.3.2"],
             ["dir-glob", "npm:3.0.1"],
-            ["execa", "npm:4.1.0"],
+            ["execa", "npm:5.0.0"],
             ["lodash", "npm:4.17.21"],
             ["micromatch", "npm:4.0.4"],
             ["p-reduce", "npm:2.1.0"],
