@@ -420,13 +420,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:13.2.0":
-  version: 13.2.0
-  resolution: "@commitlint/cli@npm:13.2.0"
+"@commitlint/cli@npm:13.2.1":
+  version: 13.2.1
+  resolution: "@commitlint/cli@npm:13.2.1"
   dependencies:
     "@commitlint/format": ^13.2.0
     "@commitlint/lint": ^13.2.0
-    "@commitlint/load": ^13.2.0
+    "@commitlint/load": ^13.2.1
     "@commitlint/read": ^13.2.0
     "@commitlint/types": ^13.2.0
     lodash: ^4.17.19
@@ -435,7 +435,7 @@ __metadata:
     yargs: ^17.0.0
   bin:
     commitlint: cli.js
-  checksum: a61cf2c8ba02a096cbf912099888fb268cccaf535ab27e4c37a35205764f3f1d82d62cc82b997533bc1ff4c649da20c84672ea121de5bbf1f79f0b02bda143f5
+  checksum: 41b74874ec3e3b1da69f07710ea080654017d6e9a73d98d06c061259bb255e09a4870a516da0ee92f86776f030e608eb797cdd44dac804c39f2f32e798e81a60
   languageName: node
   linkType: hard
 
@@ -497,7 +497,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/load@npm:>6.1.1, @commitlint/load@npm:^13.2.0":
+"@commitlint/load@npm:>6.1.1, @commitlint/load@npm:^13.2.1":
   version: 13.2.1
   resolution: "@commitlint/load@npm:13.2.1"
   dependencies:
@@ -870,7 +870,7 @@ __metadata:
     semantic-release-monorepo: 7.0.5
     ts-jest: 27.0.5
     tslib: 2.3.1
-    typescript: 4.4.3
+    typescript: 4.4.4
     yeoman-generator: 5.4.2
   languageName: unknown
   linkType: soft
@@ -879,7 +879,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@johngeorgewright/ts-mono-repo@workspace:."
   dependencies:
-    "@commitlint/cli": 13.2.0
+    "@commitlint/cli": 13.2.1
     "@commitlint/config-conventional": 13.2.0
     "@semantic-release/commit-analyzer": 9.0.1
     "@semantic-release/git": 10.0.0
@@ -892,14 +892,14 @@ __metadata:
     jest-runner: 27.2.5
     json-parse-even-better-errors: ^2.3.1
     lerna: 4.0.0
-    lint-staged: 11.2.1
+    lint-staged: 11.2.3
     mkdirp-infer-owner: ^2.0.0
     prettier: 2.4.1
     semantic-release: 18.0.0
     semantic-release-monorepo: 7.0.5
     slash: 3.0.0
     tslib: 2.3.1
-    typescript: 4.4.3
+    typescript: 4.4.4
     yo: 4.3.0
   languageName: unknown
   linkType: soft
@@ -8078,9 +8078,9 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:11.2.1":
-  version: 11.2.1
-  resolution: "lint-staged@npm:11.2.1"
+"lint-staged@npm:11.2.3":
+  version: 11.2.3
+  resolution: "lint-staged@npm:11.2.3"
   dependencies:
     cli-truncate: 2.1.0
     colorette: ^1.4.0
@@ -8098,7 +8098,7 @@ fsevents@^2.3.2:
     supports-color: 8.1.1
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 4d41e80c779082c6880c22ac0d13d68730a430d4fec6cd228365eee7647b36808c85aa554ee358fa4bf983a3ae0ca919bf00e4eeea8db65ca46b190f09b18d85
+  checksum: cf3a1612a8cb3790030fb1eaf98071b97be0c71e9ee87f2f65741321974178e9b15b480dac695bb126d2cd8751dd7d72071b13d7ea0e1a97a735d88bd3cc8bb7
   languageName: node
   linkType: hard
 
@@ -12587,17 +12587,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-typescript@4.4.3:
-  version: 4.4.3
-  resolution: "typescript@npm:4.4.3"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 05823f21796d450531a7e4ab299715d38fd9ded0e4ce7400876053f4b5166ca3dde7a68cecfe72d9086039f03c0b6edba36516fb10ed83c5837d9600532ea4c2
-  languageName: node
-  linkType: hard
-
-typescript@^4.4.3:
+typescript@4.4.4:
   version: 4.4.4
   resolution: "typescript@npm:4.4.4"
   bin:
@@ -12607,23 +12597,33 @@ typescript@^4.4.3:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.4.3#~builtin<compat/typescript>":
+typescript@^4.4.3:
   version: 4.4.3
-  resolution: "typescript@patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"
+  resolution: "typescript@npm:4.4.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 28ab98313afab46788ff41014fdb5932430ada6e03cf9e92ac47f406526a2cac1ae2894834e7da61e46b7429318e9c47f45ba8de323332f0cb9af99b72ebae74
+  checksum: 05823f21796d450531a7e4ab299715d38fd9ded0e4ce7400876053f4b5166ca3dde7a68cecfe72d9086039f03c0b6edba36516fb10ed83c5837d9600532ea4c2
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.4.4#~builtin<compat/typescript>":
   version: 4.4.4
   resolution: "typescript@patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=32657b"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: c97c33903f1eb4f9e178649befdfc859d93157db1eccd1e521e84976ec6861db53412d8018e5e4c5d09268771c65498d42caa64bd881878346c3644f6b7cd202
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
+  version: 4.4.3
+  resolution: "typescript@patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 28ab98313afab46788ff41014fdb5932430ada6e03cf9e92ac47f406526a2cac1ae2894834e7da61e46b7429318e9c47f45ba8de323332f0cb9af99b72ebae74
   languageName: node
   linkType: hard
 
