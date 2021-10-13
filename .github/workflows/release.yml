@@ -24,7 +24,7 @@ jobs:
           node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
 
       - name: Setup
-        run: yarn
+        run: yarn --immutable
 
       - name: Build
         run: yarn build
