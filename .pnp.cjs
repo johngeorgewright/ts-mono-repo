@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@commitlint/cli", "npm:16.0.1"],
+            ["@commitlint/cli", "npm:16.0.2"],
             ["@commitlint/config-conventional", "npm:16.0.0"],
             ["@semantic-release/commit-analyzer", "virtual:b353d2a3356588af07d3e6fe09d99c1fc6947d7eb1c9e4bc6be259423239815b3d2785448f3fb776b4d5b5d812b5ea46d30eb89fdcf466fca0d1d829c8bf5089#npm:9.0.2"],
             ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],
@@ -1072,10 +1072,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@commitlint/cli", [
-        ["npm:16.0.1", {
-          "packageLocation": "./.yarn/cache/@commitlint-cli-npm-16.0.1-a43d26e49a-a4ec182911.zip/node_modules/@commitlint/cli/",
+        ["npm:16.0.2", {
+          "packageLocation": "./.yarn/cache/@commitlint-cli-npm-16.0.2-0fc722cf95-20760e0f8d.zip/node_modules/@commitlint/cli/",
           "packageDependencies": [
-            ["@commitlint/cli", "npm:16.0.1"],
+            ["@commitlint/cli", "npm:16.0.2"],
             ["@commitlint/format", "npm:16.0.0"],
             ["@commitlint/lint", "npm:16.0.0"],
             ["@commitlint/load", "npm:16.0.0"],
@@ -1685,7 +1685,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@johngeorgewright/ts-mono-repo", "workspace:."],
-            ["@commitlint/cli", "npm:16.0.1"],
+            ["@commitlint/cli", "npm:16.0.2"],
             ["@commitlint/config-conventional", "npm:16.0.0"],
             ["@semantic-release/commit-analyzer", "virtual:b353d2a3356588af07d3e6fe09d99c1fc6947d7eb1c9e4bc6be259423239815b3d2785448f3fb776b4d5b5d812b5ea46d30eb89fdcf466fca0d1d829c8bf5089#npm:9.0.2"],
             ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],
