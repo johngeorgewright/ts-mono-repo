@@ -8,8 +8,7 @@
   },
   "folders": [
     { "name": "✨ @johngeorgewright/ts-mono-repo", "path": "." },
-    { "name": "🏗 @johngeorgewright/generator", "path": "packages/generator" },
-    { "name": "📦 @johngeorgewright/mung", "path": "packages/mung" }
+    { "name": "🏗 @johngeorgewright/generator", "path": "packages/generator" }
   ],
   "settings": {
     "jest.jestCommandLine": "yarn test",
