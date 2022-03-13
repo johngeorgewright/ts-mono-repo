@@ -8,7 +8,8 @@
     "generators/remove"
   ],
   "scripts": {
-    "build": "yarn rimraf generators && yarn tsc && yarn rimraf 'generators/**/?(__tests__|__mocks__|__setup__|*.test.*)'"
+    "build": "yarn rimraf generators && yarn tsc && yarn rimraf 'generators/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "test": "jest --passWithNoTests"
   },
   "keywords": [
     "yeoman-generator"

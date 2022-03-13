@@ -73,7 +73,7 @@ export = class PackageGenerator extends Generator {
       clean: 'rimraf dist',
       start: 'tsc --watch --preserveWatchOutput',
       release: 'semantic-release -e semantic-release-monorepo',
-      test: 'jest',
+      test: 'jest --passWithNoTests',
     })
 
     this.packageJson.set('license', 'MIT')
