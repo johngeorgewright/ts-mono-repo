@@ -89,6 +89,7 @@ export = class PackageGenerator extends Generator {
 
     const devDependencies = [
       '@types/jest',
+      '@types/node',
       'jest',
       'rimraf',
       'ts-node',
@@ -145,8 +146,8 @@ export = class PackageGenerator extends Generator {
     )
 
     this.fs.copyTpl(
-      this.templatePath('package-src/index.test.ts.template'),
-      this.destinationPath('src/index.test.ts'),
+      this.templatePath('package-test/index.test.ts.template'),
+      this.destinationPath('test/index.test.ts'),
       context
     )
 
