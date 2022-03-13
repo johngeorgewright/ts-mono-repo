@@ -91,6 +91,7 @@ export = class PackageGenerator extends Generator {
       '@types/jest',
       'jest',
       'rimraf',
+      'ts-node',
       'ts-jest',
       'typescript',
     ]
@@ -116,8 +117,13 @@ export = class PackageGenerator extends Generator {
     )
 
     this.fs.copy(
-      this.templatePath('jest.config.json'),
-      this.destinationPath('jest.config.json')
+      this.templatePath('tsconfig.test.json'),
+      this.destinationPath('tsconfig.test.json')
+    )
+
+    this.fs.copy(
+      this.templatePath('jest.config.ts.template'),
+      this.destinationPath('jest.config.ts')
     )
 
     this.fs.copyTpl(

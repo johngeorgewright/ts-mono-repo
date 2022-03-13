@@ -864,21 +864,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@commitlint/types@npm:16.2.1, @commitlint/types@npm:^16.2.1":
+  version: 16.2.1
+  resolution: "@commitlint/types@npm:16.2.1"
+  dependencies:
+    chalk: ^4.0.0
+  checksum: 93af3c26c36f3b11d99f0cbbb09c8952581eed2a6b7763eb728c0e7e7ecff5072de064a208b80225fb51533823af84ee3117d9c2efbcb63d1f5cfbf6fbfb8ed8
+  languageName: node
+  linkType: hard
+
 "@commitlint/types@npm:^13.2.0":
   version: 13.2.0
   resolution: "@commitlint/types@npm:13.2.0"
   dependencies:
     chalk: ^4.0.0
   checksum: 9035c01864bfbf9d3073c6ff45ef9fc8c47ee34bcc6135390bbfa6be868b23edc9b98dab5013f813e69c8ba1630a3a4a93f522a2aaf082588aeed0c5dd922167
-  languageName: node
-  linkType: hard
-
-"@commitlint/types@npm:^16.2.1":
-  version: 16.2.1
-  resolution: "@commitlint/types@npm:16.2.1"
-  dependencies:
-    chalk: ^4.0.0
-  checksum: 93af3c26c36f3b11d99f0cbbb09c8952581eed2a6b7763eb728c0e7e7ecff5072de064a208b80225fb51533823af84ee3117d9c2efbcb63d1f5cfbf6fbfb8ed8
   languageName: node
   linkType: hard
 
@@ -1198,6 +1198,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": 16.2.1
     "@commitlint/config-conventional": 16.2.1
+    "@commitlint/types": 16.2.1
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.2
