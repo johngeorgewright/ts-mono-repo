@@ -1,12 +1,12 @@
-name: Release
+name: Publish
 
 on:
   push:
     branches: [master]
 
 jobs:
-  github:
-    name: Create GitHub Release
+  test:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project
@@ -28,7 +28,51 @@ jobs:
       - name: Test
         run: yarn test
 
+      - name: Upload dists
+        uses: actions/upload-artifact@v3
+        with:
+          if-no-files-found: error
+          name: dists
+          path: packages/**/dist
+
+  publish:
+    name: Publish
+    if: github.actor != 'renovate[bot]'
+    needs: [test]
+    runs-on: ubuntu-latest
+    environment: NPM
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PUSH_TOKEN }}
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+
+      - name: Setup
+        run: |
+          yarn config set --home 'npmRegistries["https://registry.npmjs.org"].npmAuthToken' '${{ secrets.NPM_TOKEN }}'
+          yarn config set --home npmPublishRegistry https://registry.npmjs.org
+          yarn --immutable
+
+      - name: Download dists
+        uses: actions/download-artifact@v3
+        with:
+          name: dists
+          path: ~/dists
+
+      - name: Move dists to project
+        run: |
+          for package in ~/dists/*
+          do 
+            mv "$package/dist" "packages/${package/$HOME\/dists\//}"
+          done
+
       - name: Release
         run: yarn release
         env:
-          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

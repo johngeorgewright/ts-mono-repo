@@ -11,6 +11,7 @@ This is a template repository for creating a TypeScript mono repo.
 1. Use the [generator package](https://github.com/johngeorgewright/ts-mono-repo/tree/master/packages/generator) to create new packages
 1. If using VSCode, open the workspace and install recommended extensions
 1. Commit changes with `yarn commit`
+1. If your packages are to be published publically, change the publish command in `release.config.js` to `yarn npm publish --access public`
 
 ## Known issues
 

@@ -14,7 +14,7 @@
     "package:generate": "node --require ts-node/register $(yarn bin yo) ./packages/generator/src/package-generate",
     "package:remove": "node --require ts-node/register $(yarn bin yo) ./packages/generator/src/package-remove",
     "prepare": "husky install",
-    "release": "yarn workspaces foreach --no-private --topological-dev run release",
+    "release": "yarn workspaces foreach --no-private --topological-dev run sematnic-release",
     "start": "yarn build && yarn workspaces foreach --no-private --parallel --interlaced run start",
     "test": "yarn workspaces foreach run test"
   },
@@ -29,6 +29,7 @@
     "@commitlint/config-conventional": "17.0.3",
     "@commitlint/types": "17.0.0",
     "@semantic-release/commit-analyzer": "9.0.2",
+    "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.5",
     "@semantic-release/release-notes-generator": "10.0.3",
