@@ -13,10 +13,9 @@ This is a template repository for creating a TypeScript mono repo.
 1. Commit changes with `yarn commit`
 1. If your packages are to be published publically, change the publish command in `release.config.js` to `yarn npm publish --access public`
 
-## Known issues
+## Dependency management
 
-### Dependabot doesn't support Yarn2
+By default, this project's dependencies is kept up-to-date with [renovate](https://www.mend.io/free-developer-tools/renovate/). This project may also be set-up for dependabot too. To do so:
 
-If you need to use dependabot, you'll noticed that it doesn't update the "zero-install" cache. You'll have to make sure to do that yourself.
-
-We recommend using Renovate instead.
+1. Remove the `renovate.json` file
+1. Uncomment the lines in `.github/dependabot.yml`
