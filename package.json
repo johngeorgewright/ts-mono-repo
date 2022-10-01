@@ -8,15 +8,15 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspaces foreach --topological-dev --exclude @johngeorgewright/generator run build",
+    "build": "yarn workspaces foreach --verbose --topological-dev --exclude @johngeorgewright/generator run build",
     "clean": "yarn workspaces foreach run clean",
     "commit": "git-cz",
     "package:generate": "node --require ts-node/register $(yarn bin yo) ./packages/generator/src/package-generate",
     "package:remove": "node --require ts-node/register $(yarn bin yo) ./packages/generator/src/package-remove",
     "prepare": "husky install",
-    "release": "yarn workspaces foreach --no-private --topological-dev run sematnic-release",
-    "start": "yarn build && yarn workspaces foreach --no-private --parallel --interlaced run start",
-    "test": "yarn workspaces foreach run test"
+    "release": "yarn workspaces foreach --verbose --no-private --topological-dev run sematnic-release",
+    "start": "yarn build && yarn workspaces foreach --verbose --no-private --parallel --interlaced run start",
+    "test": "yarn workspaces foreach --verbose run test"
   },
   "author": "",
   "license": "UNLICENSED",
