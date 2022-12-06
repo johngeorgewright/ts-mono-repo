@@ -42,7 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.6"],\
             ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.3"],\
             ["@types/jest", "npm:29.2.3"],\
-            ["commitizen", "npm:4.2.5"],\
+            ["commitizen", "npm:4.2.6"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.2"],\
             ["jest-runner", "npm:29.3.1"],\
@@ -1759,7 +1759,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.6"],\
             ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.3"],\
             ["@types/jest", "npm:29.2.3"],\
-            ["commitizen", "npm:4.2.5"],\
+            ["commitizen", "npm:4.2.6"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.2"],\
             ["jest-runner", "npm:29.3.1"],\
@@ -4843,10 +4843,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:4.2.5", {\
-          "packageLocation": "./.yarn/cache/commitizen-npm-4.2.5-926ae634bf-28f5d10cf3.zip/node_modules/commitizen/",\
+        ["npm:4.2.6", {\
+          "packageLocation": "./.yarn/cache/commitizen-npm-4.2.6-d83eace98b-4423b25900.zip/node_modules/commitizen/",\
           "packageDependencies": [\
-            ["commitizen", "npm:4.2.5"],\
+            ["commitizen", "npm:4.2.6"],\
             ["cachedir", "npm:2.3.0"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["dedent", "npm:0.7.0"],\

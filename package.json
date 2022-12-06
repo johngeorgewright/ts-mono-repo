@@ -34,7 +34,7 @@
     "@semantic-release/github": "8.0.6",
     "@semantic-release/release-notes-generator": "10.0.3",
     "@types/jest": "29.2.3",
-    "commitizen": "4.2.5",
+    "commitizen": "4.2.6",
     "cz-conventional-changelog": "3.3.0",
     "husky": "8.0.2",
     "jest-runner": "29.3.1",
