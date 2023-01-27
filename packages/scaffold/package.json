@@ -1,7 +1,7 @@
 {
-  "name": "@johngeorgewright/generator",
+  "name": "@johngeorgewright/scaffold",
   "version": "0.0.0",
-  "description": "Generates a MOL ads packages",
+  "description": "Project scaffolding",
   "private": true,
   "files": [
     "generators/package",

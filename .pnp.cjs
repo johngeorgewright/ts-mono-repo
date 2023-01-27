@@ -16,14 +16,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."\
       },\
       {\
-        "name": "@johngeorgewright/generator",\
-        "reference": "workspace:packages/generator"\
+        "name": "@johngeorgewright/scaffold",\
+        "reference": "workspace:packages/scaffold"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["@johngeorgewright/generator", ["workspace:packages/generator"]],\
+      ["@johngeorgewright/scaffold", ["workspace:packages/scaffold"]],\
       ["@johngeorgewright/ts-mono-repo", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -1456,11 +1456,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@johngeorgewright/generator", [\
-        ["workspace:packages/generator", {\
-          "packageLocation": "./packages/generator/",\
+      ["@johngeorgewright/scaffold", [\
+        ["workspace:packages/scaffold", {\
+          "packageLocation": "./packages/scaffold/",\
           "packageDependencies": [\
-            ["@johngeorgewright/generator", "workspace:packages/generator"],\
+            ["@johngeorgewright/scaffold", "workspace:packages/scaffold"],\
             ["@semantic-release/commit-analyzer", "virtual:0db27408db66b35f867db5f036a1a6018ab37af44622cc99731540d4a88b54e31d506e2173bbf9d35d3da0d71fe88d5a152c149c5de69f3144e9ee830407eb1c#npm:9.0.2"],\
             ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.7"],\
@@ -1475,7 +1475,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:7.0.5"],\
             ["tslib", "npm:2.5.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"],\
-            ["yeoman-generator", "virtual:650a225ecefaa7a904069e5e75b461ae6d896206249c093443db6deca693117d3c65f93c0deaa38bb52c6e899dd769a530b4a01fccaa88bdd976e6e76b3ea50f#npm:5.7.0"]\
+            ["yeoman-generator", "virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:5.7.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -13864,10 +13864,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:650a225ecefaa7a904069e5e75b461ae6d896206249c093443db6deca693117d3c65f93c0deaa38bb52c6e899dd769a530b4a01fccaa88bdd976e6e76b3ea50f#npm:5.7.0", {\
-          "packageLocation": "./.yarn/__virtual__/yeoman-generator-virtual-e59cb795de/0/cache/yeoman-generator-npm-5.7.0-ab59b3fd69-16b779372d.zip/node_modules/yeoman-generator/",\
+        ["virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:5.7.0", {\
+          "packageLocation": "./.yarn/__virtual__/yeoman-generator-virtual-4ec2eac2a3/0/cache/yeoman-generator-npm-5.7.0-ab59b3fd69-16b779372d.zip/node_modules/yeoman-generator/",\
           "packageDependencies": [\
-            ["yeoman-generator", "virtual:650a225ecefaa7a904069e5e75b461ae6d896206249c093443db6deca693117d3c65f93c0deaa38bb52c6e899dd769a530b4a01fccaa88bdd976e6e76b3ea50f#npm:5.7.0"],\
+            ["yeoman-generator", "virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:5.7.0"],\
             ["@types/yeoman-environment", null],\
             ["chalk", "npm:4.1.2"],\
             ["dargs", "npm:7.0.0"],\

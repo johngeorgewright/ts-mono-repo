@@ -1160,9 +1160,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@johngeorgewright/generator@workspace:packages/generator":
+"@johngeorgewright/scaffold@workspace:packages/scaffold":
   version: 0.0.0-use.local
-  resolution: "@johngeorgewright/generator@workspace:packages/generator"
+  resolution: "@johngeorgewright/scaffold@workspace:packages/scaffold"
   dependencies:
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/git": 10.0.1
