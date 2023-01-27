@@ -25,25 +25,25 @@
   },
   "homepage": "https://github.com/johngeorgewright/ts-mono-repo#readme",
   "devDependencies": {
-    "@commitlint/cli": "17.2.0",
-    "@commitlint/config-conventional": "17.2.0",
-    "@commitlint/types": "17.0.0",
+    "@commitlint/cli": "17.4.2",
+    "@commitlint/config-conventional": "17.4.2",
+    "@commitlint/types": "17.4.0",
     "@semantic-release/commit-analyzer": "9.0.2",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "8.0.6",
+    "@semantic-release/github": "8.0.7",
     "@semantic-release/release-notes-generator": "10.0.3",
-    "@types/jest": "29.2.3",
-    "commitizen": "4.2.5",
+    "@types/jest": "29.4.0",
+    "commitizen": "4.3.0",
     "cz-conventional-changelog": "3.3.0",
-    "husky": "8.0.2",
-    "jest-runner": "29.3.1",
-    "lint-staged": "13.0.3",
-    "prettier": "2.7.1",
-    "semantic-release": "19.0.5",
+    "husky": "8.0.3",
+    "jest-runner": "29.4.1",
+    "lint-staged": "13.1.0",
+    "prettier": "2.8.3",
+    "semantic-release": "20.1.0",
     "semantic-release-monorepo": "7.0.5",
     "ts-node": "10.9.1",
-    "typescript": "4.9.3",
+    "typescript": "4.9.4",
     "yo": "4.3.1"
   },
   "config": {
@@ -57,7 +57,7 @@
     ]
   },
   "dependencies": {
-    "tslib": "2.4.1"
+    "tslib": "2.5.0"
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.3.1"
 }

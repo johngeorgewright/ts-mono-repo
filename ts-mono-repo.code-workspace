@@ -12,10 +12,9 @@
     { "name": "🤖 github", "path": ".github" }
   ],
   "settings": {
-    "jest.jestCommandLine": "yarn test",
     "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
     "search.exclude": { "**/dist": true, "**/.yarn": true, "**/.pnp.*": true },
     "typescript.enablePromptUseWorkspaceTsdk": true,
-    "typescript.tsdk": ".yarn/sdks/typescript/lib"
+    "typescript.tsdk": "✨ @johngeorgewright/ts-mono-repo/.yarn/sdks/typescript/lib"
   }
 }
