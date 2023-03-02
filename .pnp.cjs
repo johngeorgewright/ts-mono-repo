@@ -1470,7 +1470,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/yeoman-generator", "npm:5.2.11"],\
             ["change-case", "npm:4.1.2"],\
             ["prettier", "npm:2.8.4"],\
-            ["rimraf", "npm:4.1.2"],\
+            ["rimraf", "npm:4.1.3"],\
             ["semantic-release", "npm:20.1.0"],\
             ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:7.0.5"],\
             ["tslib", "npm:2.5.0"],\
@@ -11670,10 +11670,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:4.1.2", {\
-          "packageLocation": "./.yarn/cache/rimraf-npm-4.1.2-dd6c7bf72b-480b8147fd.zip/node_modules/rimraf/",\
+        ["npm:4.1.3", {\
+          "packageLocation": "./.yarn/cache/rimraf-npm-4.1.3-12ce7bb455-12c080cb37.zip/node_modules/rimraf/",\
           "packageDependencies": [\
-            ["rimraf", "npm:4.1.2"]\
+            ["rimraf", "npm:4.1.3"]\
           ],\
           "linkType": "HARD"\
         }]\
