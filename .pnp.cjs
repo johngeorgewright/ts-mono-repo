@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:17.4.4"],\
             ["@commitlint/config-conventional", "npm:17.4.4"],\
             ["@commitlint/types", "npm:17.4.4"],\
-            ["@semantic-release/commit-analyzer", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:9.0.2"],\
+            ["@semantic-release/commit-analyzer", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:9.0.2"],\
             ["@semantic-release/exec", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:6.0.3"],\
             ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.7"],\
@@ -49,7 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-runner", "npm:29.5.0"],\
             ["lint-staged", "npm:13.2.0"],\
             ["prettier", "npm:2.8.5"],\
-            ["semantic-release", "npm:20.1.1"],\
+            ["semantic-release", "npm:20.1.3"],\
             ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:7.0.5"],\
             ["ts-node", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.9.1"],\
             ["tslib", "npm:2.5.0"],\
@@ -1461,7 +1461,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/scaffold/",\
           "packageDependencies": [\
             ["@johngeorgewright/scaffold", "workspace:packages/scaffold"],\
-            ["@semantic-release/commit-analyzer", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:9.0.2"],\
+            ["@semantic-release/commit-analyzer", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:9.0.2"],\
             ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.7"],\
             ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.3"],\
@@ -1471,7 +1471,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["change-case", "npm:4.1.2"],\
             ["prettier", "npm:2.8.5"],\
             ["rimraf", "npm:4.4.0"],\
-            ["semantic-release", "npm:20.1.1"],\
+            ["semantic-release", "npm:20.1.3"],\
             ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:7.0.5"],\
             ["tslib", "npm:2.5.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"],\
@@ -1488,7 +1488,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/cli", "npm:17.4.4"],\
             ["@commitlint/config-conventional", "npm:17.4.4"],\
             ["@commitlint/types", "npm:17.4.4"],\
-            ["@semantic-release/commit-analyzer", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:9.0.2"],\
+            ["@semantic-release/commit-analyzer", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:9.0.2"],\
             ["@semantic-release/exec", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:6.0.3"],\
             ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.7"],\
@@ -1501,7 +1501,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-runner", "npm:29.5.0"],\
             ["lint-staged", "npm:13.2.0"],\
             ["prettier", "npm:2.8.5"],\
-            ["semantic-release", "npm:20.1.1"],\
+            ["semantic-release", "npm:20.1.3"],\
             ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:7.0.5"],\
             ["ts-node", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.9.1"],\
             ["tslib", "npm:2.5.0"],\
@@ -2146,10 +2146,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:9.0.2", {\
-          "packageLocation": "./.yarn/__virtual__/@semantic-release-commit-analyzer-virtual-ec644b4b9b/0/cache/@semantic-release-commit-analyzer-npm-9.0.2-6c1ff15dac-f7f759e608.zip/node_modules/@semantic-release/commit-analyzer/",\
+        ["virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:9.0.2", {\
+          "packageLocation": "./.yarn/__virtual__/@semantic-release-commit-analyzer-virtual-036acdad2d/0/cache/@semantic-release-commit-analyzer-npm-9.0.2-6c1ff15dac-f7f759e608.zip/node_modules/@semantic-release/commit-analyzer/",\
           "packageDependencies": [\
-            ["@semantic-release/commit-analyzer", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:9.0.2"],\
+            ["@semantic-release/commit-analyzer", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:9.0.2"],\
             ["@types/semantic-release", null],\
             ["conventional-changelog-angular", "npm:5.0.13"],\
             ["conventional-commits-filter", "npm:2.0.7"],\
@@ -2158,7 +2158,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["import-from", "npm:4.0.0"],\
             ["lodash", "npm:4.17.21"],\
             ["micromatch", "npm:4.0.4"],\
-            ["semantic-release", "npm:20.1.1"]\
+            ["semantic-release", "npm:20.1.3"]\
           ],\
           "packagePeers": [\
             "@types/semantic-release",\
@@ -2202,7 +2202,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["execa", "npm:5.1.1"],\
             ["lodash", "npm:4.17.21"],\
             ["parse-json", "npm:5.2.0"],\
-            ["semantic-release", "npm:20.1.1"]\
+            ["semantic-release", "npm:20.1.3"]\
           ],\
           "packagePeers": [\
             "@types/semantic-release",\
@@ -2232,7 +2232,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],\
             ["micromatch", "npm:4.0.4"],\
             ["p-reduce", "npm:2.1.0"],\
-            ["semantic-release", "npm:20.1.1"]\
+            ["semantic-release", "npm:20.1.3"]\
           ],\
           "packagePeers": [\
             "@types/semantic-release",\
@@ -2276,7 +2276,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mime", "npm:3.0.0"],\
             ["p-filter", "npm:2.1.0"],\
             ["p-retry", "npm:4.6.1"],\
-            ["semantic-release", "npm:20.1.1"],\
+            ["semantic-release", "npm:20.1.3"],\
             ["url-join", "npm:4.0.1"]\
           ],\
           "packagePeers": [\
@@ -2285,10 +2285,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:8.0.1", {\
-          "packageLocation": "./.yarn/__virtual__/@semantic-release-github-virtual-04536fc474/0/cache/@semantic-release-github-npm-8.0.1-aaea066ceb-a3db06afa9.zip/node_modules/@semantic-release/github/",\
+        ["virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:8.0.1", {\
+          "packageLocation": "./.yarn/__virtual__/@semantic-release-github-virtual-89acc0537d/0/cache/@semantic-release-github-npm-8.0.1-aaea066ceb-a3db06afa9.zip/node_modules/@semantic-release/github/",\
           "packageDependencies": [\
-            ["@semantic-release/github", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:8.0.1"],\
+            ["@semantic-release/github", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:8.0.1"],\
             ["@octokit/rest", "npm:18.12.0"],\
             ["@semantic-release/error", "npm:2.2.0"],\
             ["@types/semantic-release", null],\
@@ -2305,7 +2305,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mime", "npm:2.5.2"],\
             ["p-filter", "npm:2.1.0"],\
             ["p-retry", "npm:4.6.1"],\
-            ["semantic-release", "npm:20.1.1"],\
+            ["semantic-release", "npm:20.1.3"],\
             ["url-join", "npm:4.0.1"]\
           ],\
           "packagePeers": [\
@@ -2323,10 +2323,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:9.0.0", {\
-          "packageLocation": "./.yarn/__virtual__/@semantic-release-npm-virtual-6235dd6dad/0/cache/@semantic-release-npm-npm-9.0.0-718868a03a-e5cbb66702.zip/node_modules/@semantic-release/npm/",\
+        ["virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:9.0.0", {\
+          "packageLocation": "./.yarn/__virtual__/@semantic-release-npm-virtual-301c77e9a9/0/cache/@semantic-release-npm-npm-9.0.0-718868a03a-e5cbb66702.zip/node_modules/@semantic-release/npm/",\
           "packageDependencies": [\
-            ["@semantic-release/npm", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:9.0.0"],\
+            ["@semantic-release/npm", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:9.0.0"],\
             ["@semantic-release/error", "npm:3.0.0"],\
             ["@types/semantic-release", null],\
             ["aggregate-error", "npm:3.1.0"],\
@@ -2339,7 +2339,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rc", "npm:1.2.8"],\
             ["read-pkg", "npm:5.2.0"],\
             ["registry-auth-token", "npm:4.2.1"],\
-            ["semantic-release", "npm:20.1.1"],\
+            ["semantic-release", "npm:20.1.3"],\
             ["semver", "npm:7.3.5"],\
             ["tempy", "npm:1.0.1"]\
           ],\
@@ -2380,7 +2380,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["into-stream", "npm:6.0.0"],\
             ["lodash", "npm:4.17.21"],\
             ["read-pkg-up", "npm:7.0.1"],\
-            ["semantic-release", "npm:20.1.1"]\
+            ["semantic-release", "npm:20.1.3"]\
           ],\
           "packagePeers": [\
             "@types/semantic-release",\
@@ -2388,10 +2388,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:10.0.2", {\
-          "packageLocation": "./.yarn/__virtual__/@semantic-release-release-notes-generator-virtual-ed7756de25/0/cache/@semantic-release-release-notes-generator-npm-10.0.2-5cd273d09a-6e71e8be33.zip/node_modules/@semantic-release/release-notes-generator/",\
+        ["virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:10.0.2", {\
+          "packageLocation": "./.yarn/__virtual__/@semantic-release-release-notes-generator-virtual-22f38eb6d6/0/cache/@semantic-release-release-notes-generator-npm-10.0.2-5cd273d09a-6e71e8be33.zip/node_modules/@semantic-release/release-notes-generator/",\
           "packageDependencies": [\
-            ["@semantic-release/release-notes-generator", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:10.0.2"],\
+            ["@semantic-release/release-notes-generator", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:10.0.2"],\
             ["@types/semantic-release", null],\
             ["conventional-changelog-angular", "npm:5.0.13"],\
             ["conventional-changelog-writer", "npm:5.0.0"],\
@@ -2403,7 +2403,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["into-stream", "npm:6.0.0"],\
             ["lodash", "npm:4.17.21"],\
             ["read-pkg-up", "npm:7.0.1"],\
-            ["semantic-release", "npm:20.1.1"]\
+            ["semantic-release", "npm:20.1.3"]\
           ],\
           "packagePeers": [\
             "@types/semantic-release",\
@@ -9088,10 +9088,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:5.1.1", {\
-          "packageLocation": "./.yarn/__virtual__/marked-terminal-virtual-db805ba0a4/0/cache/marked-terminal-npm-5.1.1-dc605719af-24ceb02ebd.zip/node_modules/marked-terminal/",\
+        ["virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:5.1.1", {\
+          "packageLocation": "./.yarn/__virtual__/marked-terminal-virtual-3764170468/0/cache/marked-terminal-npm-5.1.1-dc605719af-24ceb02ebd.zip/node_modules/marked-terminal/",\
           "packageDependencies": [\
-            ["marked-terminal", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:5.1.1"],\
+            ["marked-terminal", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:5.1.1"],\
             ["@types/marked", null],\
             ["ansi-escapes", "npm:5.0.0"],\
             ["cardinal", "npm:2.1.1"],\
@@ -11883,15 +11883,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["semantic-release", [\
-        ["npm:20.1.1", {\
-          "packageLocation": "./.yarn/cache/semantic-release-npm-20.1.1-ce395cdb14-d70209d56e.zip/node_modules/semantic-release/",\
+        ["npm:20.1.3", {\
+          "packageLocation": "./.yarn/cache/semantic-release-npm-20.1.3-c75f2aad1c-804979c5b7.zip/node_modules/semantic-release/",\
           "packageDependencies": [\
-            ["semantic-release", "npm:20.1.1"],\
-            ["@semantic-release/commit-analyzer", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:9.0.2"],\
+            ["semantic-release", "npm:20.1.3"],\
+            ["@semantic-release/commit-analyzer", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:9.0.2"],\
             ["@semantic-release/error", "npm:3.0.0"],\
-            ["@semantic-release/github", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:8.0.1"],\
-            ["@semantic-release/npm", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:9.0.0"],\
-            ["@semantic-release/release-notes-generator", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:10.0.2"],\
+            ["@semantic-release/github", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:8.0.1"],\
+            ["@semantic-release/npm", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:9.0.0"],\
+            ["@semantic-release/release-notes-generator", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:10.0.2"],\
             ["aggregate-error", "npm:4.0.1"],\
             ["cosmiconfig", "npm:8.0.0"],\
             ["debug", "virtual:c61bddeb28ff5847f1a465b4dddb837a3d099a22e15a9fe3124a47a7e2d4ac1c2af811c54e48451d4f63d1957aae19762d202c1b452ad077e0fae6b219584389#npm:4.3.2"],\
@@ -11905,7 +11905,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hosted-git-info", "npm:6.1.1"],\
             ["lodash-es", "npm:4.17.21"],\
             ["marked", "npm:4.2.12"],\
-            ["marked-terminal", "virtual:ce395cdb14670a1606521db6842510af384cc332487bd5f410105904ffe80e8a56e67d3b1b78a6f182f98d12f351e7720f9f19558765aaed0be7bcb2eb005402#npm:5.1.1"],\
+            ["marked-terminal", "virtual:c75f2aad1cfb1386ad5202acb59b82b91b33a53c730761c9fc148a23fea3225950eae1f6d7635bbf8de086fa8e510a43201fc331edd45e67dc120f369cd0411e#npm:5.1.1"],\
             ["micromatch", "npm:4.0.4"],\
             ["p-each-series", "npm:3.0.0"],\
             ["p-reduce", "npm:3.0.0"],\
@@ -11938,7 +11938,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pkg-up", "npm:2.0.0"],\
             ["ramda", "npm:0.25.0"],\
             ["read-pkg", "npm:5.2.0"],\
-            ["semantic-release", "npm:20.1.1"],\
+            ["semantic-release", "npm:20.1.3"],\
             ["semantic-release-plugin-decorators", "virtual:71471311fc04e29caac2337a55e556fdbdd66ea5ffd17786cf9ca15b61987438d632d187d5f602240116017824a56979fb60f778f26a6a49b80082ee7a831680#npm:3.0.1"]\
           ],\
           "packagePeers": [\
@@ -11961,7 +11961,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["semantic-release-plugin-decorators", "virtual:71471311fc04e29caac2337a55e556fdbdd66ea5ffd17786cf9ca15b61987438d632d187d5f602240116017824a56979fb60f778f26a6a49b80082ee7a831680#npm:3.0.1"],\
             ["@types/semantic-release", null],\
-            ["semantic-release", "npm:20.1.1"]\
+            ["semantic-release", "npm:20.1.3"]\
           ],\
           "packagePeers": [\
             "@types/semantic-release",\
