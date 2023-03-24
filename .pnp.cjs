@@ -48,7 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:8.0.3"],\
             ["jest-runner", "npm:29.5.0"],\
             ["lint-staged", "npm:13.2.0"],\
-            ["prettier", "npm:2.8.5"],\
+            ["prettier", "npm:2.8.7"],\
             ["semantic-release", "npm:20.1.3"],\
             ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:7.0.5"],\
             ["ts-node", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.9.1"],\
@@ -1469,7 +1469,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/rimraf", "npm:3.0.2"],\
             ["@types/yeoman-generator", "npm:5.2.11"],\
             ["change-case", "npm:4.1.2"],\
-            ["prettier", "npm:2.8.5"],\
+            ["prettier", "npm:2.8.7"],\
             ["rimraf", "npm:4.4.0"],\
             ["semantic-release", "npm:20.1.3"],\
             ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:7.0.5"],\
@@ -1500,7 +1500,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["husky", "npm:8.0.3"],\
             ["jest-runner", "npm:29.5.0"],\
             ["lint-staged", "npm:13.2.0"],\
-            ["prettier", "npm:2.8.5"],\
+            ["prettier", "npm:2.8.7"],\
             ["semantic-release", "npm:20.1.3"],\
             ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:7.0.5"],\
             ["ts-node", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.9.1"],\
@@ -11020,10 +11020,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["prettier", [\
-        ["npm:2.8.5", {\
-          "packageLocation": "./.yarn/cache/prettier-npm-2.8.5-3f60833fcb-b7f8d30e14.zip/node_modules/prettier/",\
+        ["npm:2.8.7", {\
+          "packageLocation": "./.yarn/cache/prettier-npm-2.8.7-1962ac9483-fdc8f2616f.zip/node_modules/prettier/",\
           "packageDependencies": [\
-            ["prettier", "npm:2.8.5"]\
+            ["prettier", "npm:2.8.7"]\
           ],\
           "linkType": "HARD"\
         }]\
