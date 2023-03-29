@@ -18,6 +18,7 @@ jobs:
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
+        id: node
         with:
           node-version: ${{ matrix.node-version }}
 
@@ -28,8 +29,7 @@ jobs:
           path: |
             .yarn/unplugged
             .yarn/install-state.gz
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: ${{ runner.os }}-yarn-
+          key: ${{ runner.os }}-yarn-${{ steps.node.outputs.node-version }}-${{ hashFiles('**/yarn.lock') }}
 
       - name: Yarn
         if: steps.cache.outputs.cache-hit != 'true'
