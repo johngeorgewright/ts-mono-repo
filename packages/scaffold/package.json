@@ -22,7 +22,7 @@
     "@types/yeoman-generator": "5.2.11",
     "prettier": "2.8.8",
     "rimraf": "4.4.1",
-    "semantic-release": "21.0.4",
+    "semantic-release": "21.0.5",
     "semantic-release-monorepo": "7.0.5",
     "typescript": "5.0.4"
   },
