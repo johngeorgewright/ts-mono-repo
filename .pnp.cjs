@@ -1472,7 +1472,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
             ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.1.0"],\
             ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.3"],\
-            ["@types/prettier", "npm:2.7.2"],\
+            ["@types/prettier", "npm:2.7.3"],\
             ["@types/rimraf", "npm:3.0.2"],\
             ["@types/yeoman-generator", "npm:5.2.11"],\
             ["change-case", "npm:4.1.2"],\
@@ -3145,10 +3145,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:2.7.2", {\
-          "packageLocation": "./.yarn/cache/@types-prettier-npm-2.7.2-6b2e2f518f-b47d76a525.zip/node_modules/@types/prettier/",\
+        ["npm:2.7.3", {\
+          "packageLocation": "./.yarn/cache/@types-prettier-npm-2.7.3-497316f37c-705384209c.zip/node_modules/@types/prettier/",\
           "packageDependencies": [\
-            ["@types/prettier", "npm:2.7.2"]\
+            ["@types/prettier", "npm:2.7.3"]\
           ],\
           "linkType": "HARD"\
         }]\
