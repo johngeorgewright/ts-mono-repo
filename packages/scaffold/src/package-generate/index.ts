@@ -86,7 +86,7 @@ export = class PackageGenerator extends Generator {
       'https://github.com/johngeorgewright/ts-mono-repo#readme'
     )
 
-    const devDependencies = [
+    await this.addDevDependencies([
       '@types/jest',
       '@types/node',
       'jest',
@@ -94,21 +94,22 @@ export = class PackageGenerator extends Generator {
       'ts-node',
       'ts-jest',
       'typescript',
-    ]
+    ])
 
     if (this.#answers.public) {
-      devDependencies.push(
-        '@semantic-release/commit-analyzer',
-        '@semantic-release/exec',
-        '@semantic-release/git',
-        '@semantic-release/github',
-        '@semantic-release/release-notes-generator',
-        'semantic-release',
-        'semantic-release-monorepo'
-      )
+      // Fixed dependencies as `semantic-release-monorepo` is broken
+      // with the new `semantic-release`
+      await this.addDevDependencies({
+        '@semantic-release/commit-analyzer': '9.0.2',
+        '@semantic-release/exec': '6.0.3',
+        '@semantic-release/git': '10.0.1',
+        '@semantic-release/github': '8.1.0',
+        '@semantic-release/release-notes-generator': '10.0.3',
+        'semantic-release': '19.0.5',
+        'semantic-release-monorepo': '7.0.5',
+      })
     }
 
-    await this.addDevDependencies(devDependencies)
     await this.addDependencies(['tslib'])
 
     this.fs.copy(
