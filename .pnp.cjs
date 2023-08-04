@@ -42,7 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:93ff9e54e7e85ba03f8777529e2e31fd687b3208f0bfd29f9526626fccebedcf25fd704ae938492bcd5692d38a16927bd020804d445cde5885dc772e9e1e1ff9#npm:8.1.0"],\
             ["@semantic-release/release-notes-generator", "virtual:93ff9e54e7e85ba03f8777529e2e31fd687b3208f0bfd29f9526626fccebedcf25fd704ae938492bcd5692d38a16927bd020804d445cde5885dc772e9e1e1ff9#npm:10.0.3"],\
             ["@types/jest", "npm:29.5.3"],\
-            ["@types/node", "npm:18.17.1"],\
+            ["@types/node", "npm:18.17.2"],\
             ["commitizen", "npm:4.3.0"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.3"],\
@@ -1433,7 +1433,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:93ff9e54e7e85ba03f8777529e2e31fd687b3208f0bfd29f9526626fccebedcf25fd704ae938492bcd5692d38a16927bd020804d445cde5885dc772e9e1e1ff9#npm:8.1.0"],\
             ["@semantic-release/release-notes-generator", "virtual:93ff9e54e7e85ba03f8777529e2e31fd687b3208f0bfd29f9526626fccebedcf25fd704ae938492bcd5692d38a16927bd020804d445cde5885dc772e9e1e1ff9#npm:10.0.3"],\
             ["@types/jest", "npm:29.5.3"],\
-            ["@types/node", "npm:18.17.1"],\
+            ["@types/node", "npm:18.17.2"],\
             ["commitizen", "npm:4.3.0"],\
             ["cz-conventional-changelog", "npm:3.3.0"],\
             ["husky", "npm:8.0.3"],\
@@ -2925,10 +2925,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:18.17.1", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.17.1-4d5cf864b8-56201bda9a.zip/node_modules/@types/node/",\
+        ["npm:18.17.2", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-18.17.2-471d3f5212-2e08acaeb3.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:18.17.1"]\
+            ["@types/node", "npm:18.17.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -13765,7 +13765,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],\
             ["@tsconfig/node14", "npm:1.0.1"],\
             ["@tsconfig/node16", "npm:1.0.2"],\
-            ["@types/node", "npm:18.17.1"],\
+            ["@types/node", "npm:18.17.2"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
