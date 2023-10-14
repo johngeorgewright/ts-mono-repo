@@ -39,7 +39,7 @@
     "cz-conventional-changelog": "3.3.0",
     "husky": "8.0.3",
     "jest-runner": "29.7.0",
-    "lint-staged": "13.3.0",
+    "lint-staged": "14.0.1",
     "prettier": "2.8.8",
     "semantic-release": "19.0.5",
     "semantic-release-monorepo": "7.0.5",
