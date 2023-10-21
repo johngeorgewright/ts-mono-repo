@@ -21,7 +21,7 @@
     "@types/rimraf": "3.0.2",
     "@types/yeoman-generator": "5.2.13",
     "prettier": "2.8.8",
-    "rimraf": "4.4.1",
+    "rimraf": "5.0.5",
     "semantic-release": "19.0.5",
     "semantic-release-monorepo": "7.0.5",
     "typescript": "5.2.2"
