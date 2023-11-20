@@ -1,3 +1,0 @@
-# @johngeorgewright/test
-
-test

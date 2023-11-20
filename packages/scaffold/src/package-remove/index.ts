@@ -3,7 +3,7 @@ import { readdir, writeFile } from 'fs/promises'
 import Generator from 'yeoman-generator'
 import { validateGenerationFromRoot } from '../validation'
 import prettier from 'prettier'
-import rimraf from 'rimraf'
+import { rimraf } from 'rimraf'
 
 export = class RemovePackageGenerator extends Generator {
   #vsCodeWS = 'ts-mono-repo.code-workspace'
