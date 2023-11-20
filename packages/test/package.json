@@ -1,0 +1,30 @@
+{
+  "name": "@johngeorgewright/test",
+  "version": "0.0.0",
+  "description": "test",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "build": "yarn clean && tsc && rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "clean": "rimraf dist",
+    "start": "tsc --watch --preserveWatchOutput",
+    "test": "jest --passWithNoTests"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/ts-mono-repo/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/ts-mono-repo#readme",
+  "devDependencies": {
+    "@types/jest": "*",
+    "@types/node": "*",
+    "jest": "*",
+    "rimraf": "*",
+    "ts-jest": "*",
+    "ts-node": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "tslib": "*"
+  }
+}

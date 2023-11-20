@@ -5,6 +5,7 @@
   "folders": [
     { "name": "✨ @johngeorgewright/ts-mono-repo", "path": "." },
     { "name": "🏗 @johngeorgewright/scaffold", "path": "packages/scaffold" },
+    { "name": "📦 @johngeorgewright/test", "path": "packages/test" },
     { "name": "🤖 github", "path": ".github" }
   ],
   "settings": {
