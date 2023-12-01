@@ -1176,7 +1176,7 @@ __metadata:
     prettier: "npm:2.8.8"
     semantic-release: "npm:22.0.8"
     semantic-release-monorepo: "npm:7.0.5"
-    semantic-release-monorepo-esm: "npm:1.0.11"
+    semantic-release-monorepo-esm: "npm:1.0.12"
     ts-node: "npm:10.9.1"
     tslib: "npm:2.6.2"
     typescript: "npm:5.3.2"
@@ -4530,7 +4530,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^6.0.0":
+"cross-spawn@npm:^6.0.0, cross-spawn@npm:^6.0.5":
   version: 6.0.5
   resolution: "cross-spawn@npm:6.0.5"
   dependencies:
@@ -5235,18 +5235,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:0.8.0, execa@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "execa@npm:0.8.0"
+"execa@npm:2.0.0":
+  version: 2.0.0
+  resolution: "execa@npm:2.0.0"
   dependencies:
-    cross-spawn: "npm:^5.0.1"
-    get-stream: "npm:^3.0.0"
-    is-stream: "npm:^1.1.0"
-    npm-run-path: "npm:^2.0.0"
-    p-finally: "npm:^1.0.0"
-    signal-exit: "npm:^3.0.0"
-    strip-eof: "npm:^1.0.0"
-  checksum: 1e255f4381714402aa85605057b9a8bbb2ea6b59eae12affad3b1233aae0109cece49f1f842453e97976a537db62a0d91969d52557bd1a66badd01a926b33b67
+    cross-spawn: "npm:^6.0.5"
+    get-stream: "npm:^5.0.0"
+    is-stream: "npm:^2.0.0"
+    merge-stream: "npm:^2.0.0"
+    npm-run-path: "npm:^3.0.0"
+    p-finally: "npm:^2.0.0"
+    signal-exit: "npm:^3.0.2"
+    strip-final-newline: "npm:^2.0.0"
+  checksum: 1757fd58d46553b249578c28a302aa7e5bb5fc0187ec0e60b74abfca10761c405d329deed166953d736eb7eb7acdde2325db65c222aa74a06e34ea43b3c94d13
   languageName: node
   linkType: hard
 
@@ -5264,6 +5265,21 @@ __metadata:
     signal-exit: "npm:^4.1.0"
     strip-final-newline: "npm:^3.0.0"
   checksum: d2ab5fe1e2bb92b9788864d0713f1fce9a07c4594e272c0c97bc18c90569897ab262e4ea58d27a694d288227a2e24f16f5e2575b44224ad9983b799dc7f1098d
+  languageName: node
+  linkType: hard
+
+"execa@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "execa@npm:0.8.0"
+  dependencies:
+    cross-spawn: "npm:^5.0.1"
+    get-stream: "npm:^3.0.0"
+    is-stream: "npm:^1.1.0"
+    npm-run-path: "npm:^2.0.0"
+    p-finally: "npm:^1.0.0"
+    signal-exit: "npm:^3.0.0"
+    strip-eof: "npm:^1.0.0"
+  checksum: 1e255f4381714402aa85605057b9a8bbb2ea6b59eae12affad3b1233aae0109cece49f1f842453e97976a537db62a0d91969d52557bd1a66badd01a926b33b67
   languageName: node
   linkType: hard
 
@@ -5925,7 +5941,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-stream@npm:^5.1.0":
+"get-stream@npm:^5.0.0, get-stream@npm:^5.1.0":
   version: 5.2.0
   resolution: "get-stream@npm:5.2.0"
   dependencies:
@@ -9937,6 +9953,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"npm-run-path@npm:^3.0.0":
+  version: 3.1.0
+  resolution: "npm-run-path@npm:3.1.0"
+  dependencies:
+    path-key: "npm:^3.0.0"
+  checksum: 141e0b8f0e3b137347a2896572c9a84701754dda0670d3ceb8c56a87702ee03c26227e4517ab93f2904acfc836547315e740b8289bb24ca0cd8ba2b198043b0f
+  languageName: node
+  linkType: hard
+
 "npm-run-path@npm:^4.0.1":
   version: 4.0.1
   resolution: "npm-run-path@npm:4.0.1"
@@ -10277,6 +10302,13 @@ __metadata:
   version: 1.0.0
   resolution: "p-finally@npm:1.0.0"
   checksum: 93a654c53dc805dd5b5891bab16eb0ea46db8f66c4bfd99336ae929323b1af2b70a8b0654f8f1eae924b2b73d037031366d645f1fd18b3d30cbd15950cc4b1d4
+  languageName: node
+  linkType: hard
+
+"p-finally@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "p-finally@npm:2.0.1"
+  checksum: 6306a2851c3b28f8b603624f395ae84dce76970498fed8aa6aae2d930595053746edf1e4ee0c4b78a97410d84aa4504d63179f5310d555511ecd226f53ed1e8e
   languageName: node
   linkType: hard
 
@@ -11770,12 +11802,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release-monorepo-esm@npm:1.0.11":
-  version: 1.0.11
-  resolution: "semantic-release-monorepo-esm@npm:1.0.11"
+"semantic-release-monorepo-esm@npm:1.0.12":
+  version: 1.0.12
+  resolution: "semantic-release-monorepo-esm@npm:1.0.12"
   dependencies:
     debug: "npm:3.2.7"
-    execa: "npm:0.8.0"
+    execa: "npm:2.0.0"
     file-url: "npm:3.0.0"
     fs-extra: "npm:10.1.0"
     get-stream: "npm:6.0.1"
@@ -11788,7 +11820,7 @@ __metadata:
     tempy: "npm:1.0.1"
   peerDependencies:
     semantic-release: ">=22"
-  checksum: 96ba85af2aead65496a11e2d3cb6773f4e418fe18fd97bb96a41e2adf02aa3895b8eed535133fe166df76c22c83cb0be4b3806a1d470196cc44660be865cacf1
+  checksum: 288927b37d6aedd84887c65f6691f9e82f419e09f2635c50ff0b192690d56f521e4f6c0f5e214e1879670347055859152277134f642d540aff3b982f523199dd
   languageName: node
   linkType: hard
 
