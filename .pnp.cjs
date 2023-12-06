@@ -39,7 +39,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
           ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.2.4"],\
           ["@semantic-release/release-notes-generator", "virtual:d2c18aac46cc6145e1be69a7e93b4397379037696e89b8377c38ac232b0325bcfffada5129b259b75db360d25e5f39aff8f7a7e278baa193dafdafc99dbee51c#npm:12.1.0"],\
-          ["@types/jest", "npm:29.5.10"],\
+          ["@types/jest", "npm:29.5.11"],\
           ["@types/node", "npm:20.10.3"],\
           ["commitizen", "npm:4.3.0"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
@@ -1479,7 +1479,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
           ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.2.4"],\
           ["@semantic-release/release-notes-generator", "virtual:d2c18aac46cc6145e1be69a7e93b4397379037696e89b8377c38ac232b0325bcfffada5129b259b75db360d25e5f39aff8f7a7e278baa193dafdafc99dbee51c#npm:12.1.0"],\
-          ["@types/jest", "npm:29.5.10"],\
+          ["@types/jest", "npm:29.5.11"],\
           ["@types/node", "npm:20.10.3"],\
           ["commitizen", "npm:4.3.0"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
@@ -2977,10 +2977,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/jest", [\
-      ["npm:29.5.10", {\
-        "packageLocation": "./.yarn/cache/@types-jest-npm-29.5.10-cc73227aae-f31cdc9cf8.zip/node_modules/@types/jest/",\
+      ["npm:29.5.11", {\
+        "packageLocation": "./.yarn/cache/@types-jest-npm-29.5.11-1ede28257d-798f4c8940.zip/node_modules/@types/jest/",\
         "packageDependencies": [\
-          ["@types/jest", "npm:29.5.10"],\
+          ["@types/jest", "npm:29.5.11"],\
           ["expect", "npm:29.0.3"],\
           ["pretty-format", "npm:29.0.3"]\
         ],\
