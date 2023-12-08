@@ -44,7 +44,7 @@
     "semantic-release": "22.0.10",
     "semantic-release-monorepo": "7.0.5",
     "semantic-release-monorepo-esm": "1.0.12",
-    "ts-node": "10.9.1",
+    "ts-node": "10.9.2",
     "typescript": "5.3.3",
     "yo": "4.3.1"
   },
