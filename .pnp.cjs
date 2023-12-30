@@ -40,7 +40,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.2.6"],\
           ["@semantic-release/release-notes-generator", "virtual:af2cf72dc39691c71459e458026c5c34e70102662ec3c672a81f04a0a9438b409df99e648748671b2c936443bb341cff406321d9d48103b5d85fdc26705c8a42#npm:12.1.0"],\
           ["@types/jest", "npm:29.5.11"],\
-          ["@types/node", "npm:20.10.5"],\
+          ["@types/node", "npm:20.10.6"],\
           ["commitizen", "npm:4.3.0"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:8.0.3"],\
@@ -1480,7 +1480,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.2.6"],\
           ["@semantic-release/release-notes-generator", "virtual:af2cf72dc39691c71459e458026c5c34e70102662ec3c672a81f04a0a9438b409df99e648748671b2c936443bb341cff406321d9d48103b5d85fdc26705c8a42#npm:12.1.0"],\
           ["@types/jest", "npm:29.5.11"],\
-          ["@types/node", "npm:20.10.5"],\
+          ["@types/node", "npm:20.10.6"],\
           ["commitizen", "npm:4.3.0"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:8.0.3"],\
@@ -3090,10 +3090,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:20.10.5", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-20.10.5-9464a4540b-4a378428d2.zip/node_modules/@types/node/",\
+      ["npm:20.10.6", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-20.10.6-59a7d708ba-08471220d3.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:20.10.5"],\
+          ["@types/node", "npm:20.10.6"],\
           ["undici-types", "npm:5.26.5"]\
         ],\
         "linkType": "HARD"\
@@ -14519,7 +14519,7 @@ const RAW_RUNTIME_STATE =
           ["@tsconfig/node12", "npm:1.0.9"],\
           ["@tsconfig/node14", "npm:1.0.1"],\
           ["@tsconfig/node16", "npm:1.0.2"],\
-          ["@types/node", "npm:20.10.5"],\
+          ["@types/node", "npm:20.10.6"],\
           ["@types/swc__core", null],\
           ["@types/swc__wasm", null],\
           ["@types/typescript", null],\
