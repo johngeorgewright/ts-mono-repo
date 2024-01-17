@@ -1145,7 +1145,7 @@ __metadata:
     prettier: "npm:2.8.8"
     rimraf: "npm:5.0.5"
     semantic-release: "npm:22.0.12"
-    semantic-release-monorepo: "npm:7.0.5"
+    semantic-release-monorepo: "npm:7.0.8"
     tslib: "npm:2.6.2"
     typescript: "npm:5.3.3"
     yeoman-generator: "npm:5.10.0"
@@ -1173,7 +1173,7 @@ __metadata:
     lint-staged: "npm:15.2.0"
     prettier: "npm:2.8.8"
     semantic-release: "npm:22.0.12"
-    semantic-release-monorepo: "npm:7.0.5"
+    semantic-release-monorepo: "npm:7.0.8"
     semantic-release-monorepo-esm: "npm:1.0.12"
     ts-node: "npm:10.9.2"
     tslib: "npm:2.6.2"
@@ -5506,7 +5506,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"file-url@npm:3.0.0":
+"file-url@npm:3.0.0, file-url@npm:^3.0.0":
   version: 3.0.0
   resolution: "file-url@npm:3.0.0"
   checksum: f15c1bdd81df1a09238f3411f877274d7849703df837ec327c4d1df631314f60036cb700a59d826d8c96b79ff66429d3c758480005e1899c00961541b98d5bfe
@@ -5685,7 +5685,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:10.1.0":
+"fs-extra@npm:10.1.0, fs-extra@npm:^10.0.1":
   version: 10.1.0
   resolution: "fs-extra@npm:10.1.0"
   dependencies:
@@ -5907,7 +5907,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-stream@npm:6.0.1, get-stream@npm:^6.0.0":
+"get-stream@npm:6.0.1, get-stream@npm:^6.0.0, get-stream@npm:^6.0.1":
   version: 6.0.1
   resolution: "get-stream@npm:6.0.1"
   checksum: 781266d29725f35c59f1d214aedc92b0ae855800a980800e2923b3fbc4e56b3cb6e462c42e09a1cf1a00c64e056a78fa407cbe06c7c92b7e5cd49b4b85c2a497
@@ -10266,7 +10266,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-each-series@npm:2.2.0":
+"p-each-series@npm:2.2.0, p-each-series@npm:^2.1.0":
   version: 2.2.0
   resolution: "p-each-series@npm:2.2.0"
   checksum: 5fbe2f1f1966f55833bd401fe36f7afe410707d5e9fb6032c6dde8aa716d50521c3bb201fdb584130569b5941d5e84993e09e0b3f76a474288e0ede8f632983c
@@ -11831,20 +11831,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release-monorepo@npm:7.0.5":
-  version: 7.0.5
-  resolution: "semantic-release-monorepo@npm:7.0.5"
+"semantic-release-monorepo@npm:7.0.8":
+  version: 7.0.8
+  resolution: "semantic-release-monorepo@npm:7.0.8"
   dependencies:
     debug: "npm:^3.1.0"
     execa: "npm:^0.8.0"
+    file-url: "npm:^3.0.0"
+    fs-extra: "npm:^10.0.1"
+    get-stream: "npm:^6.0.1"
+    git-log-parser: "npm:^1.2.0"
+    p-each-series: "npm:^2.1.0"
     p-limit: "npm:^1.2.0"
     pkg-up: "npm:^2.0.0"
     ramda: "npm:^0.25.0"
     read-pkg: "npm:^5.0.0"
     semantic-release-plugin-decorators: "npm:^3.0.0"
+    tempy: "npm:1.0.1"
   peerDependencies:
-    semantic-release: ">=15.11.x"
-  checksum: a719202c7fbfb7f2ace561181fe01d0710b0e9c95810b499ab2a3d801dcb21579de2b3bcb801b022aae1b47a5528ddec80cd3a6f65db7897fe616a579de5f1b3
+    semantic-release: ">=15.11.x < 20"
+  checksum: 1ff23776a53508bc14dc837659c1660adb85c07f3c27dd49c9aa6023d832c77ffa36a47250ed59533d1f4880dbfe6481abe8fb3d9e6bdaaaf9dbf1fd1c66a4a3
   languageName: node
   linkType: hard
 
