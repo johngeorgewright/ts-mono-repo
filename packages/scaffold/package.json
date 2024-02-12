@@ -17,13 +17,13 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "9.2.6",
     "@semantic-release/release-notes-generator": "12.1.0",
-    "@types/prettier": "2.7.3",
+    "@types/prettier": "3.0.0",
     "@types/rimraf": "4.0.5",
     "@types/yeoman-generator": "5.2.14",
-    "prettier": "2.8.8",
+    "prettier": "3.2.5",
     "rimraf": "5.0.5",
-    "semantic-release": "22.0.12",
-    "semantic-release-monorepo": "7.0.8",
+    "semantic-release": "23.0.2",
+    "semantic-release-monorepo": "8.0.2",
     "typescript": "5.3.3"
   },
   "dependencies": {

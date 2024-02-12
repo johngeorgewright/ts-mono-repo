@@ -25,9 +25,7 @@ export = class PackageGenerator extends Generator {
   async prompting() {
     this.#answers = await this.prompt([
       {
-        message: `What is the packages's name? (Minus the ${
-          this.#namespace
-        } namespace)`,
+        message: `What is the packages's name? (Minus the ${this.#namespace} namespace)`,
         name: 'name',
         type: 'input',
         validate: (x) => !!x || 'You must supply a name',
@@ -83,7 +81,7 @@ export = class PackageGenerator extends Generator {
 
     this.packageJson.set(
       'homepage',
-      'https://github.com/johngeorgewright/ts-mono-repo#readme'
+      'https://github.com/johngeorgewright/ts-mono-repo#readme',
     )
 
     await this.addDevDependencies([
@@ -97,58 +95,61 @@ export = class PackageGenerator extends Generator {
     ])
 
     if (this.#answers.public) {
-      // Fixed dependencies as `semantic-release-monorepo` is broken
-      // with the new `semantic-release`
-      await this.addDevDependencies({
-        '@semantic-release/commit-analyzer': '9.0.2',
-        '@semantic-release/exec': '6.0.3',
-        '@semantic-release/git': '10.0.1',
-        '@semantic-release/github': '8.1.0',
-        '@semantic-release/release-notes-generator': '10.0.3',
-        'semantic-release': '19.0.5',
-        'semantic-release-monorepo': '7.0.5',
-      })
+      await this.addDevDependencies([
+        '@semantic-release/commit-analyzer',
+        '@semantic-release/exec',
+        '@semantic-release/git',
+        '@semantic-release/github',
+        '@semantic-release/release-notes-generator',
+        'semantic-release',
+        'semantic-release-monorepo',
+      ])
+
+      this.fs.copy(
+        this.templatePath('.releaserc.cjs'),
+        this.destinationPath('.releaserc.cjs'),
+      )
     }
 
     await this.addDependencies(['tslib'])
 
     this.fs.copy(
       this.templatePath('tsconfig.json'),
-      this.destinationPath('tsconfig.json')
+      this.destinationPath('tsconfig.json'),
     )
 
     this.fs.copy(
       this.templatePath('tsconfig.test.json'),
-      this.destinationPath('tsconfig.test.json')
+      this.destinationPath('tsconfig.test.json'),
     )
 
     this.fs.copy(
       this.templatePath('jest.config.ts.template'),
-      this.destinationPath('jest.config.ts')
+      this.destinationPath('jest.config.ts'),
     )
 
     this.fs.copyTpl(
       this.templatePath('LICENSE'),
       this.destinationPath('LICENSE'),
-      context
+      context,
     )
 
     this.fs.copyTpl(
       this.templatePath('README.md'),
       this.destinationPath('README.md'),
-      context
+      context,
     )
 
     this.fs.copyTpl(
       this.templatePath('package-src/index.ts.template'),
       this.destinationPath('src/index.ts'),
-      context
+      context,
     )
 
     this.fs.copyTpl(
       this.templatePath('package-test/index.test.ts.template'),
       this.destinationPath('test/index.test.ts'),
-      context
+      context,
     )
 
     await this.#updateVSCodeWS(this.#vsCodeWS)
@@ -163,13 +164,16 @@ export = class PackageGenerator extends Generator {
     })
 
     vsCodeWS.folders.sort((a: any, b: any) =>
-      a.name === b.name ? 0 : a.name < b.name ? -1 : 0
+      a.name === b.name ? 0 : a.name < b.name ? -1 : 0,
     )
 
     const prettierOptions = (await prettier.resolveConfig(file)) || {}
     prettierOptions.parser = 'json'
 
-    writeFile(file, prettier.format(JSON.stringify(vsCodeWS), prettierOptions))
+    writeFile(
+      file,
+      await prettier.format(JSON.stringify(vsCodeWS), prettierOptions),
+    )
   }
 
   async install() {
