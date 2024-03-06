@@ -24,7 +24,7 @@
     "rimraf": "5.0.5",
     "semantic-release": "23.0.2",
     "semantic-release-monorepo": "8.0.2",
-    "typescript": "5.3.3"
+    "typescript": "5.4.2"
   },
   "dependencies": {
     "change-case": "4.1.2",
