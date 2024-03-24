@@ -34,11 +34,11 @@ const RAW_RUNTIME_STATE =
           ["@commitlint/cli", "npm:18.6.1"],\
           ["@commitlint/config-conventional", "npm:18.6.3"],\
           ["@commitlint/types", "npm:18.6.1"],\
-          ["@semantic-release/commit-analyzer", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:11.1.0"],\
+          ["@semantic-release/commit-analyzer", "virtual:7a3afbed81eccba7ae75191abd975254c421603b004d655080d1317a6610d656d80a44c4d5f2487c69618fee686f21b5c388263c74cfde60e8eef312b70229f6#npm:12.0.0"],\
           ["@semantic-release/exec", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:6.0.3"],\
           ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
-          ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.2.6"],\
-          ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:12.1.0"],\
+          ["@semantic-release/github", "virtual:7a3afbed81eccba7ae75191abd975254c421603b004d655080d1317a6610d656d80a44c4d5f2487c69618fee686f21b5c388263c74cfde60e8eef312b70229f6#npm:10.0.2"],\
+          ["@semantic-release/release-notes-generator", "virtual:7a3afbed81eccba7ae75191abd975254c421603b004d655080d1317a6610d656d80a44c4d5f2487c69618fee686f21b5c388263c74cfde60e8eef312b70229f6#npm:13.0.0"],\
           ["@types/jest", "npm:29.5.12"],\
           ["@types/node", "npm:20.11.30"],\
           ["commitizen", "npm:4.3.0"],\
@@ -1446,10 +1446,10 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/scaffold/",\
         "packageDependencies": [\
           ["@johngeorgewright/scaffold", "workspace:packages/scaffold"],\
-          ["@semantic-release/commit-analyzer", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:11.1.0"],\
+          ["@semantic-release/commit-analyzer", "virtual:7a3afbed81eccba7ae75191abd975254c421603b004d655080d1317a6610d656d80a44c4d5f2487c69618fee686f21b5c388263c74cfde60e8eef312b70229f6#npm:12.0.0"],\
           ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
-          ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.2.6"],\
-          ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:12.1.0"],\
+          ["@semantic-release/github", "virtual:7a3afbed81eccba7ae75191abd975254c421603b004d655080d1317a6610d656d80a44c4d5f2487c69618fee686f21b5c388263c74cfde60e8eef312b70229f6#npm:10.0.2"],\
+          ["@semantic-release/release-notes-generator", "virtual:7a3afbed81eccba7ae75191abd975254c421603b004d655080d1317a6610d656d80a44c4d5f2487c69618fee686f21b5c388263c74cfde60e8eef312b70229f6#npm:13.0.0"],\
           ["@types/prettier", "npm:3.0.0"],\
           ["@types/rimraf", "npm:4.0.5"],\
           ["@types/yeoman-generator", "npm:5.2.14"],\
@@ -1473,11 +1473,11 @@ const RAW_RUNTIME_STATE =
           ["@commitlint/cli", "npm:18.6.1"],\
           ["@commitlint/config-conventional", "npm:18.6.3"],\
           ["@commitlint/types", "npm:18.6.1"],\
-          ["@semantic-release/commit-analyzer", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:11.1.0"],\
+          ["@semantic-release/commit-analyzer", "virtual:7a3afbed81eccba7ae75191abd975254c421603b004d655080d1317a6610d656d80a44c4d5f2487c69618fee686f21b5c388263c74cfde60e8eef312b70229f6#npm:12.0.0"],\
           ["@semantic-release/exec", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:6.0.3"],\
           ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
-          ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.2.6"],\
-          ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:12.1.0"],\
+          ["@semantic-release/github", "virtual:7a3afbed81eccba7ae75191abd975254c421603b004d655080d1317a6610d656d80a44c4d5f2487c69618fee686f21b5c388263c74cfde60e8eef312b70229f6#npm:10.0.2"],\
+          ["@semantic-release/release-notes-generator", "virtual:7a3afbed81eccba7ae75191abd975254c421603b004d655080d1317a6610d656d80a44c4d5f2487c69618fee686f21b5c388263c74cfde60e8eef312b70229f6#npm:13.0.0"],\
           ["@types/jest", "npm:29.5.12"],\
           ["@types/node", "npm:20.11.30"],\
           ["commitizen", "npm:4.3.0"],\
@@ -2043,13 +2043,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.0.0", {\
-        "packageLocation": "./.yarn/cache/@octokit-auth-token-npm-4.0.0-9ad78a752f-60e42701e3.zip/node_modules/@octokit/auth-token/",\
-        "packageDependencies": [\
-          ["@octokit/auth-token", "npm:4.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:5.0.1", {\
         "packageLocation": "./.yarn/cache/@octokit-auth-token-npm-5.0.1-e6bce33d52-bb48bcbf19.zip/node_modules/@octokit/auth-token/",\
         "packageDependencies": [\
@@ -2068,20 +2061,6 @@ const RAW_RUNTIME_STATE =
           ["@octokit/request", "npm:5.6.2"],\
           ["@octokit/request-error", "npm:2.1.0"],\
           ["@octokit/types", "npm:6.34.0"],\
-          ["before-after-hook", "npm:2.2.2"],\
-          ["universal-user-agent", "npm:6.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:5.0.1", {\
-        "packageLocation": "./.yarn/cache/@octokit-core-npm-5.0.1-58208565b9-e0f6398e59.zip/node_modules/@octokit/core/",\
-        "packageDependencies": [\
-          ["@octokit/core", "npm:5.0.1"],\
-          ["@octokit/auth-token", "npm:4.0.0"],\
-          ["@octokit/graphql", "npm:7.0.2"],\
-          ["@octokit/request", "npm:8.1.5"],\
-          ["@octokit/request-error", "npm:5.0.1"],\
-          ["@octokit/types", "npm:12.3.0"],\
           ["before-after-hook", "npm:2.2.2"],\
           ["universal-user-agent", "npm:6.0.0"]\
         ],\
@@ -2121,16 +2100,6 @@ const RAW_RUNTIME_STATE =
           ["universal-user-agent", "npm:6.0.0"]\
         ],\
         "linkType": "HARD"\
-      }],\
-      ["npm:9.0.2", {\
-        "packageLocation": "./.yarn/cache/@octokit-endpoint-npm-9.0.2-0be2b78649-042491e4f4.zip/node_modules/@octokit/endpoint/",\
-        "packageDependencies": [\
-          ["@octokit/endpoint", "npm:9.0.2"],\
-          ["@octokit/types", "npm:12.3.0"],\
-          ["is-plain-object", "npm:5.0.0"],\
-          ["universal-user-agent", "npm:6.0.0"]\
-        ],\
-        "linkType": "HARD"\
       }]\
     ]],\
     ["@octokit/graphql", [\
@@ -2140,16 +2109,6 @@ const RAW_RUNTIME_STATE =
           ["@octokit/graphql", "npm:4.8.0"],\
           ["@octokit/request", "npm:5.6.2"],\
           ["@octokit/types", "npm:6.34.0"],\
-          ["universal-user-agent", "npm:6.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:7.0.2", {\
-        "packageLocation": "./.yarn/cache/@octokit-graphql-npm-7.0.2-b5522f5b29-f5dcc51fed.zip/node_modules/@octokit/graphql/",\
-        "packageDependencies": [\
-          ["@octokit/graphql", "npm:7.0.2"],\
-          ["@octokit/request", "npm:8.1.5"],\
-          ["@octokit/types", "npm:12.3.0"],\
           ["universal-user-agent", "npm:6.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -2202,27 +2161,6 @@ const RAW_RUNTIME_STATE =
           ["@octokit/plugin-paginate-rest", "npm:2.17.0"]\
         ],\
         "linkType": "SOFT"\
-      }],\
-      ["npm:9.1.4", {\
-        "packageLocation": "./.yarn/cache/@octokit-plugin-paginate-rest-npm-9.1.4-2463f31552-1573934e0c.zip/node_modules/@octokit/plugin-paginate-rest/",\
-        "packageDependencies": [\
-          ["@octokit/plugin-paginate-rest", "npm:9.1.4"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:1db33b81efccb795adcf471dc004c36ed83a1b22b2068e10448c4791c8fae14ef6849cdadbb36b30d761b4d3cc7368591583226df2438f8589d1a042a237d4df#npm:9.1.4", {\
-        "packageLocation": "./.yarn/__virtual__/@octokit-plugin-paginate-rest-virtual-0f4e77747d/0/cache/@octokit-plugin-paginate-rest-npm-9.1.4-2463f31552-1573934e0c.zip/node_modules/@octokit/plugin-paginate-rest/",\
-        "packageDependencies": [\
-          ["@octokit/plugin-paginate-rest", "virtual:1db33b81efccb795adcf471dc004c36ed83a1b22b2068e10448c4791c8fae14ef6849cdadbb36b30d761b4d3cc7368591583226df2438f8589d1a042a237d4df#npm:9.1.4"],\
-          ["@octokit/core", "npm:5.0.1"],\
-          ["@octokit/types", "npm:12.3.0"],\
-          ["@types/octokit__core", null]\
-        ],\
-        "packagePeers": [\
-          "@octokit/core",\
-          "@types/octokit__core"\
-        ],\
-        "linkType": "HARD"\
       }],\
       ["virtual:44c3ed91af57028f67f2f0b51b28ec255de3d1342d6872f0613a084400f6fae4bad14b75b0561b787802c933d081ca528a7c4536ddf77e51b00757dbe442119a#npm:10.0.0", {\
         "packageLocation": "./.yarn/__virtual__/@octokit-plugin-paginate-rest-virtual-825a7a922c/0/cache/@octokit-plugin-paginate-rest-npm-10.0.0-556305dfec-ab198792c9.zip/node_modules/@octokit/plugin-paginate-rest/",\
@@ -2300,35 +2238,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@octokit/plugin-retry", [\
-      ["npm:6.0.1", {\
-        "packageLocation": "./.yarn/cache/@octokit-plugin-retry-npm-6.0.1-b38996e6ff-2f5cd8b221.zip/node_modules/@octokit/plugin-retry/",\
-        "packageDependencies": [\
-          ["@octokit/plugin-retry", "npm:6.0.1"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
       ["npm:7.0.3", {\
         "packageLocation": "./.yarn/cache/@octokit-plugin-retry-npm-7.0.3-09938e7e40-dd04be30d9.zip/node_modules/@octokit/plugin-retry/",\
         "packageDependencies": [\
           ["@octokit/plugin-retry", "npm:7.0.3"]\
         ],\
         "linkType": "SOFT"\
-      }],\
-      ["virtual:1db33b81efccb795adcf471dc004c36ed83a1b22b2068e10448c4791c8fae14ef6849cdadbb36b30d761b4d3cc7368591583226df2438f8589d1a042a237d4df#npm:6.0.1", {\
-        "packageLocation": "./.yarn/__virtual__/@octokit-plugin-retry-virtual-2d8296a379/0/cache/@octokit-plugin-retry-npm-6.0.1-b38996e6ff-2f5cd8b221.zip/node_modules/@octokit/plugin-retry/",\
-        "packageDependencies": [\
-          ["@octokit/plugin-retry", "virtual:1db33b81efccb795adcf471dc004c36ed83a1b22b2068e10448c4791c8fae14ef6849cdadbb36b30d761b4d3cc7368591583226df2438f8589d1a042a237d4df#npm:6.0.1"],\
-          ["@octokit/core", "npm:5.0.1"],\
-          ["@octokit/request-error", "npm:5.0.1"],\
-          ["@octokit/types", "npm:12.3.0"],\
-          ["@types/octokit__core", null],\
-          ["bottleneck", "npm:2.19.5"]\
-        ],\
-        "packagePeers": [\
-          "@octokit/core",\
-          "@types/octokit__core"\
-        ],\
-        "linkType": "HARD"\
       }],\
       ["virtual:44c3ed91af57028f67f2f0b51b28ec255de3d1342d6872f0613a084400f6fae4bad14b75b0561b787802c933d081ca528a7c4536ddf77e51b00757dbe442119a#npm:7.0.3", {\
         "packageLocation": "./.yarn/__virtual__/@octokit-plugin-retry-virtual-73e8458193/0/cache/@octokit-plugin-retry-npm-7.0.3-09938e7e40-dd04be30d9.zip/node_modules/@octokit/plugin-retry/",\
@@ -2348,34 +2263,12 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@octokit/plugin-throttling", [\
-      ["npm:8.1.3", {\
-        "packageLocation": "./.yarn/cache/@octokit-plugin-throttling-npm-8.1.3-e289724e54-dfc0eca10f.zip/node_modules/@octokit/plugin-throttling/",\
-        "packageDependencies": [\
-          ["@octokit/plugin-throttling", "npm:8.1.3"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
       ["npm:9.0.3", {\
         "packageLocation": "./.yarn/cache/@octokit-plugin-throttling-npm-9.0.3-5d967c3a48-d5c1d66a49.zip/node_modules/@octokit/plugin-throttling/",\
         "packageDependencies": [\
           ["@octokit/plugin-throttling", "npm:9.0.3"]\
         ],\
         "linkType": "SOFT"\
-      }],\
-      ["virtual:1db33b81efccb795adcf471dc004c36ed83a1b22b2068e10448c4791c8fae14ef6849cdadbb36b30d761b4d3cc7368591583226df2438f8589d1a042a237d4df#npm:8.1.3", {\
-        "packageLocation": "./.yarn/__virtual__/@octokit-plugin-throttling-virtual-82f8063f46/0/cache/@octokit-plugin-throttling-npm-8.1.3-e289724e54-dfc0eca10f.zip/node_modules/@octokit/plugin-throttling/",\
-        "packageDependencies": [\
-          ["@octokit/plugin-throttling", "virtual:1db33b81efccb795adcf471dc004c36ed83a1b22b2068e10448c4791c8fae14ef6849cdadbb36b30d761b4d3cc7368591583226df2438f8589d1a042a237d4df#npm:8.1.3"],\
-          ["@octokit/core", "npm:5.0.1"],\
-          ["@octokit/types", "npm:12.3.0"],\
-          ["@types/octokit__core", null],\
-          ["bottleneck", "npm:2.19.5"]\
-        ],\
-        "packagePeers": [\
-          "@octokit/core",\
-          "@types/octokit__core"\
-        ],\
-        "linkType": "HARD"\
       }],\
       ["virtual:44c3ed91af57028f67f2f0b51b28ec255de3d1342d6872f0613a084400f6fae4bad14b75b0561b787802c933d081ca528a7c4536ddf77e51b00757dbe442119a#npm:9.0.3", {\
         "packageLocation": "./.yarn/__virtual__/@octokit-plugin-throttling-virtual-d6c22890fc/0/cache/@octokit-plugin-throttling-npm-9.0.3-5d967c3a48-d5c1d66a49.zip/node_modules/@octokit/plugin-throttling/",\
@@ -2407,18 +2300,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:8.1.5", {\
-        "packageLocation": "./.yarn/cache/@octokit-request-npm-8.1.5-55d7e1303c-52c26a686f.zip/node_modules/@octokit/request/",\
-        "packageDependencies": [\
-          ["@octokit/request", "npm:8.1.5"],\
-          ["@octokit/endpoint", "npm:9.0.2"],\
-          ["@octokit/request-error", "npm:5.0.1"],\
-          ["@octokit/types", "npm:12.3.0"],\
-          ["is-plain-object", "npm:5.0.0"],\
-          ["universal-user-agent", "npm:6.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:9.0.1", {\
         "packageLocation": "./.yarn/cache/@octokit-request-npm-9.0.1-b76783150d-428e27ca11.zip/node_modules/@octokit/request/",\
         "packageDependencies": [\
@@ -2437,16 +2318,6 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@octokit/request-error", "npm:2.1.0"],\
           ["@octokit/types", "npm:6.34.0"],\
-          ["deprecation", "npm:2.3.1"],\
-          ["once", "npm:1.4.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:5.0.1", {\
-        "packageLocation": "./.yarn/cache/@octokit-request-error-npm-5.0.1-eda589102d-a21a4614c4.zip/node_modules/@octokit/request-error/",\
-        "packageDependencies": [\
-          ["@octokit/request-error", "npm:5.0.1"],\
-          ["@octokit/types", "npm:12.3.0"],\
           ["deprecation", "npm:2.3.1"],\
           ["once", "npm:1.4.0"]\
         ],\
@@ -2541,13 +2412,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@semantic-release/commit-analyzer", [\
-      ["npm:11.1.0", {\
-        "packageLocation": "./.yarn/cache/@semantic-release-commit-analyzer-npm-11.1.0-3004dc9e25-de693f1565.zip/node_modules/@semantic-release/commit-analyzer/",\
-        "packageDependencies": [\
-          ["@semantic-release/commit-analyzer", "npm:11.1.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
       ["npm:12.0.0", {\
         "packageLocation": "./.yarn/cache/@semantic-release-commit-analyzer-npm-12.0.0-29bc00d178-a095ab4a87.zip/node_modules/@semantic-release/commit-analyzer/",\
         "packageDependencies": [\
@@ -2559,26 +2423,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@semantic-release-commit-analyzer-virtual-05e3187a43/0/cache/@semantic-release-commit-analyzer-npm-12.0.0-29bc00d178-a095ab4a87.zip/node_modules/@semantic-release/commit-analyzer/",\
         "packageDependencies": [\
           ["@semantic-release/commit-analyzer", "virtual:7a3afbed81eccba7ae75191abd975254c421603b004d655080d1317a6610d656d80a44c4d5f2487c69618fee686f21b5c388263c74cfde60e8eef312b70229f6#npm:12.0.0"],\
-          ["@types/semantic-release", null],\
-          ["conventional-changelog-angular", "npm:7.0.0"],\
-          ["conventional-commits-filter", "npm:4.0.0"],\
-          ["conventional-commits-parser", "npm:5.0.0"],\
-          ["debug", "virtual:c61bddeb28ff5847f1a465b4dddb837a3d099a22e15a9fe3124a47a7e2d4ac1c2af811c54e48451d4f63d1957aae19762d202c1b452ad077e0fae6b219584389#npm:4.3.2"],\
-          ["import-from-esm", "npm:1.3.3"],\
-          ["lodash-es", "npm:4.17.21"],\
-          ["micromatch", "npm:4.0.4"],\
-          ["semantic-release", "npm:23.0.6"]\
-        ],\
-        "packagePeers": [\
-          "@types/semantic-release",\
-          "semantic-release"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:11.1.0", {\
-        "packageLocation": "./.yarn/__virtual__/@semantic-release-commit-analyzer-virtual-f30b781c2e/0/cache/@semantic-release-commit-analyzer-npm-11.1.0-3004dc9e25-de693f1565.zip/node_modules/@semantic-release/commit-analyzer/",\
-        "packageDependencies": [\
-          ["@semantic-release/commit-analyzer", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:11.1.0"],\
           ["@types/semantic-release", null],\
           ["conventional-changelog-angular", "npm:7.0.0"],\
           ["conventional-commits-filter", "npm:4.0.0"],\
@@ -2678,13 +2522,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["npm:9.2.6", {\
-        "packageLocation": "./.yarn/cache/@semantic-release-github-npm-9.2.6-167c09dbcd-699131327d.zip/node_modules/@semantic-release/github/",\
-        "packageDependencies": [\
-          ["@semantic-release/github", "npm:9.2.6"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
       ["virtual:7a3afbed81eccba7ae75191abd975254c421603b004d655080d1317a6610d656d80a44c4d5f2487c69618fee686f21b5c388263c74cfde60e8eef312b70229f6#npm:10.0.2", {\
         "packageLocation": "./.yarn/__virtual__/@semantic-release-github-virtual-44c3ed91af/0/cache/@semantic-release-github-npm-10.0.2-93492993f6-4e9e401205.zip/node_modules/@semantic-release/github/",\
         "packageDependencies": [\
@@ -2702,35 +2539,6 @@ const RAW_RUNTIME_STATE =
           ["http-proxy-agent", "npm:7.0.0"],\
           ["https-proxy-agent", "npm:7.0.0"],\
           ["issue-parser", "npm:7.0.0"],\
-          ["lodash-es", "npm:4.17.21"],\
-          ["mime", "npm:4.0.0"],\
-          ["p-filter", "npm:4.0.0"],\
-          ["semantic-release", "npm:23.0.6"],\
-          ["url-join", "npm:5.0.0"]\
-        ],\
-        "packagePeers": [\
-          "@types/semantic-release",\
-          "semantic-release"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.2.6", {\
-        "packageLocation": "./.yarn/__virtual__/@semantic-release-github-virtual-1db33b81ef/0/cache/@semantic-release-github-npm-9.2.6-167c09dbcd-699131327d.zip/node_modules/@semantic-release/github/",\
-        "packageDependencies": [\
-          ["@semantic-release/github", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:9.2.6"],\
-          ["@octokit/core", "npm:5.0.1"],\
-          ["@octokit/plugin-paginate-rest", "virtual:1db33b81efccb795adcf471dc004c36ed83a1b22b2068e10448c4791c8fae14ef6849cdadbb36b30d761b4d3cc7368591583226df2438f8589d1a042a237d4df#npm:9.1.4"],\
-          ["@octokit/plugin-retry", "virtual:1db33b81efccb795adcf471dc004c36ed83a1b22b2068e10448c4791c8fae14ef6849cdadbb36b30d761b4d3cc7368591583226df2438f8589d1a042a237d4df#npm:6.0.1"],\
-          ["@octokit/plugin-throttling", "virtual:1db33b81efccb795adcf471dc004c36ed83a1b22b2068e10448c4791c8fae14ef6849cdadbb36b30d761b4d3cc7368591583226df2438f8589d1a042a237d4df#npm:8.1.3"],\
-          ["@semantic-release/error", "npm:4.0.0"],\
-          ["@types/semantic-release", null],\
-          ["aggregate-error", "npm:5.0.0"],\
-          ["debug", "virtual:da1e8ea74f8c4a36993c4ec6f4d59ff93992279c2da5b42697633717d08676e2923d18f611517105da5ca08629acd5d1a624d0429c14da4f7c302eef895ed55b#npm:4.3.4"],\
-          ["dir-glob", "npm:3.0.1"],\
-          ["globby", "npm:14.0.0"],\
-          ["http-proxy-agent", "npm:7.0.0"],\
-          ["https-proxy-agent", "npm:7.0.0"],\
-          ["issue-parser", "npm:6.0.0"],\
           ["lodash-es", "npm:4.17.21"],\
           ["mime", "npm:4.0.0"],\
           ["p-filter", "npm:4.0.0"],\
@@ -2780,13 +2588,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@semantic-release/release-notes-generator", [\
-      ["npm:12.1.0", {\
-        "packageLocation": "./.yarn/cache/@semantic-release-release-notes-generator-npm-12.1.0-866cd1b0ca-ff8c5e3b58.zip/node_modules/@semantic-release/release-notes-generator/",\
-        "packageDependencies": [\
-          ["@semantic-release/release-notes-generator", "npm:12.1.0"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
       ["npm:13.0.0", {\
         "packageLocation": "./.yarn/cache/@semantic-release-release-notes-generator-npm-13.0.0-101ced5f20-802f98e5e1.zip/node_modules/@semantic-release/release-notes-generator/",\
         "packageDependencies": [\
@@ -2798,29 +2599,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/@semantic-release-release-notes-generator-virtual-81f6f7ce9c/0/cache/@semantic-release-release-notes-generator-npm-13.0.0-101ced5f20-802f98e5e1.zip/node_modules/@semantic-release/release-notes-generator/",\
         "packageDependencies": [\
           ["@semantic-release/release-notes-generator", "virtual:7a3afbed81eccba7ae75191abd975254c421603b004d655080d1317a6610d656d80a44c4d5f2487c69618fee686f21b5c388263c74cfde60e8eef312b70229f6#npm:13.0.0"],\
-          ["@types/semantic-release", null],\
-          ["conventional-changelog-angular", "npm:7.0.0"],\
-          ["conventional-changelog-writer", "npm:7.0.1"],\
-          ["conventional-commits-filter", "npm:4.0.0"],\
-          ["conventional-commits-parser", "npm:5.0.0"],\
-          ["debug", "virtual:c61bddeb28ff5847f1a465b4dddb837a3d099a22e15a9fe3124a47a7e2d4ac1c2af811c54e48451d4f63d1957aae19762d202c1b452ad077e0fae6b219584389#npm:4.3.2"],\
-          ["get-stream", "npm:7.0.1"],\
-          ["import-from-esm", "npm:1.3.3"],\
-          ["into-stream", "npm:7.0.0"],\
-          ["lodash-es", "npm:4.17.21"],\
-          ["read-pkg-up", "npm:11.0.0"],\
-          ["semantic-release", "npm:23.0.6"]\
-        ],\
-        "packagePeers": [\
-          "@types/semantic-release",\
-          "semantic-release"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:12.1.0", {\
-        "packageLocation": "./.yarn/__virtual__/@semantic-release-release-notes-generator-virtual-05b886788e/0/cache/@semantic-release-release-notes-generator-npm-12.1.0-866cd1b0ca-ff8c5e3b58.zip/node_modules/@semantic-release/release-notes-generator/",\
-        "packageDependencies": [\
-          ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:12.1.0"],\
           ["@types/semantic-release", null],\
           ["conventional-changelog-angular", "npm:7.0.0"],\
           ["conventional-changelog-writer", "npm:7.0.1"],\
@@ -8666,18 +8444,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["issue-parser", [\
-      ["npm:6.0.0", {\
-        "packageLocation": "./.yarn/cache/issue-parser-npm-6.0.0-ef081f1601-dfa82df9ab.zip/node_modules/issue-parser/",\
-        "packageDependencies": [\
-          ["issue-parser", "npm:6.0.0"],\
-          ["lodash.capitalize", "npm:4.2.1"],\
-          ["lodash.escaperegexp", "npm:4.1.2"],\
-          ["lodash.isplainobject", "npm:4.0.6"],\
-          ["lodash.isstring", "npm:4.0.1"],\
-          ["lodash.uniqby", "npm:4.7.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:7.0.0", {\
         "packageLocation": "./.yarn/cache/issue-parser-npm-7.0.0-bfd06132af-3975fcfccf.zip/node_modules/issue-parser/",\
         "packageDependencies": [\
