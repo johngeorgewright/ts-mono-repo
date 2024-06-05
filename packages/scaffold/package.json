@@ -20,7 +20,7 @@
     "@types/prettier": "3.0.0",
     "@types/rimraf": "4.0.5",
     "@types/yeoman-generator": "5.2.14",
-    "prettier": "3.3.0",
+    "prettier": "3.3.1",
     "rimraf": "5.0.7",
     "semantic-release": "23.1.1",
     "semantic-release-monorepo": "8.0.2",

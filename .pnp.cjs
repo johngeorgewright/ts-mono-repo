@@ -47,7 +47,7 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:9.0.11"],\
           ["jest-runner", "npm:29.7.0"],\
           ["lint-staged", "npm:15.2.5"],\
-          ["prettier", "npm:3.3.0"],\
+          ["prettier", "npm:3.3.1"],\
           ["semantic-release", "npm:23.1.1"],\
           ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.2"],\
           ["semantic-release-monorepo-esm", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:1.0.12"],\
@@ -1455,7 +1455,7 @@ const RAW_RUNTIME_STATE =
           ["@types/rimraf", "npm:4.0.5"],\
           ["@types/yeoman-generator", "npm:5.2.14"],\
           ["change-case", "npm:4.1.2"],\
-          ["prettier", "npm:3.3.0"],\
+          ["prettier", "npm:3.3.1"],\
           ["rimraf", "npm:5.0.7"],\
           ["semantic-release", "npm:23.1.1"],\
           ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.2"],\
@@ -1486,7 +1486,7 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:9.0.11"],\
           ["jest-runner", "npm:29.7.0"],\
           ["lint-staged", "npm:15.2.5"],\
-          ["prettier", "npm:3.3.0"],\
+          ["prettier", "npm:3.3.1"],\
           ["semantic-release", "npm:23.1.1"],\
           ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.2"],\
           ["semantic-release-monorepo-esm", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:1.0.12"],\
@@ -12693,10 +12693,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:3.3.0", {\
-        "packageLocation": "./.yarn/unplugged/prettier-npm-3.3.0-2a7d3c0efa/node_modules/prettier/",\
+      ["npm:3.3.1", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.3.1-91c1be8598/node_modules/prettier/",\
         "packageDependencies": [\
-          ["prettier", "npm:3.3.0"]\
+          ["prettier", "npm:3.3.1"]\
         ],\
         "linkType": "HARD"\
       }]\
