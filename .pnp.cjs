@@ -42,7 +42,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:12.1.0"],\
           ["@types/jest", "npm:29.5.13"],\
           ["@types/node", "npm:20.16.9"],\
-          ["commitizen", "npm:4.3.0"],\
+          ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.6"],\
           ["jest-runner", "npm:29.7.0"],\
@@ -1481,7 +1481,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:12.1.0"],\
           ["@types/jest", "npm:29.5.13"],\
           ["@types/node", "npm:20.16.9"],\
-          ["commitizen", "npm:4.3.0"],\
+          ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.6"],\
           ["jest-runner", "npm:29.7.0"],\
@@ -5224,10 +5224,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.3.0", {\
-        "packageLocation": "./.yarn/cache/commitizen-npm-4.3.0-3695cdaf66-45a82b7fde.zip/node_modules/commitizen/",\
+      ["npm:4.3.1", {\
+        "packageLocation": "./.yarn/cache/commitizen-npm-4.3.1-eab8087a7a-3feeb9d235.zip/node_modules/commitizen/",\
         "packageDependencies": [\
-          ["commitizen", "npm:4.3.0"],\
+          ["commitizen", "npm:4.3.1"],\
           ["cachedir", "npm:2.3.0"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["dedent", "npm:0.7.0"],\
