@@ -46,7 +46,7 @@
     "semantic-release-monorepo-esm": "1.0.12",
     "ts-node": "10.9.2",
     "typescript": "5.7.2",
-    "yo": "4.3.1"
+    "yo": "5.0.0"
   },
   "config": {
     "commitizen": {
