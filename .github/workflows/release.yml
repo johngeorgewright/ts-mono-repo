@@ -8,38 +8,28 @@ concurrency:
   group: release
 
 jobs:
+  cache:
+    uses: ./.github/workflows/cache.yml
+
   build:
     name: Build
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.x, 20.x]
+    needs: [cache]
     steps:
       - name: Checkout project
         uses: actions/checkout@v4
 
-      - name: NVM
-        id: nvm
-        run: echo "version=$(cat .nvmrc)" >> $GITHUB_OUTPUT
-
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: actions/setup-node@v4
         id: node
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version-file: .nvmrc
 
       - name: Restore cache
         uses: actions/cache@v4
-        id: cache
         with:
-          path: |
-            .yarn/unplugged
-            .yarn/install-state.gz
-          key: ${{ runner.os }}-yarn-${{ steps.node.outputs.node-version }}-${{ hashFiles('**/yarn.lock') }}
-
-      - name: Yarn
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn install --immutable
+          key: ${{ needs.cache.outputs.yarn-cache-key }}
+          path: ${{ needs.cache.outputs.yarn-cache-path }}
 
       - name: Build
         run: yarn build
@@ -49,7 +39,6 @@ jobs:
 
       - name: Upload dists
         uses: actions/upload-artifact@v4
-        if: startsWith(matrix.node-version, steps.nvm.outputs.version)
         with:
           if-no-files-found: error
           name: dists
@@ -58,7 +47,7 @@ jobs:
   publish-npm:
     name: NPM
     if: github.actor != 'renovate[bot]'
-    needs: [build]
+    needs: [build, cache]
     runs-on: ubuntu-latest
     permissions:
       contents: write # to be able to publish a GitHub release
@@ -69,7 +58,7 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PUSH_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -84,16 +73,9 @@ jobs:
 
       - name: Restore cache
         uses: actions/cache@v4
-        id: cache
         with:
-          path: |
-            .yarn/unplugged
-            .yarn/install-state.gz
-          key: ${{ runner.os }}-yarn-${{ steps.node.outputs.node-version }}-${{ hashFiles('**/yarn.lock') }}
-
-      - name: Yarn
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn install --immutable
+          key: ${{ needs.cache.outputs.yarn-cache-key }}
+          path: ${{ needs.cache.outputs.yarn-cache-path }}
 
       - name: Download dists
         uses: actions/download-artifact@v4
