@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "CommonJS",
-    "lib": ["es2018"],
+    "target": "ESNext",
+    "module": "NodeNext",
+    "lib": ["ESNext"],
     "importHelpers": true,
     "sourceMap": true,
     "outDir": "./generators",
@@ -12,7 +12,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noImplicitOverride": true,
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "rootDir": "src"
