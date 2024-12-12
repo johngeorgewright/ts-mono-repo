@@ -7,10 +7,6 @@
   "scripts": {
     "cli": "vite-node src/cli.ts"
   },
-  "files": [
-    "generators/package",
-    "generators/remove"
-  ],
   "keywords": [
     "yeoman-generator"
   ],
@@ -19,9 +15,7 @@
   "devDependencies": {
     "@types/mustache": "^4.2.5",
     "@types/prettier": "3.0.0",
-    "@types/rimraf": "4.0.5",
     "prettier": "3.4.2",
-    "rimraf": "6.0.1",
     "typescript": "5.7.2"
   },
   "dependencies": {

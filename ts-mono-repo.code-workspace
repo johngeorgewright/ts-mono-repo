@@ -17,16 +17,17 @@
     {
       "name": "🐙 github",
       "path": ".github"
+    },
+    {
+      "name": "📦 @johngeorgewright/mung",
+      "path": "packages/mung"
     }
   ],
   "settings": {
-    "prettier.prettierPath": "../../.yarn/sdks/prettier/index.cjs",
     "search.exclude": {
       "**/dist": true,
       "**/.yarn": true,
       "**/.pnp.*": true
-    },
-    "typescript.enablePromptUseWorkspaceTsdk": true,
-    "typescript.tsdk": "✨ @johngeorgewright/ts-mono-repo/.yarn/sdks/typescript/lib"
+    }
   }
 }

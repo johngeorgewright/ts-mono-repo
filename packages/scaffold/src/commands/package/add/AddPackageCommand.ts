@@ -4,10 +4,9 @@ import { MustacheGeneratorCommand } from '../../MustacheGeneratorCommand.js'
 import { Option } from 'clipanion'
 import { readFile, writeFile } from 'node:fs/promises'
 import { packagesPath, projectRootPath } from '../../../path.js'
+import { MODULE_PREFIX } from '../../../constants.js'
 
 const modulePath = module.path || __dirname
-
-const MODULE_PREFIX = '@johngeorgewright/'
 
 export class AddPackageCommand extends MustacheGeneratorCommand {
   static override paths = [['package', 'add']]
@@ -84,19 +83,18 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
 
   async #installDependencies() {
     const $$ = $({
-      cwd: this.destinationDir,
       verbose: true,
     })
-    await $$`yarn`
-    await $$`yarn add --cached --caret tslib`
-    await $$`yarn add --cached --dev \
+    await $$`npm install`
+    await $$`npm install --workspace=${this.moduleName} tslib`
+    await $$`npm install --workspace=${this.moduleName} --dev \
       @types/node \
       @types/prettier \
       eslint-plugin-jest \
       typescript \
       vitest`
     if (this.public)
-      $$`yarn add --cached --dev \
+      $$`npm install --workspace=${this.moduleName} --dev \
         @semantic-release/changelog \
         @semantic-release/commit-analyzer \
         @semantic-release/exec \
