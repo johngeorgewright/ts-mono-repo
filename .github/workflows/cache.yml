@@ -37,8 +37,7 @@ jobs:
     needs: [keys]
     runs-on: ubuntu-latest
     env:
-      CACHE_PATH: |
-        node_modules
+      CACHE_PATH: node_modules
     concurrency:
       group: ${{ needs.keys.outputs.npm }}
     outputs:
