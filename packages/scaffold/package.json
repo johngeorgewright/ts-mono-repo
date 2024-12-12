@@ -2,7 +2,11 @@
   "name": "@johngeorgewright/scaffold",
   "version": "0.0.0",
   "description": "Project scaffolding",
+  "type": "module",
   "private": true,
+  "scripts": {
+    "cli": "vite-node src/cli.ts"
+  },
   "files": [
     "generators/package",
     "generators/remove"
@@ -13,22 +17,20 @@
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@semantic-release/commit-analyzer": "11.1.0",
-    "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "9.2.6",
-    "@semantic-release/release-notes-generator": "12.1.0",
+    "@types/mustache": "^4.2.5",
     "@types/prettier": "3.0.0",
     "@types/rimraf": "4.0.5",
-    "@types/yeoman-generator": "5.2.14",
     "prettier": "3.4.2",
-    "rimraf": "5.0.10",
-    "semantic-release": "23.1.1",
-    "semantic-release-monorepo": "8.0.2",
+    "rimraf": "6.0.1",
     "typescript": "5.7.2"
   },
   "dependencies": {
-    "change-case": "4.1.2",
+    "change-case": "5.4.4",
+    "clipanion": "4.0.0-rc.4",
+    "clipanion-generator-command": "1.1.0",
+    "mustache": "4.2.0",
     "tslib": "2.8.1",
-    "yeoman-generator": "5.10.0"
+    "vite-node": "2.1.8",
+    "zx": "8.2.4"
   }
 }

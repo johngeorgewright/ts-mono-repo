@@ -4,13 +4,17 @@ on:
   pull_request:
 
 jobs:
+  cache:
+    uses: ./.github/workflows/cache.yml
+
   test:
     name: Test
     runs-on: ubuntu-latest
+    needs: [cache]
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x]
+        node-version: [18, 20, 22]
 
     steps:
       - name: Checkout project
@@ -24,16 +28,9 @@ jobs:
 
       - name: Restore cache
         uses: actions/cache@v4
-        id: cache
         with:
-          path: |
-            .yarn/unplugged
-            .yarn/install-state.gz
-          key: ${{ runner.os }}-yarn-${{ steps.node.outputs.node-version }}-${{ hashFiles('**/yarn.lock') }}
-
-      - name: Yarn
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn install --immutable
+          key: ${{ needs.cache.outputs.yarn-cache-key }}
+          path: ${{ needs.cache.outputs.yarn-cache-path }}
 
       - name: Build
         run: yarn build
