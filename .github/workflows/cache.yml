@@ -33,7 +33,7 @@ jobs:
         run: echo "value=${{ runner.os }}-node-${{ steps.node.outputs.node-version }}-npm-${{ steps.npm.outputs.version }}-${{ hashFiles('**/package-lock.json') }}" >> $GITHUB_OUTPUT
 
   yarn:
-    name: Prime Yarn Cache
+    name: Prime NPM Cache
     needs: [keys]
     runs-on: ubuntu-latest
     env:
@@ -62,6 +62,6 @@ jobs:
           path: ${{ env.CACHE_PATH }}
           key: ${{ needs.keys.outputs.npm }}
 
-      - name: Yarn
+      - name: NPM
         if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn --immutable
+        run: npm ci
