@@ -38,9 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CACHE_PATH: |
-        ~/.cache
-        .yarn/unplugged
-        .yarn/install-state.gz
+        node_modules
     concurrency:
       group: ${{ needs.keys.outputs.npm }}
     outputs:
