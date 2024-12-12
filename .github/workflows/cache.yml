@@ -3,9 +3,9 @@ name: Cache
 on:
   workflow_call:
     outputs:
-      yarn-cache-key:
-        value: ${{ jobs.keys.outputs.yarn }}
-      yarn-cache-path:
+      npm-cache-key:
+        value: ${{ jobs.keys.outputs.npm }}
+      npm-cache-path:
         value: ${{ jobs.yarn.outputs.cache-path }}
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
     name: Cache Keys
     runs-on: ubuntu-latest
     outputs:
-      yarn: ${{ steps.yarn-cache-key.outputs.value }}
+      npm: ${{ steps.npm-cache-key.outputs.value }}
     steps:
       - name: Checkout project
         uses: actions/checkout@v4
@@ -24,13 +24,13 @@ jobs:
         with:
           node-version-file: .nvmrc
 
-      - name: Install Yarn
-        id: yarn
-        run: echo "version=$(yarn --version)" >> $GITHUB_OUTPUT
+      - name: NPM Version
+        id: npm
+        run: echo "version=$(npm --version)" >> $GITHUB_OUTPUT
 
       - name: Yarn Cache Key
-        id: yarn-cache-key
-        run: echo "value=${{ runner.os }}-node-${{ steps.node.outputs.node-version }}-yarn-${{ steps.yarn.outputs.version }}-${{ hashFiles('**/yarn.lock') }}" >> $GITHUB_OUTPUT
+        id: npm-cache-key
+        run: echo "value=${{ runner.os }}-node-${{ steps.node.outputs.node-version }}-npm-${{ steps.npm.outputs.version }}-${{ hashFiles('**/package-lock.json') }}" >> $GITHUB_OUTPUT
 
   yarn:
     name: Prime Yarn Cache
@@ -42,7 +42,7 @@ jobs:
         .yarn/unplugged
         .yarn/install-state.gz
     concurrency:
-      group: ${{ needs.keys.outputs.yarn }}
+      group: ${{ needs.keys.outputs.npm }}
     outputs:
       cache-path: ${{ env.CACHE_PATH }}
     steps:
@@ -60,7 +60,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ env.CACHE_PATH }}
-          key: ${{ needs.keys.outputs.yarn }}
+          key: ${{ needs.keys.outputs.npm }}
 
       - name: Yarn
         if: steps.cache.outputs.cache-hit != 'true'
