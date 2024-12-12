@@ -2,20 +2,18 @@
   "name": "@johngeorgewright/ts-mono-repo",
   "version": "0.0.0",
   "description": "The MOL Ads mono-repo",
-  "main": "index.js",
+  "type": "module",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspaces foreach --all --verbose --parallel --topological-dev --exclude @johngeorgewright/scaffold run build",
-    "clean": "yarn workspaces foreach --all --verbose --parallel run clean",
-    "commit": "git-cz",
-    "scaffold": "yarn workspace @johngeorgewright/scaffold run cli",
-    "prepare": "husky install",
-    "release": "yarn workspaces foreach --all --verbose --no-private --topological-dev run release",
-    "start": "yarn build && yarn workspaces foreach --all --verbose --no-private --parallel --interlaced run start",
-    "test": "yarn workspaces foreach --all --verbose run test"
+    "build": "lage build",
+    "scaffold": "npm run --workspace=@johngeorgewright/scaffold cli --",
+    "prepare": "husky",
+    "release": "lage release",
+    "start": "lage start",
+    "test": "lage test"
   },
   "author": "",
   "license": "UNLICENSED",
@@ -31,11 +29,13 @@
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "11.0.1",
+    "@semantic-release/npm": "^12.0.1",
     "@semantic-release/release-notes-generator": "14.0.1",
     "@types/node": "22.10.2",
     "commitizen": "4.3.1",
     "cz-conventional-changelog": "3.3.0",
     "husky": "9.1.7",
+    "lage": "^2.12.4",
     "lint-staged": "15.2.11",
     "prettier": "3.4.2",
     "semantic-release": "24.2.0",
@@ -50,11 +50,10 @@
   },
   "lint-staged": {
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
-      "yarn prettier --write"
+      "npx prettier --write"
     ]
   },
   "dependencies": {
     "tslib": "^2.8.1"
-  },
-  "packageManager": "yarn@4.5.3"
+  }
 }

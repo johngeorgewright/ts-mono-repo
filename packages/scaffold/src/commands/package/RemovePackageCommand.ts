@@ -1,3 +1,4 @@
+import { $ } from 'zx'
 import * as path from 'node:path'
 import { packagePath, packagesPath, projectRootPath } from '../../path.js'
 import { readFile, rm, writeFile } from 'node:fs/promises'
@@ -33,6 +34,7 @@ export class RemovePackageCommand extends Command {
       rm(this.dir, { recursive: true }),
       this.#updateCodeWorkspace(),
     ])
+    await this.#install()
   }
 
   async #updateCodeWorkspace() {
@@ -48,5 +50,10 @@ export class RemovePackageCommand extends Command {
     )
 
     await writeFile(workspacePath, JSON.stringify(workspace, null, 2))
+  }
+
+  async #install() {
+    const $$ = $({ verbose: true })
+    await $$`npm install`
   }
 }
