@@ -17,10 +17,6 @@
     {
       "name": "🐙 github",
       "path": ".github"
-    },
-    {
-      "name": "📦 @johngeorgewright/mung",
-      "path": "packages/mung"
     }
   ],
   "settings": {
