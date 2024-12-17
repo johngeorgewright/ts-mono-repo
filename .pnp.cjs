@@ -39,7 +39,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/exec", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:6.0.3"],\
           ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
           ["@semantic-release/github", "virtual:5f5958b05261cc64020bb11a1cac3e38fe4e1e47837ac350f43d5b43361e885b6379224c50598725aed7b43537de6eaeb5a45aed066e3dc0221dc996eb535998#npm:11.0.1"],\
-          ["@semantic-release/release-notes-generator", "virtual:5f5958b05261cc64020bb11a1cac3e38fe4e1e47837ac350f43d5b43361e885b6379224c50598725aed7b43537de6eaeb5a45aed066e3dc0221dc996eb535998#npm:14.0.1"],\
+          ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:14.0.2"],\
           ["@types/node", "npm:22.10.2"],\
           ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
@@ -681,7 +681,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/exec", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:6.0.3"],\
           ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
           ["@semantic-release/github", "virtual:5f5958b05261cc64020bb11a1cac3e38fe4e1e47837ac350f43d5b43361e885b6379224c50598725aed7b43537de6eaeb5a45aed066e3dc0221dc996eb535998#npm:11.0.1"],\
-          ["@semantic-release/release-notes-generator", "virtual:5f5958b05261cc64020bb11a1cac3e38fe4e1e47837ac350f43d5b43361e885b6379224c50598725aed7b43537de6eaeb5a45aed066e3dc0221dc996eb535998#npm:14.0.1"],\
+          ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:14.0.2"],\
           ["@types/node", "npm:22.10.2"],\
           ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
@@ -1580,10 +1580,40 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
+      ["npm:14.0.2", {\
+        "packageLocation": "./.yarn/cache/@semantic-release-release-notes-generator-npm-14.0.2-335224299b-ad50e70eaf.zip/node_modules/@semantic-release/release-notes-generator/",\
+        "packageDependencies": [\
+          ["@semantic-release/release-notes-generator", "npm:14.0.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
       ["virtual:5f5958b05261cc64020bb11a1cac3e38fe4e1e47837ac350f43d5b43361e885b6379224c50598725aed7b43537de6eaeb5a45aed066e3dc0221dc996eb535998#npm:14.0.1", {\
         "packageLocation": "./.yarn/__virtual__/@semantic-release-release-notes-generator-virtual-6a28fd7b71/0/cache/@semantic-release-release-notes-generator-npm-14.0.1-3d4bd63da7-3312392cdd.zip/node_modules/@semantic-release/release-notes-generator/",\
         "packageDependencies": [\
           ["@semantic-release/release-notes-generator", "virtual:5f5958b05261cc64020bb11a1cac3e38fe4e1e47837ac350f43d5b43361e885b6379224c50598725aed7b43537de6eaeb5a45aed066e3dc0221dc996eb535998#npm:14.0.1"],\
+          ["@types/semantic-release", null],\
+          ["conventional-changelog-angular", "npm:8.0.0"],\
+          ["conventional-changelog-writer", "npm:8.0.0"],\
+          ["conventional-commits-filter", "npm:5.0.0"],\
+          ["conventional-commits-parser", "npm:6.0.0"],\
+          ["debug", "virtual:5f5958b05261cc64020bb11a1cac3e38fe4e1e47837ac350f43d5b43361e885b6379224c50598725aed7b43537de6eaeb5a45aed066e3dc0221dc996eb535998#npm:4.3.2"],\
+          ["get-stream", "npm:7.0.1"],\
+          ["import-from-esm", "npm:1.3.3"],\
+          ["into-stream", "npm:7.0.0"],\
+          ["lodash-es", "npm:4.17.21"],\
+          ["read-package-up", "npm:11.0.0"],\
+          ["semantic-release", "npm:24.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/semantic-release",\
+          "semantic-release"\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:14.0.2", {\
+        "packageLocation": "./.yarn/__virtual__/@semantic-release-release-notes-generator-virtual-f9755e96b3/0/cache/@semantic-release-release-notes-generator-npm-14.0.2-335224299b-ad50e70eaf.zip/node_modules/@semantic-release/release-notes-generator/",\
+        "packageDependencies": [\
+          ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:14.0.2"],\
           ["@types/semantic-release", null],\
           ["conventional-changelog-angular", "npm:8.0.0"],\
           ["conventional-changelog-writer", "npm:8.0.0"],\
