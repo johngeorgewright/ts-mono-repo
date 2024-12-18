@@ -37,7 +37,9 @@ jobs:
     needs: [keys]
     runs-on: ubuntu-latest
     env:
-      CACHE_PATH: node_modules
+      CACHE_PATH: |
+        node_modules
+        packages/**/node_modules
     concurrency:
       group: ${{ needs.keys.outputs.npm }}
     outputs:
@@ -61,4 +63,4 @@ jobs:
 
       - name: NPM
         if: steps.cache.outputs.cache-hit != 'true'
-        run: npm ci
+        run: npm clean-install --include-workspace-root

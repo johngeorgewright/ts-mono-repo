@@ -9,11 +9,12 @@
   ],
   "scripts": {
     "build": "lage build",
+    "clean": "lage clean",
     "scaffold": "npm run --workspace=@johngeorgewright/scaffold cli --",
     "prepare": "husky",
     "release": "lage release",
-    "start": "lage start",
-    "test": "lage test"
+    "start": "lage build --watch",
+    "test": "lage test --watch"
   },
   "author": "",
   "license": "UNLICENSED",

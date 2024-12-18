@@ -4,8 +4,10 @@
   "description": "{{description}}",
   "main": "src/index.js",
   "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
     "release": "semantic-release && sleep 3",
-    "test": "vitest"
+    "test": "vitest --run"
   },
   "license": "MIT",
   "bugs": {

@@ -1,6 +1,6 @@
 import { $ } from 'zx'
 import * as path from 'node:path'
-import { packagePath, packagesPath, projectRootPath } from '../../path.js'
+import { packagePath, packagesPath, projectRootPath } from '../../../path.js'
 import { readFile, rm, writeFile } from 'node:fs/promises'
 import { Command, Option } from 'clipanion'
 
@@ -12,7 +12,7 @@ export class RemovePackageCommand extends Command {
     description: 'Remove a package from this workspace',
   })
 
-  name = Option.String('-n,--name', {
+  readonly name = Option.String('-n,--name', {
     description: 'The name of the package',
     required: true,
   })
@@ -21,7 +21,7 @@ export class RemovePackageCommand extends Command {
     return `packages/${this.name}`
   }
 
-  dirOption = Option.String('-d,--dir', {
+  readonly dirOption = Option.String('-d,--dir', {
     description: `Default will be ${packagesPath}/[NAME]`,
   })
 

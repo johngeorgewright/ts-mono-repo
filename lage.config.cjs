@@ -3,15 +3,10 @@ module.exports = {
     build: [
       '^build'
     ],
+    clean: [],
     release: [
       '^release'
     ],
-    start: [
-      'build'
-    ],
-    test: [
-      'build'
-    ],
-  },
-  npmClient: 'npm'
+    test: [],
+  }
 }

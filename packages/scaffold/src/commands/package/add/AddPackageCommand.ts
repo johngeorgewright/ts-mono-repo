@@ -20,21 +20,21 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
     return path.join(modulePath, 'templates')
   }
 
-  name = Option.String('-n,--name', {
+  readonly name = Option.String('-n,--name', {
     description: 'The name of the package',
     required: true,
   })
 
-  description = Option.String('-d,--description', {
+  readonly description = Option.String('-d,--description', {
     description: "What's your package about?",
     required: true,
   })
 
-  public = Option.Boolean('-p,--public', false, {
+  readonly public = Option.Boolean('-p,--public', false, {
     description: 'Will your package be published to NPM?',
   })
 
-  destinationDirOption = Option.String('-o,--destinationDir', {
+  readonly destinationDirOption = Option.String('-o,--destinationDir', {
     description: `Default will be ${packagesPath}/[NAME]`,
   })
 
@@ -50,7 +50,7 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
     return `packages/${this.name}`
   }
 
-  year = new Date().getFullYear()
+  readonly year = new Date().getFullYear()
 
   override templateNameFilter = (templateName: string) =>
     this.public ? true : templateName !== '.releaserc.cjs'

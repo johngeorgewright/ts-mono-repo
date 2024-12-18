@@ -1,17 +1,14 @@
 {
   "extensions": {
-    "recommendations": [
-      "arcanis.vscode-zipfs",
-      "esbenp.prettier-vscode"
-    ]
+    "recommendations": ["arcanis.vscode-zipfs", "esbenp.prettier-vscode"]
   },
   "folders": [
     {
-      "name": "✨ @johngeorgewright/ts-mono-repo",
+      "name": "✨ ts-mono-repo",
       "path": "."
     },
     {
-      "name": "🏗 @johngeorgewright/scaffold",
+      "name": "🏗 scaffold",
       "path": "packages/scaffold"
     },
     {
