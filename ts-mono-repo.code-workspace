@@ -7,11 +7,11 @@
   },
   "folders": [
     {
-      "name": "✨ @johngeorgewright/ts-mono-repo",
+      "name": "✨ ts-mono-repo",
       "path": "."
     },
     {
-      "name": "🏗 @johngeorgewright/scaffold",
+      "name": "🏗 scaffold",
       "path": "packages/scaffold"
     },
     {
@@ -27,6 +27,6 @@
       "**/.pnp.*": true
     },
     "typescript.enablePromptUseWorkspaceTsdk": true,
-    "typescript.tsdk": "✨ @johngeorgewright/ts-mono-repo/.yarn/sdks/typescript/lib"
+    "typescript.tsdk": "✨ ts-mono-repo/.yarn/sdks/typescript/lib"
   }
 }
