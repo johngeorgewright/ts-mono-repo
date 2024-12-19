@@ -12,7 +12,7 @@
     "clean": "yarn workspaces foreach --all --verbose --parallel run clean",
     "commit": "git-cz",
     "scaffold": "yarn workspace @johngeorgewright/scaffold run cli",
-    "prepare": "husky install",
+    "prepare": "husky",
     "release": "yarn workspaces foreach --all --verbose --no-private --topological-dev run release",
     "start": "yarn build && yarn workspaces foreach --all --verbose --no-private --parallel --interlaced run start",
     "test": "yarn workspaces foreach --all --verbose run test"
