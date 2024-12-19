@@ -2,6 +2,7 @@
 
 import { runExit } from 'clipanion'
 import { AddPackageCommand } from './commands/package/add/AddPackageCommand.js'
-import { RemovePackageCommand } from './commands/package/RemovePackageCommand.js'
+import { LinkPackageCommand } from './commands/package/link/LinkPackageCommand.js'
+import { RemovePackageCommand } from './commands/package/remove/RemovePackageCommand.js'
 
-runExit([AddPackageCommand, RemovePackageCommand])
+runExit([AddPackageCommand, LinkPackageCommand, RemovePackageCommand])

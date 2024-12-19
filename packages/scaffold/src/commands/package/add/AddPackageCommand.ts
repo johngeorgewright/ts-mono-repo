@@ -3,11 +3,13 @@ import { $ } from 'zx'
 import { MustacheGeneratorCommand } from '../../MustacheGeneratorCommand.js'
 import { Option } from 'clipanion'
 import { readFile, writeFile } from 'node:fs/promises'
-import { packagesPath, projectRootPath } from '../../../path.js'
+import {
+  moduleName,
+  packagesPath,
+  projectRootPath,
+} from '../../../workspace.js'
 
 const modulePath = module.path || __dirname
-
-const MODULE_PREFIX = '@johngeorgewright/'
 
 export class AddPackageCommand extends MustacheGeneratorCommand {
   static override paths = [['package', 'add']]
@@ -44,7 +46,7 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
   }
 
   get moduleName() {
-    return MODULE_PREFIX + this.name
+    return moduleName(this.name)
   }
 
   get packagePath() {

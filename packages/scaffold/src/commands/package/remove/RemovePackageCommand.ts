@@ -1,5 +1,9 @@
 import * as path from 'node:path'
-import { packagePath, packagesPath, projectRootPath } from '../../path.js'
+import {
+  packagePath,
+  packagesPath,
+  projectRootPath,
+} from '../../../workspace.js'
 import { readFile, rm, writeFile } from 'node:fs/promises'
 import { Command, Option } from 'clipanion'
 
