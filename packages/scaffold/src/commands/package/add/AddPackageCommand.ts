@@ -58,9 +58,6 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
 
   readonly year = new Date().getFullYear()
 
-  override templateNameFilter = (templateName: string) =>
-    this.public ? true : templateName !== '.releaserc.cjs'
-
   override async execute() {
     await super.execute()
     if (this.public) {

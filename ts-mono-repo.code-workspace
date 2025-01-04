@@ -1,31 +1,15 @@
 {
   "extensions": {
-    "recommendations": [
-      "arcanis.vscode-zipfs",
-      "esbenp.prettier-vscode"
-    ]
+    "recommendations": ["arcanis.vscode-zipfs", "esbenp.prettier-vscode"]
   },
   "folders": [
-    {
-      "name": "✨ ts-mono-repo",
-      "path": "."
-    },
-    {
-      "name": "🏗 scaffold",
-      "path": "packages/scaffold"
-    },
-    {
-      "name": "🐙 github",
-      "path": ".github"
-    }
+    { "name": "✨ ts-mono-repo", "path": "." },
+    { "name": "🏗 scaffold", "path": "packages/scaffold" },
+    { "name": "🐙 github", "path": ".github" }
   ],
   "settings": {
     "prettier.prettierPath": "../../.yarn/sdks/prettier/index.cjs",
-    "search.exclude": {
-      "**/dist": true,
-      "**/.yarn": true,
-      "**/.pnp.*": true
-    },
+    "search.exclude": { "**/dist": true, "**/.yarn": true, "**/.pnp.*": true },
     "typescript.enablePromptUseWorkspaceTsdk": true,
     "typescript.tsdk": "✨ ts-mono-repo/.yarn/sdks/typescript/lib"
   }

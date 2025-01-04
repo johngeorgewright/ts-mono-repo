@@ -1,9 +1,14 @@
-import { readFile, writeFile } from 'node:fs/promises'
+import { readdir } from 'node:fs/promises'
 import * as path from 'node:path'
+import rootPackageJSON from '../../../package.json' assert { type: 'json' }
+import { updateJSONFile } from './fs.js'
+import { memoize } from 'lodash'
 
-export const MODULE_PREFIX = '@johngeorgewright/'
+export const MODULE_NAMESPACE =
+  /^(@[^\/]+\/)/.exec(rootPackageJSON.name)?.[1] ?? ''
 
-export const moduleName = (name: string) => MODULE_PREFIX + name
+export const moduleName = (name: string) =>
+  name.startsWith('@') ? name : MODULE_NAMESPACE + name
 
 export const projectRootPath = path.resolve(
   module.path || __dirname,
@@ -16,20 +21,24 @@ export const packagesPath = path.join(projectRootPath, 'packages')
 
 export const packagePath = (name: string) => path.join(packagesPath, name)
 
-export const vsCodeWorkspacePath = path.join(
-  projectRootPath,
-  'ts-mono-repo.code-workspace',
-)
+export const findVSCodeWorkspacePath = memoize(async () => {
+  const filenames = await readdir(projectRootPath)
+  const filename = filenames.find((filename) =>
+    filename.endsWith('.code-workspace'),
+  )
+  if (!filename) throw new Error('No .code-workspace file found')
+  return path.join(projectRootPath, filename)
+})
 
 export async function updateVSCodeWorkspace(
   update: (workspace: VSCodeWorkspace) => VSCodeWorkspace,
 ) {
-  let workspace = JSON.parse((await readFile(vsCodeWorkspacePath)).toString())
-  workspace = update(workspace)
-  workspace.folders.sort((a: { name: string }, b: { name: string }) =>
-    a.name.localeCompare(b.name),
-  )
-  await writeFile(vsCodeWorkspacePath, JSON.stringify(workspace, null, 2))
+  const vsCodeWorkspacePath = await findVSCodeWorkspacePath()
+  await updateJSONFile<VSCodeWorkspace>(vsCodeWorkspacePath, (workspace) => {
+    workspace = update(workspace)
+    workspace.folders.sort((a, b) => a.name.localeCompare(b.name))
+    return workspace
+  })
 }
 
 interface VSCodeWorkspace {

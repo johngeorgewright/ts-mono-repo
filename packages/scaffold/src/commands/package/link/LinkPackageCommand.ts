@@ -1,7 +1,8 @@
 import { Command, Option } from 'clipanion'
 import { moduleName, packagePath } from '../../../workspace.js'
-import { readFile, writeFile } from 'node:fs/promises'
 import { relative } from 'node:path'
+import { updateJSONFile } from '../../../fs.js'
+import { $ } from 'zx'
 
 export class LinkPackageCommand extends Command {
   static override paths = [['package', 'link']]
@@ -39,31 +40,31 @@ export class LinkPackageCommand extends Command {
   }
 
   async #addTSConfigReference() {
-    const srcTSConfigPath = `${this.srcPackagePath}/tsconfig.json`
-    const destTSConfigPath = `${this.destPackagePath}/tsconfig.json`
-
-    const srcTSConfigJSON = JSON.parse(await readFile(srcTSConfigPath, 'utf-8'))
-    const destTSConfigJSON = JSON.parse(
-      await readFile(destTSConfigPath, 'utf-8'),
+    await updateJSONFile<any>(
+      `${this.srcPackagePath}/tsconfig.json`,
+      (tsconfig) =>
+        tsconfig.compilerOptions?.composite
+          ? tsconfig
+          : {
+              ...tsconfig,
+              compilerOptions: { ...tsconfig.compilerOptions, composite: true },
+            },
     )
 
-    if (!srcTSConfigJSON.composite) {
-      srcTSConfigJSON.composite = true
-      await writeFile(srcTSConfigPath, JSON.stringify(srcTSConfigJSON, null, 2))
-    }
-
-    destTSConfigJSON.references ??= []
-    destTSConfigJSON.references.push({
-      path: relative(this.destPackagePath, this.srcPackagePath),
-    })
-
-    await writeFile(destTSConfigPath, JSON.stringify(destTSConfigJSON, null, 2))
+    await updateJSONFile<any>(
+      `${this.destPackagePath}/tsconfig.json`,
+      (tsconfig) => {
+        tsconfig.references ??= []
+        tsconfig.references.push({
+          path: relative(this.destPackagePath, this.srcPackagePath),
+        })
+        return tsconfig
+      },
+    )
   }
 
   async #install() {
-    const { $ } = await import('zx')
     const $$ = $({ cwd: this.destPackagePath, verbose: true })
-
     await $$`yarn add ${this.dev ? '-D' : ''} ${moduleName(this.src)}`
   }
 }

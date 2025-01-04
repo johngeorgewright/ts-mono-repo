@@ -652,12 +652,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/scaffold/",\
         "packageDependencies": [\
           ["@johngeorgewright/scaffold", "workspace:packages/scaffold"],\
+          ["@types/lodash", "npm:4.17.14"],\
           ["@types/mustache", "npm:4.2.5"],\
           ["@types/prettier", "npm:3.0.0"],\
           ["@types/rimraf", "npm:4.0.5"],\
           ["change-case", "npm:5.4.4"],\
           ["clipanion", "virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:4.0.0-rc.4"],\
           ["clipanion-generator-command", "virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:1.1.0"],\
+          ["lodash", "npm:4.17.21"],\
           ["mustache", "npm:4.2.0"],\
           ["prettier", "npm:3.4.2"],\
           ["rimraf", "npm:6.0.1"],\
@@ -1850,6 +1852,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/jsonfile", "npm:6.1.4"],\
           ["@types/node", "npm:16.10.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/lodash", [\
+      ["npm:4.17.14", {\
+        "packageLocation": "./.yarn/cache/@types-lodash-npm-4.17.14-6b38705727-6ee40725f3.zip/node_modules/@types/lodash/",\
+        "packageDependencies": [\
+          ["@types/lodash", "npm:4.17.14"]\
         ],\
         "linkType": "HARD"\
       }]\
