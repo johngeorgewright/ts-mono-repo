@@ -15,14 +15,13 @@ export class LinkPackageCommand extends Command {
     description: 'Link as a dev dependency',
   })
 
-  readonly dest = Option.String('-d,--dest', {
-    description: 'The name of the destination package',
+  readonly src = Option.String({
+    name: 'source',
     required: true,
   })
 
-  readonly src = Option.String('-s,--src', {
-    description:
-      'The name of the source package (the package to be linked/installed)',
+  readonly dest = Option.String({
+    name: 'destination',
     required: true,
   })
 

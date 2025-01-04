@@ -5,6 +5,7 @@ import {
 } from '../../../workspace.js'
 import { rm } from 'node:fs/promises'
 import { Command, Option } from 'clipanion'
+import { $ } from 'zx'
 
 export class RemovePackageCommand extends Command {
   static override paths = [['package', 'remove']]
@@ -14,8 +15,8 @@ export class RemovePackageCommand extends Command {
     description: 'Remove a package from this workspace',
   })
 
-  name = Option.String('-n,--name', {
-    description: 'The name of the package',
+  readonly name = Option.String({
+    name: 'name',
     required: true,
   })
 
@@ -23,7 +24,7 @@ export class RemovePackageCommand extends Command {
     return `packages/${this.name}`
   }
 
-  dirOption = Option.String('-d,--dir', {
+  readonly dirOption = Option.String('-d,--dir', {
     description: `Default will be ${packagesPath}/[NAME]`,
   })
 
@@ -36,6 +37,7 @@ export class RemovePackageCommand extends Command {
       rm(this.dir, { recursive: true }),
       this.#updateCodeWorkspace(),
     ])
+    await $({ verbose: true })`yarn`
   }
 
   async #updateCodeWorkspace() {

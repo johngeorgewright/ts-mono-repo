@@ -26,21 +26,21 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
     this.#templateDir = path.join(modulePath, value)
   }
 
-  name = Option.String('-n,--name', {
-    description: 'The name of the package',
+  readonly name = Option.String({
+    name: 'name',
     required: true,
   })
 
-  description = Option.String('-d,--description', {
-    description: "What's your package about?",
+  readonly description = Option.String({
+    name: 'description',
     required: true,
   })
 
-  public = Option.Boolean('-p,--public', false, {
+  readonly public = Option.Boolean('-p,--public', false, {
     description: 'Will your package be published to NPM?',
   })
 
-  destinationDirOption = Option.String('-o,--destinationDir', {
+  readonly destinationDirOption = Option.String('-o,--destinationDir', {
     description: `Default will be ${packagesPath}/[NAME]`,
   })
 
@@ -56,7 +56,7 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
     return `packages/${this.name}`
   }
 
-  year = new Date().getFullYear()
+  readonly year = new Date().getFullYear()
 
   override templateNameFilter = (templateName: string) =>
     this.public ? true : templateName !== '.releaserc.cjs'
@@ -95,6 +95,7 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
       @types/node \
       @types/prettier \
       eslint-plugin-jest \
+      prettier \
       typescript \
       vitest`
     if (this.public)
