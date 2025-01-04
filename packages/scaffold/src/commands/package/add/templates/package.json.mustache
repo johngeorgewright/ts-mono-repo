@@ -2,9 +2,14 @@
   "name": "{{moduleName}}",
   "version": "0.0.0",
   "description": "{{description}}",
+  {{^public}}
+  "private": true,
+  {{/public}}
   "main": "src/index.js",
   "scripts": {
+    {{#public}}
     "release": "semantic-release && sleep 3",
+    {{/public}}
     "test": "vitest"
   },
   "license": "MIT",

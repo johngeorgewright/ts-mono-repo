@@ -2,11 +2,10 @@ import * as path from 'node:path'
 import { $ } from 'zx'
 import { MustacheGeneratorCommand } from '../../MustacheGeneratorCommand.js'
 import { Option } from 'clipanion'
-import { readFile, writeFile } from 'node:fs/promises'
 import {
   moduleName,
   packagesPath,
-  projectRootPath,
+  updateVSCodeWorkspace,
 } from '../../../workspace.js'
 
 const modulePath = module.path || __dirname
@@ -19,8 +18,12 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
     description: 'Create a new package in this workspace',
   })
 
+  #templateDir = path.join(modulePath, 'templates')
   override get templateDir() {
-    return path.join(modulePath, 'templates')
+    return this.#templateDir
+  }
+  override set templateDir(value: string) {
+    this.#templateDir = path.join(modulePath, value)
   }
 
   name = Option.String('-n,--name', {
@@ -60,28 +63,25 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
 
   override async execute() {
     await super.execute()
+    if (this.public) {
+      this.templateDir = 'templates-public'
+      await super.execute()
+    }
     await this.#updateCodeWorkspace()
     await this.#installDependencies()
   }
 
   async #updateCodeWorkspace() {
-    const workspacePath = path.join(
-      projectRootPath,
-      'ts-mono-repo.code-workspace',
-    )
-
-    const workspace = JSON.parse((await readFile(workspacePath)).toString())
-
-    workspace.folders.push({
-      name: `📦 ${this.moduleName}`,
-      path: this.packagePath,
-    })
-
-    workspace.folders.sort((a: { name: string }, b: { name: string }) =>
-      a.name.localeCompare(b.name),
-    )
-
-    await writeFile(workspacePath, JSON.stringify(workspace, null, 2))
+    await updateVSCodeWorkspace((workspace) => ({
+      ...workspace,
+      folders: [
+        ...workspace.folders,
+        {
+          name: `📦 ${this.moduleName}`,
+          path: this.packagePath,
+        },
+      ],
+    }))
   }
 
   async #installDependencies() {

@@ -1,10 +1,9 @@
-import * as path from 'node:path'
 import {
   packagePath,
   packagesPath,
-  projectRootPath,
+  updateVSCodeWorkspace,
 } from '../../../workspace.js'
-import { readFile, rm, writeFile } from 'node:fs/promises'
+import { rm } from 'node:fs/promises'
 import { Command, Option } from 'clipanion'
 
 export class RemovePackageCommand extends Command {
@@ -40,17 +39,11 @@ export class RemovePackageCommand extends Command {
   }
 
   async #updateCodeWorkspace() {
-    const workspacePath = path.join(
-      projectRootPath,
-      'ts-mono-repo.code-workspace',
-    )
-
-    const workspace = JSON.parse((await readFile(workspacePath)).toString())
-
-    workspace.folders = workspace.folders.filter(
-      (folder: { path: string }) => folder.path !== this.packagePath,
-    )
-
-    await writeFile(workspacePath, JSON.stringify(workspace, null, 2))
+    await updateVSCodeWorkspace((workspace) => ({
+      ...workspace,
+      folders: workspace.folders.filter(
+        (folder: { path: string }) => folder.path !== this.packagePath,
+      ),
+    }))
   }
 }
