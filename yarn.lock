@@ -516,7 +516,7 @@ __metadata:
     "@types/rimraf": "npm:4.0.5"
     change-case: "npm:5.4.4"
     clipanion: "npm:4.0.0-rc.4"
-    clipanion-generator-command: "npm:1.1.0"
+    clipanion-generator-command: "npm:1.2.0"
     lodash: "npm:4.17.21"
     mustache: "npm:4.2.0"
     prettier: "npm:3.4.2"
@@ -2289,15 +2289,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clipanion-generator-command@npm:1.1.0":
-  version: 1.1.0
-  resolution: "clipanion-generator-command@npm:1.1.0"
+"clipanion-generator-command@npm:1.2.0":
+  version: 1.2.0
+  resolution: "clipanion-generator-command@npm:1.2.0"
   dependencies:
     enquirer: "npm:^2.4.1"
     tslib: "npm:^2.8.1"
   peerDependencies:
     clipanion: ^4.0.0-rc.4
-  checksum: 10/bacd0aa094266d181808c3a172891863abe6976ddf66e5b7f92520ad19980b72aea15a60df516be9594f172b7c0ec2d25d7aa12ca166e08160ac717aeb7cd7ac
+  checksum: 10/4dcb4f5256df95e5fcf89aeec71c195d9434567835ad042ef4c671f2ef105ad2533d973599c485b5f164f7a4dc342a82a32daecf008a46cd8bdf6796592b8375
   languageName: node
   linkType: hard
 
