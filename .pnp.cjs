@@ -44,7 +44,7 @@ const RAW_RUNTIME_STATE =
           ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:15.4.0"],\
+          ["lint-staged", "npm:15.4.1"],\
           ["prettier", "npm:3.4.2"],\
           ["semantic-release", "npm:24.2.1"],\
           ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.2"],\
@@ -688,7 +688,7 @@ const RAW_RUNTIME_STATE =
           ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:15.4.0"],\
+          ["lint-staged", "npm:15.4.1"],\
           ["prettier", "npm:3.4.2"],\
           ["semantic-release", "npm:24.2.1"],\
           ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.2"],\
@@ -3303,10 +3303,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:9a16069976d36c9af7a4f77833e8fbf03f7829cee8ff3a739c1b0ba2558f54a14eb45969b63cedae8551e599b6c686421e5058495d194ef5a1c491c00f8d01ee#npm:4.4.0", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-4ce2ddf594/0/cache/debug-npm-4.4.0-f6efe76023-1847944c2e.zip/node_modules/debug/",\
+      ["virtual:8d0a5b99329d7c1ebcc1ebbf583e80007b908d1d310dabee279d43ca32eda8675df64c2302a1e5d44830697e5d1993f13be790053e01e3170776efabef51f972#npm:4.4.0", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-5f939f0f1b/0/cache/debug-npm-4.4.0-f6efe76023-1847944c2e.zip/node_modules/debug/",\
         "packageDependencies": [\
-          ["debug", "virtual:9a16069976d36c9af7a4f77833e8fbf03f7829cee8ff3a739c1b0ba2558f54a14eb45969b63cedae8551e599b6c686421e5058495d194ef5a1c491c00f8d01ee#npm:4.4.0"],\
+          ["debug", "virtual:8d0a5b99329d7c1ebcc1ebbf583e80007b908d1d310dabee279d43ca32eda8675df64c2302a1e5d44830697e5d1993f13be790053e01e3170776efabef51f972#npm:4.4.0"],\
           ["@types/supports-color", null],\
           ["ms", "npm:2.1.3"],\
           ["supports-color", null]\
@@ -5451,13 +5451,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:15.4.0", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-15.4.0-9a16069976-1fed6a2736.zip/node_modules/lint-staged/",\
+      ["npm:15.4.1", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-15.4.1-8d0a5b9932-615a1f0a66.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
-          ["lint-staged", "npm:15.4.0"],\
+          ["lint-staged", "npm:15.4.1"],\
           ["chalk", "npm:5.4.1"],\
           ["commander", "npm:12.1.0"],\
-          ["debug", "virtual:9a16069976d36c9af7a4f77833e8fbf03f7829cee8ff3a739c1b0ba2558f54a14eb45969b63cedae8551e599b6c686421e5058495d194ef5a1c491c00f8d01ee#npm:4.4.0"],\
+          ["debug", "virtual:8d0a5b99329d7c1ebcc1ebbf583e80007b908d1d310dabee279d43ca32eda8675df64c2302a1e5d44830697e5d1993f13be790053e01e3170776efabef51f972#npm:4.4.0"],\
           ["execa", "npm:8.0.1"],\
           ["lilconfig", "npm:3.1.3"],\
           ["listr2", "npm:8.2.5"],\
@@ -9097,7 +9097,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["vite-node", "npm:2.1.8"],\
           ["cac", "npm:6.7.14"],\
-          ["debug", "virtual:9a16069976d36c9af7a4f77833e8fbf03f7829cee8ff3a739c1b0ba2558f54a14eb45969b63cedae8551e599b6c686421e5058495d194ef5a1c491c00f8d01ee#npm:4.4.0"],\
+          ["debug", "virtual:8d0a5b99329d7c1ebcc1ebbf583e80007b908d1d310dabee279d43ca32eda8675df64c2302a1e5d44830697e5d1993f13be790053e01e3170776efabef51f972#npm:4.4.0"],\
           ["es-module-lexer", "npm:1.5.4"],\
           ["pathe", "npm:1.1.2"],\
           ["vite", "virtual:ab9d2b7124648229fade39d55911bd90a228e95a37b9487cfcd1a4f2af59e4acce805bd57dc55af28e9863e5f825ddfb903fa9606a7f562a0fda3448bd71b6d9#npm:5.4.11"]\
