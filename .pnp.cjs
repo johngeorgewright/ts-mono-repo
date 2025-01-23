@@ -44,7 +44,7 @@ const RAW_RUNTIME_STATE =
           ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:15.4.1"],\
+          ["lint-staged", "npm:15.4.2"],\
           ["prettier", "npm:3.4.2"],\
           ["semantic-release", "npm:24.2.1"],\
           ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.2"],\
@@ -688,7 +688,7 @@ const RAW_RUNTIME_STATE =
           ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:15.4.1"],\
+          ["lint-staged", "npm:15.4.2"],\
           ["prettier", "npm:3.4.2"],\
           ["semantic-release", "npm:24.2.1"],\
           ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.2"],\
@@ -2881,10 +2881,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["commander", [\
-      ["npm:12.1.0", {\
-        "packageLocation": "./.yarn/cache/commander-npm-12.1.0-65c868e907-cdaeb672d9.zip/node_modules/commander/",\
+      ["npm:13.1.0", {\
+        "packageLocation": "./.yarn/cache/commander-npm-13.1.0-bdbbfaaf9d-d3b4b79e6b.zip/node_modules/commander/",\
         "packageDependencies": [\
-          ["commander", "npm:12.1.0"]\
+          ["commander", "npm:13.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3275,6 +3275,20 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
+      ["virtual:1172738fea2f971a44a2bf577981d6963fb4c0f4afcf9ebe86174d36c48cb1cdee1e17ba2c8dbadf57e7389fe1b6c3248c2424e3d017898833b988c5a2cb4739#npm:4.4.0", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-ef6230ed47/0/cache/debug-npm-4.4.0-f6efe76023-1847944c2e.zip/node_modules/debug/",\
+        "packageDependencies": [\
+          ["debug", "virtual:1172738fea2f971a44a2bf577981d6963fb4c0f4afcf9ebe86174d36c48cb1cdee1e17ba2c8dbadf57e7389fe1b6c3248c2424e3d017898833b988c5a2cb4739#npm:4.4.0"],\
+          ["@types/supports-color", null],\
+          ["ms", "npm:2.1.3"],\
+          ["supports-color", null]\
+        ],\
+        "packagePeers": [\
+          "@types/supports-color",\
+          "supports-color"\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["virtual:650501150d44d3e7d7cbd3410f83dc1b4b13fd2aee9626c853aad499853558a40c0f2e6b1645577c0dec3f6d9c883124d615bf013ff6d010014192e49f048699#npm:3.2.7", {\
         "packageLocation": "./.yarn/__virtual__/debug-virtual-f0e4b2e02b/0/cache/debug-npm-3.2.7-754e818c7a-d86fd7be2b.zip/node_modules/debug/",\
         "packageDependencies": [\
@@ -3295,20 +3309,6 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:8866147795d308091c464175a42e9db9c8525e58f8ee83ac382b2a6d7dfca9f0262a439c98e1e6c97839fb23bdce1374c6611813b5e2e1c7d2aa725e24e64d29#npm:4.3.4"],\
           ["@types/supports-color", null],\
           ["ms", "npm:2.1.2"],\
-          ["supports-color", null]\
-        ],\
-        "packagePeers": [\
-          "@types/supports-color",\
-          "supports-color"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:8d0a5b99329d7c1ebcc1ebbf583e80007b908d1d310dabee279d43ca32eda8675df64c2302a1e5d44830697e5d1993f13be790053e01e3170776efabef51f972#npm:4.4.0", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-5f939f0f1b/0/cache/debug-npm-4.4.0-f6efe76023-1847944c2e.zip/node_modules/debug/",\
-        "packageDependencies": [\
-          ["debug", "virtual:8d0a5b99329d7c1ebcc1ebbf583e80007b908d1d310dabee279d43ca32eda8675df64c2302a1e5d44830697e5d1993f13be790053e01e3170776efabef51f972#npm:4.4.0"],\
-          ["@types/supports-color", null],\
-          ["ms", "npm:2.1.3"],\
           ["supports-color", null]\
         ],\
         "packagePeers": [\
@@ -5451,20 +5451,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:15.4.1", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-15.4.1-8d0a5b9932-615a1f0a66.zip/node_modules/lint-staged/",\
+      ["npm:15.4.2", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-15.4.2-1172738fea-19f85db74d.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
-          ["lint-staged", "npm:15.4.1"],\
+          ["lint-staged", "npm:15.4.2"],\
           ["chalk", "npm:5.4.1"],\
-          ["commander", "npm:12.1.0"],\
-          ["debug", "virtual:8d0a5b99329d7c1ebcc1ebbf583e80007b908d1d310dabee279d43ca32eda8675df64c2302a1e5d44830697e5d1993f13be790053e01e3170776efabef51f972#npm:4.4.0"],\
+          ["commander", "npm:13.1.0"],\
+          ["debug", "virtual:1172738fea2f971a44a2bf577981d6963fb4c0f4afcf9ebe86174d36c48cb1cdee1e17ba2c8dbadf57e7389fe1b6c3248c2424e3d017898833b988c5a2cb4739#npm:4.4.0"],\
           ["execa", "npm:8.0.1"],\
           ["lilconfig", "npm:3.1.3"],\
           ["listr2", "npm:8.2.5"],\
           ["micromatch", "npm:4.0.8"],\
           ["pidtree", "npm:0.6.0"],\
           ["string-argv", "npm:0.3.2"],\
-          ["yaml", "npm:2.6.1"]\
+          ["yaml", "npm:2.7.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9097,7 +9097,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["vite-node", "npm:2.1.8"],\
           ["cac", "npm:6.7.14"],\
-          ["debug", "virtual:8d0a5b99329d7c1ebcc1ebbf583e80007b908d1d310dabee279d43ca32eda8675df64c2302a1e5d44830697e5d1993f13be790053e01e3170776efabef51f972#npm:4.4.0"],\
+          ["debug", "virtual:1172738fea2f971a44a2bf577981d6963fb4c0f4afcf9ebe86174d36c48cb1cdee1e17ba2c8dbadf57e7389fe1b6c3248c2424e3d017898833b988c5a2cb4739#npm:4.4.0"],\
           ["es-module-lexer", "npm:1.5.4"],\
           ["pathe", "npm:1.1.2"],\
           ["vite", "virtual:ab9d2b7124648229fade39d55911bd90a228e95a37b9487cfcd1a4f2af59e4acce805bd57dc55af28e9863e5f825ddfb903fa9606a7f562a0fda3448bd71b6d9#npm:5.4.11"]\
@@ -9273,10 +9273,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:2.6.1", {\
-        "packageLocation": "./.yarn/cache/yaml-npm-2.6.1-eb747069e9-cf412f03a3.zip/node_modules/yaml/",\
+      ["npm:2.7.0", {\
+        "packageLocation": "./.yarn/cache/yaml-npm-2.7.0-bb348b356b-c8c314c62f.zip/node_modules/yaml/",\
         "packageDependencies": [\
-          ["yaml", "npm:2.6.1"]\
+          ["yaml", "npm:2.7.0"]\
         ],\
         "linkType": "HARD"\
       }]\
