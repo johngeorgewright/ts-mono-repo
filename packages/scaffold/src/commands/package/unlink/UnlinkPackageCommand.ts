@@ -1,13 +1,13 @@
-import { Command, Option } from 'clipanion'
+import { Option } from 'clipanion'
 import { updateJSONFile } from '../../../fs.js'
 import { moduleName, packagePath } from '../../../workspace.js'
 import { relative } from 'node:path'
-import { $ } from 'zx'
+import { BaseCommand } from '../../BaseCommand.js'
 
-export class UnlinkPackageCommand extends Command {
+export class UnlinkPackageCommand extends BaseCommand {
   static override paths = [['package', 'unlink']]
 
-  static override usage = Command.Usage({
+  static override usage = BaseCommand.Usage({
     category: 'package',
     description: 'Unlink one package from another',
   })
@@ -50,7 +50,7 @@ export class UnlinkPackageCommand extends Command {
   }
 
   async #uninstall() {
-    const $$ = $({ cwd: this.destPackagePath, verbose: true })
+    const $$ = this.context.$({ cwd: this.destPackagePath })
     await $$`yarn remove ${moduleName(this.src)}`
   }
 }

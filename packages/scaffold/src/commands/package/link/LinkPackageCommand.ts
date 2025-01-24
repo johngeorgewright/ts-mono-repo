@@ -1,13 +1,13 @@
-import { Command, Option } from 'clipanion'
+import { Option } from 'clipanion'
 import { moduleName, packagePath } from '../../../workspace.js'
 import { relative } from 'node:path'
 import { updateJSONFile } from '../../../fs.js'
-import { $ } from 'zx'
+import { BaseCommand } from '../../BaseCommand.js'
 
-export class LinkPackageCommand extends Command {
+export class LinkPackageCommand extends BaseCommand {
   static override paths = [['package', 'link']]
 
-  static override usage = Command.Usage({
+  static override usage = BaseCommand.Usage({
     category: 'package',
     description: 'Link one package to another',
   })
@@ -42,13 +42,10 @@ export class LinkPackageCommand extends Command {
   async #addTSConfigReference() {
     await updateJSONFile<any>(
       `${this.srcPackagePath}/tsconfig.json`,
-      (tsconfig) =>
-        tsconfig.compilerOptions?.composite
-          ? tsconfig
-          : {
-              ...tsconfig,
-              compilerOptions: { ...tsconfig.compilerOptions, composite: true },
-            },
+      (tsconfig) => ({
+        ...tsconfig,
+        compilerOptions: { ...tsconfig.compilerOptions, composite: true },
+      }),
     )
 
     await updateJSONFile<any>(
@@ -64,7 +61,7 @@ export class LinkPackageCommand extends Command {
   }
 
   async #install() {
-    const $$ = $({ cwd: this.destPackagePath, verbose: true })
+    const $$ = this.context.$({ cwd: this.destPackagePath })
     await $$`yarn add ${this.dev ? '-D' : ''} ${moduleName(this.src)}`
   }
 }

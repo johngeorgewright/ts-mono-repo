@@ -5,10 +5,10 @@ import { updateJSONFile } from './fs.js'
 import { memoize } from 'lodash'
 
 export const MODULE_NAMESPACE =
-  /^(@[^\/]+\/)/.exec(rootPackageJSON.name)?.[1] ?? ''
+  /^(@[^\/]+)\//.exec(rootPackageJSON.name)?.[1] ?? ''
 
 export const moduleName = (name: string) =>
-  name.startsWith('@') ? name : MODULE_NAMESPACE + name
+  name.startsWith('@') ? name : `${MODULE_NAMESPACE}/${name}`
 
 export const projectRootPath = path.resolve(
   module.path || __dirname,

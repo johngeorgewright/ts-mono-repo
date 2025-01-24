@@ -1,5 +1,4 @@
 import * as path from 'node:path'
-import { $ } from 'zx'
 import { MustacheGeneratorCommand } from '../../MustacheGeneratorCommand.js'
 import { Option } from 'clipanion'
 import {
@@ -17,14 +16,6 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
     category: 'package',
     description: 'Create a new package in this workspace',
   })
-
-  #templateDir = path.join(modulePath, 'templates')
-  override get templateDir() {
-    return this.#templateDir
-  }
-  override set templateDir(value: string) {
-    this.#templateDir = path.join(modulePath, value)
-  }
 
   readonly name = Option.String({
     name: 'name',
@@ -59,11 +50,14 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
   readonly year = new Date().getFullYear()
 
   override async execute() {
+    this.templateDir = path.join(modulePath, 'templates')
     await super.execute()
+
     if (this.public) {
-      this.templateDir = 'templates-public'
+      this.templateDir = path.join(modulePath, 'templates-public')
       await super.execute()
     }
+
     await this.#updateCodeWorkspace()
     await this.#installDependencies()
   }
@@ -82,9 +76,8 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
   }
 
   async #installDependencies() {
-    const $$ = $({
+    const $$ = this.context.$({
       cwd: this.destinationDir,
-      verbose: true,
     })
     await $$`yarn`
     await $$`yarn add --cached --caret tslib`
