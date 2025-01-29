@@ -666,7 +666,7 @@ const RAW_RUNTIME_STATE =
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.7.3#optional!builtin<compat/typescript>::version=5.7.3&hash=5786d5"],\
           ["vite-node", "npm:2.1.8"],\
-          ["zx", "npm:8.3.0"]\
+          ["zx", "npm:8.3.1"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -9376,10 +9376,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["zx", [\
-      ["npm:8.3.0", {\
-        "packageLocation": "./.yarn/cache/zx-npm-8.3.0-a8ab9de186-1397ab20cf.zip/node_modules/zx/",\
+      ["npm:8.3.1", {\
+        "packageLocation": "./.yarn/cache/zx-npm-8.3.1-1b584b17d0-ad63ae182b.zip/node_modules/zx/",\
         "packageDependencies": [\
-          ["zx", "npm:8.3.0"],\
+          ["zx", "npm:8.3.1"],\
           ["@types/fs-extra", "npm:11.0.4"],\
           ["@types/node", "npm:22.10.1"]\
         ],\

@@ -524,7 +524,7 @@ __metadata:
     tslib: "npm:2.8.1"
     typescript: "npm:5.7.3"
     vite-node: "npm:2.1.8"
-    zx: "npm:8.3.0"
+    zx: "npm:8.3.1"
   languageName: unknown
   linkType: soft
 
@@ -8505,9 +8505,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zx@npm:8.3.0":
-  version: 8.3.0
-  resolution: "zx@npm:8.3.0"
+"zx@npm:8.3.1":
+  version: 8.3.1
+  resolution: "zx@npm:8.3.1"
   dependencies:
     "@types/fs-extra": "npm:>=11"
     "@types/node": "npm:>=20"
@@ -8518,6 +8518,6 @@ __metadata:
       optional: true
   bin:
     zx: build/cli.js
-  checksum: 10/1397ab20cf0043ff7a630ecedc77accbb8756f554db82dc5b32bfd0853230cae4507ab9857a4143204970e3fe56ebea2d06ee533000e0f297322b4747b3dfba7
+  checksum: 10/ad63ae182b058db01c946c1c16b37f7344c839d7af79395d7f43fd2f7576aa1e5c6f7ac5f092d3c166f71b9b3a0afbcd084f323f9b90fdcc34b82a5db52fa1ff
   languageName: node
   linkType: hard
