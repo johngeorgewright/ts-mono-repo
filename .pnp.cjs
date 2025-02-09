@@ -45,7 +45,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:15.4.3"],\
-          ["prettier", "npm:3.4.2"],\
+          ["prettier", "npm:3.5.0"],\
           ["semantic-release", "npm:24.2.2"],\
           ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.2"],\
           ["semantic-release-monorepo-esm", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:1.0.12"],\
@@ -661,7 +661,7 @@ const RAW_RUNTIME_STATE =
           ["clipanion-generator-command", "virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:1.2.0"],\
           ["lodash", "npm:4.17.21"],\
           ["mustache", "npm:4.2.0"],\
-          ["prettier", "npm:3.4.2"],\
+          ["prettier", "npm:3.5.0"],\
           ["rimraf", "npm:6.0.1"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.7.3#optional!builtin<compat/typescript>::version=5.7.3&hash=5786d5"],\
@@ -689,7 +689,7 @@ const RAW_RUNTIME_STATE =
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:15.4.3"],\
-          ["prettier", "npm:3.4.2"],\
+          ["prettier", "npm:3.5.0"],\
           ["semantic-release", "npm:24.2.2"],\
           ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.2"],\
           ["semantic-release-monorepo-esm", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:1.0.12"],\
@@ -7209,10 +7209,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:3.4.2", {\
-        "packageLocation": "./.yarn/unplugged/prettier-npm-3.4.2-fae349e44a/node_modules/prettier/",\
+      ["npm:3.5.0", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.5.0-597a8f3ced/node_modules/prettier/",\
         "packageDependencies": [\
-          ["prettier", "npm:3.4.2"]\
+          ["prettier", "npm:3.5.0"]\
         ],\
         "linkType": "HARD"\
       }]\
