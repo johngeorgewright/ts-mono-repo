@@ -40,7 +40,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
           ["@semantic-release/github", "virtual:cf458e43c6cdb438aba36851f4ade1fe5a1743163a8a2e0634bd473237702aa7cb463acf790a08c1be2f4ac7b4e02fd50ae5885d6743dc0c3a4fd25e86239473#npm:11.0.1"],\
           ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:14.0.3"],\
-          ["@types/node", "npm:22.13.1"],\
+          ["@types/node", "npm:22.13.2"],\
           ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
@@ -684,7 +684,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
           ["@semantic-release/github", "virtual:cf458e43c6cdb438aba36851f4ade1fe5a1743163a8a2e0634bd473237702aa7cb463acf790a08c1be2f4ac7b4e02fd50ae5885d6743dc0c3a4fd25e86239473#npm:11.0.1"],\
           ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:14.0.3"],\
-          ["@types/node", "npm:22.13.1"],\
+          ["@types/node", "npm:22.13.2"],\
           ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
@@ -1890,10 +1890,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:22.13.1", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-22.13.1-f9de886009-d8ba7068b0.zip/node_modules/@types/node/",\
+      ["npm:22.13.2", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-22.13.2-72bda934c7-1d033a01a3.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:22.13.1"],\
+          ["@types/node", "npm:22.13.2"],\
           ["undici-types", "npm:6.20.0"]\
         ],\
         "linkType": "HARD"\
