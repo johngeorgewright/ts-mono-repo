@@ -666,7 +666,7 @@ const RAW_RUNTIME_STATE =
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"],\
           ["vite-node", "npm:2.1.9"],\
-          ["zx", "npm:8.3.2"]\
+          ["zx", "npm:8.4.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1835,27 +1835,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["@types/fs-extra", [\
-      ["npm:11.0.4", {\
-        "packageLocation": "./.yarn/cache/@types-fs-extra-npm-11.0.4-e30a7fec50-acc4c1eb0c.zip/node_modules/@types/fs-extra/",\
-        "packageDependencies": [\
-          ["@types/fs-extra", "npm:11.0.4"],\
-          ["@types/jsonfile", "npm:6.1.4"],\
-          ["@types/node", "npm:16.10.5"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@types/jsonfile", [\
-      ["npm:6.1.4", {\
-        "packageLocation": "./.yarn/cache/@types-jsonfile-npm-6.1.4-33f021b8d9-309fda20eb.zip/node_modules/@types/jsonfile/",\
-        "packageDependencies": [\
-          ["@types/jsonfile", "npm:6.1.4"],\
-          ["@types/node", "npm:16.10.5"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["@types/lodash", [\
       ["npm:4.17.16", {\
         "packageLocation": "./.yarn/cache/@types-lodash-npm-4.17.16-edc964ca5b-9a8bb7471a.zip/node_modules/@types/lodash/",\
@@ -1879,14 +1858,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-node-npm-16.10.5-8e3373f1f6-49e628d2fc.zip/node_modules/@types/node/",\
         "packageDependencies": [\
           ["@types/node", "npm:16.10.5"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:22.10.1", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-22.10.1-db989fc54b-c802a526da.zip/node_modules/@types/node/",\
-        "packageDependencies": [\
-          ["@types/node", "npm:22.10.1"],\
-          ["undici-types", "npm:6.20.0"]\
         ],\
         "linkType": "HARD"\
       }],\
@@ -9376,12 +9347,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["zx", [\
-      ["npm:8.3.2", {\
-        "packageLocation": "./.yarn/cache/zx-npm-8.3.2-6030c59c8b-ffa9f7ea02.zip/node_modules/zx/",\
+      ["npm:8.4.0", {\
+        "packageLocation": "./.yarn/cache/zx-npm-8.4.0-7dcdbc9f05-ee12775d31.zip/node_modules/zx/",\
         "packageDependencies": [\
-          ["zx", "npm:8.3.2"],\
-          ["@types/fs-extra", "npm:11.0.4"],\
-          ["@types/node", "npm:22.10.1"]\
+          ["zx", "npm:8.4.0"]\
         ],\
         "linkType": "HARD"\
       }]\
