@@ -44,7 +44,7 @@ const RAW_RUNTIME_STATE =
           ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:15.4.3"],\
+          ["lint-staged", "npm:15.5.0"],\
           ["prettier", "npm:3.5.3"],\
           ["semantic-release", "npm:24.2.3"],\
           ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.2"],\
@@ -688,7 +688,7 @@ const RAW_RUNTIME_STATE =
           ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
-          ["lint-staged", "npm:15.4.3"],\
+          ["lint-staged", "npm:15.5.0"],\
           ["prettier", "npm:3.5.3"],\
           ["semantic-release", "npm:24.2.3"],\
           ["semantic-release-monorepo", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:8.0.2"],\
@@ -3246,6 +3246,20 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
+      ["virtual:63006597bb5cc2c4a7ab4fa19b72fcbb97432d2bbcf948ed173747b003c1a8f9a9ba9a8d6034ca3ecd161ccc0af37d1bbfd9f04dc8a658234ee3b07c2b2033bc#npm:4.4.0", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-48100e3f37/0/cache/debug-npm-4.4.0-f6efe76023-1847944c2e.zip/node_modules/debug/",\
+        "packageDependencies": [\
+          ["debug", "virtual:63006597bb5cc2c4a7ab4fa19b72fcbb97432d2bbcf948ed173747b003c1a8f9a9ba9a8d6034ca3ecd161ccc0af37d1bbfd9f04dc8a658234ee3b07c2b2033bc#npm:4.4.0"],\
+          ["@types/supports-color", null],\
+          ["ms", "npm:2.1.3"],\
+          ["supports-color", null]\
+        ],\
+        "packagePeers": [\
+          "@types/supports-color",\
+          "supports-color"\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["virtual:650501150d44d3e7d7cbd3410f83dc1b4b13fd2aee9626c853aad499853558a40c0f2e6b1645577c0dec3f6d9c883124d615bf013ff6d010014192e49f048699#npm:3.2.7", {\
         "packageLocation": "./.yarn/__virtual__/debug-virtual-f0e4b2e02b/0/cache/debug-npm-3.2.7-754e818c7a-d86fd7be2b.zip/node_modules/debug/",\
         "packageDependencies": [\
@@ -3266,20 +3280,6 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:8866147795d308091c464175a42e9db9c8525e58f8ee83ac382b2a6d7dfca9f0262a439c98e1e6c97839fb23bdce1374c6611813b5e2e1c7d2aa725e24e64d29#npm:4.3.4"],\
           ["@types/supports-color", null],\
           ["ms", "npm:2.1.2"],\
-          ["supports-color", null]\
-        ],\
-        "packagePeers": [\
-          "@types/supports-color",\
-          "supports-color"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:a6714936967661db4c50f5e9ac4985e2c78b13c770fe9816b8aaa64e55dc67458b66f033911b6e7c71096d059cd8c0f7d07daf03853191212127379996acf3f3#npm:4.4.0", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-875804211b/0/cache/debug-npm-4.4.0-f6efe76023-1847944c2e.zip/node_modules/debug/",\
-        "packageDependencies": [\
-          ["debug", "virtual:a6714936967661db4c50f5e9ac4985e2c78b13c770fe9816b8aaa64e55dc67458b66f033911b6e7c71096d059cd8c0f7d07daf03853191212127379996acf3f3#npm:4.4.0"],\
-          ["@types/supports-color", null],\
-          ["ms", "npm:2.1.3"],\
           ["supports-color", null]\
         ],\
         "packagePeers": [\
@@ -5422,13 +5422,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lint-staged", [\
-      ["npm:15.4.3", {\
-        "packageLocation": "./.yarn/cache/lint-staged-npm-15.4.3-a671493696-14a6a9cb9b.zip/node_modules/lint-staged/",\
+      ["npm:15.5.0", {\
+        "packageLocation": "./.yarn/cache/lint-staged-npm-15.5.0-63006597bb-5873584649.zip/node_modules/lint-staged/",\
         "packageDependencies": [\
-          ["lint-staged", "npm:15.4.3"],\
+          ["lint-staged", "npm:15.5.0"],\
           ["chalk", "npm:5.4.1"],\
           ["commander", "npm:13.1.0"],\
-          ["debug", "virtual:a6714936967661db4c50f5e9ac4985e2c78b13c770fe9816b8aaa64e55dc67458b66f033911b6e7c71096d059cd8c0f7d07daf03853191212127379996acf3f3#npm:4.4.0"],\
+          ["debug", "virtual:63006597bb5cc2c4a7ab4fa19b72fcbb97432d2bbcf948ed173747b003c1a8f9a9ba9a8d6034ca3ecd161ccc0af37d1bbfd9f04dc8a658234ee3b07c2b2033bc#npm:4.4.0"],\
           ["execa", "npm:8.0.1"],\
           ["lilconfig", "npm:3.1.3"],\
           ["listr2", "npm:8.2.5"],\
@@ -9068,7 +9068,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["vite-node", "npm:2.1.9"],\
           ["cac", "npm:6.7.14"],\
-          ["debug", "virtual:a6714936967661db4c50f5e9ac4985e2c78b13c770fe9816b8aaa64e55dc67458b66f033911b6e7c71096d059cd8c0f7d07daf03853191212127379996acf3f3#npm:4.4.0"],\
+          ["debug", "virtual:63006597bb5cc2c4a7ab4fa19b72fcbb97432d2bbcf948ed173747b003c1a8f9a9ba9a8d6034ca3ecd161ccc0af37d1bbfd9f04dc8a658234ee3b07c2b2033bc#npm:4.4.0"],\
           ["es-module-lexer", "npm:1.5.4"],\
           ["pathe", "npm:1.1.2"],\
           ["vite", "virtual:84dcff71db8be9cbe950d0756a4f7772695095a485baf88f1cc98436fdd0ea49e9c6ac7f535ec4b7b26fd24d60bd4323cc6ed6d8629d5b2015f92d4613c7ffb6#npm:5.4.11"]\
