@@ -1,6 +1,6 @@
 import { readdir } from 'node:fs/promises'
 import * as path from 'node:path'
-import rootPackageJSON from '../../../package.json' assert { type: 'json' }
+import rootPackageJSON from '../../../package.json' with { type: 'json' }
 import { updateJSONFile } from './fs.js'
 import { memoize } from 'lodash'
 
