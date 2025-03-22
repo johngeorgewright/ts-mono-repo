@@ -7,7 +7,7 @@ on:
 jobs:
   cache:
     if: github.actor == 'renovate[bot]' || github.actor == 'dependabot[bot]'
-    uses: ./.github/workflows/cache.yml
+    uses: johngeorgewright/workflows/.github/workflows/yarn-cache.yml@main
 
   yarn-sdk:
     name: Rebuild Yarn SDKs
@@ -32,8 +32,8 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v4
         with:
-          key: ${{ needs.cache.outputs.yarn-cache-key }}
-          path: ${{ needs.cache.outputs.yarn-cache-path }}
+          key: ${{ needs.cache.outputs.key }}
+          path: ${{ needs.cache.outputs.path }}
 
       - name: Update SDKs
         run: yarn dlx @yarnpkg/sdks
@@ -43,7 +43,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           message: 'chore: yarn sdks'
-  
 
   auto-approve:
     name: Auto Approve
