@@ -40,28 +40,30 @@ export class LinkPackageCommand extends BaseCommand {
   }
 
   async #addTSConfigReference() {
-    await updateJSONFile<any>(
-      `${this.srcPackagePath}/tsconfig.json`,
-      (tsconfig) => ({
-        ...tsconfig,
-        compilerOptions: { ...tsconfig.compilerOptions, composite: true },
-      }),
-    )
+    await Promise.all([
+      updateJSONFile<any>(
+        `${this.srcPackagePath}/tsconfig.json`,
+        (tsconfig) => ({
+          ...tsconfig,
+          compilerOptions: { ...tsconfig.compilerOptions, composite: true },
+        }),
+      ),
 
-    await updateJSONFile<any>(
-      `${this.destPackagePath}/tsconfig.json`,
-      (tsconfig) => {
-        tsconfig.references ??= []
-        tsconfig.references.push({
-          path: relative(this.destPackagePath, this.srcPackagePath),
-        })
-        return tsconfig
-      },
-    )
+      updateJSONFile<any>(
+        `${this.destPackagePath}/tsconfig.json`,
+        (tsconfig) => {
+          tsconfig.references ??= []
+          tsconfig.references.push({
+            path: relative(this.destPackagePath, this.srcPackagePath),
+          })
+          return tsconfig
+        },
+      ),
+    ])
   }
 
   async #install() {
-    const $$ = this.context.$({ cwd: this.destPackagePath })
+    const $$ = this.context.$({ cwd: this.destPackagePath, quote: (x) => x })
     await $$`yarn add ${this.dev ? '-D' : ''} ${moduleName(this.src)}`
   }
 }
