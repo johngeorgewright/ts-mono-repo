@@ -21,6 +21,11 @@ export const packagesPath = path.join(projectRootPath, 'packages')
 
 export const packagePath = (name: string) => path.join(packagesPath, name)
 
+export const packageNames = async () => {
+  const filenames = await readdir(packagesPath)
+  return filenames.filter((filename) => !filename.startsWith('.'))
+}
+
 export const findVSCodeWorkspacePath = memoize(async () => {
   const filenames = await readdir(projectRootPath)
   const filename = filenames.find((filename) =>

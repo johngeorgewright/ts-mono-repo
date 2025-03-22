@@ -51,6 +51,8 @@ export class UnlinkPackageCommand extends BaseCommand {
 
   async #uninstall() {
     const $$ = this.context.$({ cwd: this.destPackagePath })
-    await $$`yarn remove ${moduleName(this.src)}`
+    if ((await $$`yarn why ${moduleName(this.src)}`).stdout) {
+      await $$`yarn remove ${moduleName(this.src)}`
+    }
   }
 }

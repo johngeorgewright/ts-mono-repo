@@ -1,4 +1,5 @@
 import {
+  packageNames,
   packagePath,
   packagesPath,
   updateVSCodeWorkspace,
@@ -33,6 +34,7 @@ export class RemovePackageCommand extends BaseCommand {
   }
 
   override async execute() {
+    await this.#unlinkAll()
     await Promise.all([
       rm(this.dir, { recursive: true }),
       this.#updateCodeWorkspace(),
@@ -47,5 +49,12 @@ export class RemovePackageCommand extends BaseCommand {
         (folder: { path: string }) => folder.path !== this.packagePath,
       ),
     }))
+  }
+
+  async #unlinkAll() {
+    for (const packageName of await packageNames()) {
+      if (packageName === this.name) continue
+      await this.cli.run(['package', 'unlink', this.name, packageName])
+    }
   }
 }
