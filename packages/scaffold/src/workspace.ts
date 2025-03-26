@@ -1,14 +1,14 @@
 import { readdir } from 'node:fs/promises'
 import * as path from 'node:path'
-import rootPackageJSON from '../../../package.json' assert { type: 'json' }
+import rootPackageJSON from '../../../package.json' with { type: 'json' }
 import { updateJSONFile } from './fs.js'
 import { memoize } from 'lodash'
 
 export const MODULE_NAMESPACE =
-  /^(@[^\/]+\/)/.exec(rootPackageJSON.name)?.[1] ?? ''
+  /^(@[^\/]+)\//.exec(rootPackageJSON.name)?.[1] ?? ''
 
 export const moduleName = (name: string) =>
-  name.startsWith('@') ? name : MODULE_NAMESPACE + name
+  name.startsWith('@') ? name : `${MODULE_NAMESPACE}/${name}`
 
 export const projectRootPath = path.resolve(
   module.path || __dirname,
@@ -20,6 +20,11 @@ export const projectRootPath = path.resolve(
 export const packagesPath = path.join(projectRootPath, 'packages')
 
 export const packagePath = (name: string) => path.join(packagesPath, name)
+
+export const packageNames = async () => {
+  const filenames = await readdir(packagesPath)
+  return filenames.filter((filename) => !filename.startsWith('.'))
+}
 
 export const findVSCodeWorkspacePath = memoize(async () => {
   const filenames = await readdir(projectRootPath)

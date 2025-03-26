@@ -1,16 +1,17 @@
 import {
+  packageNames,
   packagePath,
   packagesPath,
   updateVSCodeWorkspace,
 } from '../../../workspace.js'
 import { rm } from 'node:fs/promises'
-import { Command, Option } from 'clipanion'
-import { $ } from 'zx'
+import { Option } from 'clipanion'
+import { BaseCommand } from '../../BaseCommand.js'
 
-export class RemovePackageCommand extends Command {
+export class RemovePackageCommand extends BaseCommand {
   static override paths = [['package', 'remove']]
 
-  static override usage = Command.Usage({
+  static override usage = BaseCommand.Usage({
     category: 'package',
     description: 'Remove a package from this workspace',
   })
@@ -33,11 +34,12 @@ export class RemovePackageCommand extends Command {
   }
 
   override async execute() {
+    await this.#unlinkAll()
     await Promise.all([
       rm(this.dir, { recursive: true }),
       this.#updateCodeWorkspace(),
     ])
-    await $({ verbose: true })`yarn`
+    await this.context.$`yarn`
   }
 
   async #updateCodeWorkspace() {
@@ -47,5 +49,12 @@ export class RemovePackageCommand extends Command {
         (folder: { path: string }) => folder.path !== this.packagePath,
       ),
     }))
+  }
+
+  async #unlinkAll() {
+    for (const packageName of await packageNames()) {
+      if (packageName === this.name) continue
+      await this.cli.run(['package', 'unlink', this.name, packageName])
+    }
   }
 }
