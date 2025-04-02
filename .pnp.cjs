@@ -41,7 +41,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
           ["@semantic-release/github", "virtual:ce2ba867df5142b289810590d399803c3a69dfb5f96a5659efed59df05519576d293ed02c5232ffe95480b8f7c42252357849076cc29cb99617f7316eb1d0d83#npm:11.0.1"],\
           ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:14.0.3"],\
-          ["@types/node", "npm:22.13.17"],\
+          ["@types/node", "npm:22.14.0"],\
           ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
@@ -703,7 +703,7 @@ const RAW_RUNTIME_STATE =
           ["@semantic-release/git", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:10.0.1"],\
           ["@semantic-release/github", "virtual:ce2ba867df5142b289810590d399803c3a69dfb5f96a5659efed59df05519576d293ed02c5232ffe95480b8f7c42252357849076cc29cb99617f7316eb1d0d83#npm:11.0.1"],\
           ["@semantic-release/release-notes-generator", "virtual:bf3606dcb058995accc01cf5514ba01cbfa8c784fc6e6145c12a697a4cb2caf039104e6eae6da749917a6307519d5e9b415ea467529184744caeab2057a7e7b6#npm:14.0.3"],\
-          ["@types/node", "npm:22.13.17"],\
+          ["@types/node", "npm:22.14.0"],\
           ["commitizen", "npm:4.3.1"],\
           ["cz-conventional-changelog", "npm:3.3.0"],\
           ["husky", "npm:9.1.7"],\
@@ -1880,11 +1880,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:22.13.17", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-22.13.17-888d18fda5-b2bb532c6c.zip/node_modules/@types/node/",\
+      ["npm:22.14.0", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-22.14.0-a09e354ed5-d0669a8a37.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:22.13.17"],\
-          ["undici-types", "npm:6.20.0"]\
+          ["@types/node", "npm:22.14.0"],\
+          ["undici-types", "npm:6.21.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8877,10 +8877,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["undici-types", [\
-      ["npm:6.20.0", {\
-        "packageLocation": "./.yarn/cache/undici-types-npm-6.20.0-bd21e669af-583ac7bbf4.zip/node_modules/undici-types/",\
+      ["npm:6.21.0", {\
+        "packageLocation": "./.yarn/cache/undici-types-npm-6.21.0-eb2b0ed56a-ec8f41aa43.zip/node_modules/undici-types/",\
         "packageDependencies": [\
-          ["undici-types", "npm:6.20.0"]\
+          ["undici-types", "npm:6.21.0"]\
         ],\
         "linkType": "HARD"\
       }]\
