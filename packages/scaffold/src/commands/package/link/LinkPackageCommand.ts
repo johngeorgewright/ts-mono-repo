@@ -1,10 +1,11 @@
 import { Option } from 'clipanion'
-import { moduleName, packagePath } from '../../../workspace.js'
+import { moduleName } from '../../../workspace.js'
 import { relative } from 'node:path'
 import { updateJSONFile } from '../../../fs.js'
 import { BaseCommand } from '../../BaseCommand.js'
+import { Linkable } from '../../../mixins/Linkable.js'
 
-export class LinkPackageCommand extends BaseCommand {
+export class LinkPackageCommand extends Linkable(BaseCommand) {
   static override paths = [['package', 'link']]
 
   static override usage = BaseCommand.Usage({
@@ -15,24 +16,6 @@ export class LinkPackageCommand extends BaseCommand {
   readonly dev = Option.Boolean('-D,--dev', false, {
     description: 'Link as a dev dependency',
   })
-
-  readonly src = Option.String({
-    name: 'source',
-    required: true,
-  })
-
-  readonly dest = Option.String({
-    name: 'destination',
-    required: true,
-  })
-
-  get srcPackagePath() {
-    return packagePath(this.src)
-  }
-
-  get destPackagePath() {
-    return packagePath(this.dest)
-  }
 
   override async execute() {
     await this.#addTSConfigReference()
