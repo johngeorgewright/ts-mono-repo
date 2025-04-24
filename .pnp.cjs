@@ -700,7 +700,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/mung/",\
         "packageDependencies": [\
           ["@johngeorgewright/mung", "workspace:packages/mung"],\
-          ["@types/node", "npm:16.10.5"],\
+          ["@types/node", "npm:22.14.1"],\
           ["@types/prettier", "npm:3.0.0"],\
           ["eslint-plugin-jest", "virtual:812e4c3d57dbce195c059a3d55fb909ed896ba2e8409620e3b762d885e8affcb00bce91ac575485083df809a776c1c2af019bee90edfe7e2b4f84409e87e42a2#npm:28.11.0"],\
           ["prettier", "npm:3.2.5"],\
@@ -1894,7 +1894,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-conventional-commits-parser-npm-5.0.1-3f074d40bc-ac98a31ed0.zip/node_modules/@types/conventional-commits-parser/",\
         "packageDependencies": [\
           ["@types/conventional-commits-parser", "npm:5.0.1"],\
-          ["@types/node", "npm:16.10.5"]\
+          ["@types/node", "npm:22.14.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1934,13 +1934,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:16.10.5", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-16.10.5-8e3373f1f6-49e628d2fc.zip/node_modules/@types/node/",\
-        "packageDependencies": [\
-          ["@types/node", "npm:16.10.5"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:22.14.1", {\
         "packageLocation": "./.yarn/cache/@types-node-npm-22.14.1-ff7e0a29d7-561b1ad98e.zip/node_modules/@types/node/",\
         "packageDependencies": [\
@@ -9569,7 +9562,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jiti", null],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
-          ["@types/node", "npm:16.10.5"],\
+          ["@types/node", "npm:22.14.1"],\
           ["@types/sass", null],\
           ["@types/sass-embedded", null],\
           ["@types/stylus", null],\
@@ -9704,7 +9697,7 @@ const RAW_RUNTIME_STATE =
           ["@types/edge-runtime__vm", null],\
           ["@types/happy-dom", null],\
           ["@types/jsdom", null],\
-          ["@types/node", "npm:16.10.5"],\
+          ["@types/node", "npm:22.14.1"],\
           ["@types/vitest__browser", null],\
           ["@types/vitest__ui", null],\
           ["@vitest/browser", null],\
