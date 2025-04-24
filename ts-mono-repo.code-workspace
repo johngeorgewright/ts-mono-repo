@@ -5,10 +5,12 @@
   "folders": [
     { "name": "✨ ts-mono-repo", "path": "." },
     { "name": "🏗 scaffold", "path": "packages/scaffold" },
-    { "name": "🐙 github", "path": ".github" }
+    { "name": "🐙 github", "path": ".github" },
+    { "name": "📦 @johngeorgewright/mung", "path": "packages/mung" }
   ],
   "settings": {
-    "prettier.prettierPath": "../../.yarn/sdks/prettier/index.cjs",
+    "eslint.nodePath": ".yarn/sdks",
+    "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
     "search.exclude": { "**/dist": true, "**/.yarn": true, "**/.pnp.*": true },
     "typescript.enablePromptUseWorkspaceTsdk": true,
     "typescript.tsdk": "✨ ts-mono-repo/.yarn/sdks/typescript/lib"

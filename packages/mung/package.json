@@ -1,0 +1,26 @@
+{
+  "name": "@johngeorgewright/mung",
+  "version": "0.0.0",
+  "description": "Mung",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MailOnline/dmg-ads/issues"
+  },
+  "homepage": "https://github.com/MailOnline/dmg-ads#readme",
+  "dependencies": {
+    "tslib": "npm:^1.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "npm:*",
+    "@types/prettier": "npm:3.0.0",
+    "eslint-plugin-jest": "28.11.0",
+    "prettier": "npm:*",
+    "typescript": "npm:5.8.3",
+    "vitest": "3.1.2"
+  }
+}
