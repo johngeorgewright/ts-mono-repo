@@ -700,7 +700,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/mung/",\
         "packageDependencies": [\
           ["@johngeorgewright/mung", "workspace:packages/mung"],\
-          ["@types/node", "npm:22.15.0"],\
+          ["@types/node", "npm:22.15.2"],\
           ["@types/prettier", "npm:3.0.0"],\
           ["eslint-plugin-jest", "virtual:812e4c3d57dbce195c059a3d55fb909ed896ba2e8409620e3b762d885e8affcb00bce91ac575485083df809a776c1c2af019bee90edfe7e2b4f84409e87e42a2#npm:28.11.0"],\
           ["prettier", "npm:3.5.3"],\
@@ -1894,7 +1894,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-conventional-commits-parser-npm-5.0.1-3f074d40bc-ac98a31ed0.zip/node_modules/@types/conventional-commits-parser/",\
         "packageDependencies": [\
           ["@types/conventional-commits-parser", "npm:5.0.1"],\
-          ["@types/node", "npm:22.15.0"]\
+          ["@types/node", "npm:22.15.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1934,14 +1934,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:22.15.0", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-22.15.0-bfce8fa295-96911bc8bc.zip/node_modules/@types/node/",\
-        "packageDependencies": [\
-          ["@types/node", "npm:22.15.0"],\
-          ["undici-types", "npm:6.21.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:22.15.2", {\
         "packageLocation": "./.yarn/cache/@types-node-npm-22.15.2-8c5ac561a4-e220715712.zip/node_modules/@types/node/",\
         "packageDependencies": [\
@@ -9563,7 +9555,7 @@ const RAW_RUNTIME_STATE =
           ["@types/jiti", null],\
           ["@types/less", null],\
           ["@types/lightningcss", null],\
-          ["@types/node", "npm:22.15.0"],\
+          ["@types/node", "npm:22.15.2"],\
           ["@types/sass", null],\
           ["@types/sass-embedded", null],\
           ["@types/stylus", null],\
@@ -9698,7 +9690,7 @@ const RAW_RUNTIME_STATE =
           ["@types/edge-runtime__vm", null],\
           ["@types/happy-dom", null],\
           ["@types/jsdom", null],\
-          ["@types/node", "npm:22.15.0"],\
+          ["@types/node", "npm:22.15.2"],\
           ["@types/vitest__browser", null],\
           ["@types/vitest__ui", null],\
           ["@vitest/browser", null],\
