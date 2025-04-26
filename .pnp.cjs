@@ -704,7 +704,7 @@ const RAW_RUNTIME_STATE =
           ["@types/prettier", "npm:3.0.0"],\
           ["eslint-plugin-jest", "virtual:812e4c3d57dbce195c059a3d55fb909ed896ba2e8409620e3b762d885e8affcb00bce91ac575485083df809a776c1c2af019bee90edfe7e2b4f84409e87e42a2#npm:28.11.0"],\
           ["prettier", "npm:3.5.3"],\
-          ["tslib", "npm:1.14.1"],\
+          ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
           ["vitest", "virtual:812e4c3d57dbce195c059a3d55fb909ed896ba2e8409620e3b762d885e8affcb00bce91ac575485083df809a776c1c2af019bee90edfe7e2b4f84409e87e42a2#npm:3.1.2"]\
         ],\
