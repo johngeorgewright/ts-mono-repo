@@ -68,7 +68,6 @@ export class AddPackageCommand extends Namable(MustacheGeneratorCommand) {
     await $$`yarn add --cached --dev \
       @types/node \
       @types/prettier \
-      eslint-plugin-jest \
       prettier \
       typescript \
       vitest`
