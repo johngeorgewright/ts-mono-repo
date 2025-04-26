@@ -1,25 +1,17 @@
 import * as path from 'node:path'
 import { MustacheGeneratorCommand } from '../../MustacheGeneratorCommand.js'
 import { Option } from 'clipanion'
-import {
-  moduleName,
-  packagesPath,
-  updateVSCodeWorkspace,
-} from '../../../workspace.js'
+import { packagesPath, updateVSCodeWorkspace } from '../../../workspace.js'
+import { Namable } from '../../../mixins/Namable.js'
 
 const modulePath = module.path || __dirname
 
-export class AddPackageCommand extends MustacheGeneratorCommand {
+export class AddPackageCommand extends Namable(MustacheGeneratorCommand) {
   static override paths = [['package', 'add']]
 
   static override usage = MustacheGeneratorCommand.Usage({
     category: 'package',
     description: 'Create a new package in this workspace',
-  })
-
-  readonly name = Option.String({
-    name: 'name',
-    required: true,
   })
 
   readonly description = Option.String({
@@ -37,14 +29,6 @@ export class AddPackageCommand extends MustacheGeneratorCommand {
 
   override get destinationDir() {
     return this.destinationDirOption || path.join(packagesPath, this.name)
-  }
-
-  get moduleName() {
-    return moduleName(this.name)
-  }
-
-  get packagePath() {
-    return `packages/${this.name}`
   }
 
   readonly year = new Date().getFullYear()

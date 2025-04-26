@@ -7,23 +7,15 @@ import {
 import { rm } from 'node:fs/promises'
 import { Option } from 'clipanion'
 import { BaseCommand } from '../../BaseCommand.js'
+import { Namable } from '../../../mixins/Namable.js'
 
-export class RemovePackageCommand extends BaseCommand {
+export class RemovePackageCommand extends Namable(BaseCommand) {
   static override paths = [['package', 'remove']]
 
   static override usage = BaseCommand.Usage({
     category: 'package',
     description: 'Remove a package from this workspace',
   })
-
-  readonly name = Option.String({
-    name: 'name',
-    required: true,
-  })
-
-  get packagePath() {
-    return `packages/${this.name}`
-  }
 
   readonly dirOption = Option.String('-d,--dir', {
     description: `Default will be ${packagesPath}/[NAME]`,
