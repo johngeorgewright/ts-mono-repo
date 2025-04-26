@@ -71,15 +71,5 @@ export class AddPackageCommand extends Namable(MustacheGeneratorCommand) {
       prettier \
       typescript \
       vitest`
-    if (this.public)
-      $$`yarn add --cached --dev \
-        @semantic-release/changelog \
-        @semantic-release/commit-analyzer \
-        @semantic-release/exec \
-        @semantic-release/git \
-        @semantic-release/github \
-        @semantic-release/release-notes-generator \
-        semantic-release \
-        semantic-release-monorepo`
   }
 }
