@@ -27,26 +27,11 @@
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
     "@commitlint/types": "19.8.0",
-    "@semantic-release/commit-analyzer": "13.0.1",
-    "@semantic-release/exec": "7.0.3",
-    "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "11.0.2",
-    "@semantic-release/release-notes-generator": "14.0.3",
     "@types/node": "22.15.2",
-    "commitizen": "4.3.1",
-    "cz-conventional-changelog": "3.3.0",
     "husky": "9.1.7",
     "lint-staged": "15.5.1",
     "prettier": "3.5.3",
-    "semantic-release": "24.2.3",
-    "semantic-release-monorepo": "8.0.2",
-    "semantic-release-monorepo-esm": "1.0.12",
     "typescript": "5.8.3"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
   },
   "lint-staged": {
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
