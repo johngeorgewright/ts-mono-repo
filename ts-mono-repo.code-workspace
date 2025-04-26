@@ -5,8 +5,7 @@
   "folders": [
     { "name": "✨ ts-mono-repo", "path": "." },
     { "name": "🏗 scaffold", "path": "packages/scaffold" },
-    { "name": "🐙 github", "path": ".github" },
-    { "name": "📦 @johngeorgewright/mung", "path": "packages/mung" }
+    { "name": "🐙 github", "path": ".github" }
   ],
   "settings": {
     "eslint.nodePath": ".yarn/sdks",
