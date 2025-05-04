@@ -8,14 +8,13 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspaces foreach --all --verbose --parallel --topological-dev --exclude @johngeorgewright/scaffold run build",
-    "clean": "yarn workspaces foreach --all --verbose --parallel run clean",
-    "commit": "git-cz",
-    "scaffold": "yarn workspace @johngeorgewright/scaffold run cli",
+    "build": "bun run --filter * build",
+    "clean": "bun run --filter * clean",
+    "scaffold": "bun run --filter @johngeorgewright/scaffold cli",
     "prepare": "husky",
-    "release": "yarn workspaces foreach --all --verbose --no-private --topological-dev run release",
-    "start": "yarn build && yarn workspaces foreach --all --verbose --no-private --parallel --interlaced run start",
-    "test": "yarn workspaces foreach --all --verbose run test"
+    "release": "bun run --filter * release",
+    "start": "yarn run --filter * start",
+    "test": "yarn test --filter *"
   },
   "author": "",
   "license": "UNLICENSED",
@@ -27,7 +26,6 @@
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
     "@commitlint/types": "19.8.0",
-    "@types/node": "22.15.3",
     "husky": "9.1.7",
     "lint-staged": "15.5.1",
     "prettier": "3.5.3",
@@ -35,11 +33,10 @@
   },
   "lint-staged": {
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
-      "yarn prettier --write"
+      "bunx prettier --write"
     ]
   },
   "dependencies": {
     "tslib": "^2.8.1"
-  },
-  "packageManager": "yarn@4.9.1"
+  }
 }

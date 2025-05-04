@@ -17,6 +17,7 @@
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
+    "@types/bun": "latest",
     "@types/lodash": "4.17.16",
     "@types/mustache": "4.2.5",
     "@types/prettier": "3.0.0",
