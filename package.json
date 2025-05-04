@@ -8,13 +8,13 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "bun run --filter * build",
-    "clean": "bun run --filter * clean",
+    "build": "bun run --filter '*' build",
+    "clean": "bun run --filter '*' clean",
     "scaffold": "cd packages/scaffold; bun run cli",
     "prepare": "husky",
-    "release": "bun run --filter * release",
-    "start": "bun run --filter * start",
-    "test": "bun test --filter *"
+    "release": "bun run --filter '*' release",
+    "start": "bun run --filter '*' start",
+    "test": "bun run --filter '*' test"
   },
   "author": "",
   "license": "UNLICENSED",

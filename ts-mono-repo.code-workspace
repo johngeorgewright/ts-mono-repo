@@ -1,6 +1,6 @@
 {
-  "extensions": { 
-    "recommendations": ["esbenp.prettier-vscode", "oven.bun-vscode"] 
+  "extensions": {
+    "recommendations": ["esbenp.prettier-vscode", "oven.bun-vscode"]
   },
   "folders": [
     { "name": "✨ ts-mono-repo", "path": "." },
