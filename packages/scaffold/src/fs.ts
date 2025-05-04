@@ -1,12 +1,11 @@
-import { readFile, writeFile } from 'node:fs/promises'
 import * as prettier from 'prettier'
 
 export async function readJSONFile<T>(path: string): Promise<T> {
-  return JSON.parse(await readFile(path, 'utf-8'))
+  return JSON.parse(await Bun.file(path).text())
 }
 
 export async function writeJSONFile<T>(path: string, data: T): Promise<void> {
-  await writeFile(
+  await Bun.write(
     path,
     await prettier.format(JSON.stringify(data), {
       ...(await prettier.resolveConfig(path)),

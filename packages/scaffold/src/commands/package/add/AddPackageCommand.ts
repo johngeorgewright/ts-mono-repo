@@ -4,7 +4,7 @@ import { Option } from 'clipanion'
 import { packagesPath, updateVSCodeWorkspace } from '../../../workspace.js'
 import { Namable } from '../../../mixins/Namable.js'
 
-const modulePath = module.path || __dirname
+const modulePath = import.meta.dirname
 
 export class AddPackageCommand extends Namable(MustacheGeneratorCommand) {
   static override paths = [['package', 'add']]
@@ -63,13 +63,12 @@ export class AddPackageCommand extends Namable(MustacheGeneratorCommand) {
     const $$ = this.context.$({
       cwd: this.destinationDir,
     })
-    await $$`yarn`
-    await $$`yarn add --cached --caret tslib`
-    await $$`yarn add --cached --dev \
-      @types/node \
+    await $$`bun install`
+    await $$`bun add tslib`
+    await $$`bun add --dev \
+      @types/bun \
       @types/prettier \
       prettier \
-      typescript \
-      vitest`
+      typescript`
   }
 }
