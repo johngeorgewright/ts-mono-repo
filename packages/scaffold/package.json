@@ -5,7 +5,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "cli": "vite-node src/cli.ts"
+    "cli": "bun src/cli.ts"
   },
   "files": [
     "generators/package",
@@ -33,7 +33,6 @@
     "mustache": "^4.2.0",
     "prettier": "^3.5.3",
     "tslib": "^2.8.1",
-    "vite-node": "^3.1.2",
     "zx": "^8.5.3"
   }
 }

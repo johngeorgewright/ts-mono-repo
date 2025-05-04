@@ -10,11 +10,11 @@
   "scripts": {
     "build": "bun run --filter * build",
     "clean": "bun run --filter * clean",
-    "scaffold": "bun run --filter @johngeorgewright/scaffold cli",
+    "scaffold": "cd packages/scaffold; bun run cli",
     "prepare": "husky",
     "release": "bun run --filter * release",
-    "start": "yarn run --filter * start",
-    "test": "yarn test --filter *"
+    "start": "bun run --filter * start",
+    "test": "bun test --filter *"
   },
   "author": "",
   "license": "UNLICENSED",

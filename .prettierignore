@@ -2,4 +2,3 @@ dist
 *.log
 .pnp.cjs
 *.validator.ts
-.yarn/*

@@ -31,7 +31,7 @@ export class RemovePackageCommand extends Namable(BaseCommand) {
       rm(this.dir, { recursive: true }),
       this.#updateCodeWorkspace(),
     ])
-    await this.context.$`yarn`
+    await this.context.$`bun install`
   }
 
   async #updateCodeWorkspace() {

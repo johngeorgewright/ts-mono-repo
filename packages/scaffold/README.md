@@ -4,6 +4,6 @@ This is a private package to this mono-repo that is used to generate new package
 
 ## Usage
 
-From the root of the mono-repo run: `yarn package:generate`
+From the root of the mono-repo run: `bun run scaffold package add <name> <description>`
 
-To remove a package, run `yarn package:remove`
+To remove a package, run `bun run scaffold package remove <name>`

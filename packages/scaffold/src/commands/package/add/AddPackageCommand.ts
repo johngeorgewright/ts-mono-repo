@@ -4,7 +4,7 @@ import { Option } from 'clipanion'
 import { packagesPath, updateVSCodeWorkspace } from '../../../workspace.js'
 import { Namable } from '../../../mixins/Namable.js'
 
-const modulePath = module.path || __dirname
+const modulePath = import.meta.dirname
 
 export class AddPackageCommand extends Namable(MustacheGeneratorCommand) {
   static override paths = [['package', 'add']]
