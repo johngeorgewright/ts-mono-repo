@@ -1,8 +1,8 @@
 import { Option } from 'clipanion'
 import { packagePath } from '../workspace.js'
-import { BaseConstructor } from './BaseConstructor.js'
+import { AbstractConstructor } from './AbstractConstructor.js'
 
-export function Linkable<TBase extends BaseConstructor>(Base: TBase) {
+export function Linkable<TBase extends AbstractConstructor>(Base: TBase) {
   abstract class Linkable extends Base {
     readonly src = Option.String({
       name: 'source',
