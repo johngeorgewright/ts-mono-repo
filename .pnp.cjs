@@ -551,7 +551,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@johngeorgewright/scaffold", "workspace:packages/scaffold"],\
           ["@types/lodash", "npm:4.17.16"],\
-          ["@types/mustache", "npm:4.2.5"],\
+          ["@types/mustache", "npm:4.2.6"],\
           ["@types/prettier", "npm:3.0.0"],\
           ["@types/rimraf", "npm:4.0.5"],\
           ["change-case", "npm:5.4.4"],\
@@ -836,10 +836,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/mustache", [\
-      ["npm:4.2.5", {\
-        "packageLocation": "./.yarn/cache/@types-mustache-npm-4.2.5-074c602f76-29581027fe.zip/node_modules/@types/mustache/",\
+      ["npm:4.2.6", {\
+        "packageLocation": "./.yarn/cache/@types-mustache-npm-4.2.6-66bd71815f-56a9b979a9.zip/node_modules/@types/mustache/",\
         "packageDependencies": [\
-          ["@types/mustache", "npm:4.2.5"]\
+          ["@types/mustache", "npm:4.2.6"]\
         ],\
         "linkType": "HARD"\
       }]\
