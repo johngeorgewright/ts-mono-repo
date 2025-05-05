@@ -424,7 +424,7 @@ __metadata:
   resolution: "@johngeorgewright/scaffold@workspace:packages/scaffold"
   dependencies:
     "@types/lodash": "npm:4.17.16"
-    "@types/mustache": "npm:4.2.5"
+    "@types/mustache": "npm:4.2.6"
     "@types/prettier": "npm:3.0.0"
     "@types/rimraf": "npm:4.0.5"
     change-case: "npm:^5.4.4"
@@ -654,10 +654,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mustache@npm:4.2.5":
-  version: 4.2.5
-  resolution: "@types/mustache@npm:4.2.5"
-  checksum: 10/29581027fe420120ae0591e28d44209d0e01adf5175910d03401327777ee9c649a1508e2aa63147c782c7e53fcea4b69b5f9a2fbedcadc5500561d1161ae5ded
+"@types/mustache@npm:4.2.6":
+  version: 4.2.6
+  resolution: "@types/mustache@npm:4.2.6"
+  checksum: 10/56a9b979a9984d4f8b370ccdf04b54ae07f055b9e7326a526cf86b2fac73b04576cc71c83edaceaaf80038817520cbe2405f73623200a8ce03dcdd1e578e5016
   languageName: node
   linkType: hard
 
