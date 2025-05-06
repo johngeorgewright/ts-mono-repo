@@ -37,7 +37,7 @@ const RAW_RUNTIME_STATE =
           ["@commitlint/config-conventional", "npm:19.8.0"],\
           ["@commitlint/types", "npm:19.8.0"],\
           ["@johngeorgewright/ts-mono-repo", "workspace:."],\
-          ["@types/node", "npm:22.15.11"],\
+          ["@types/node", "npm:22.15.12"],\
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:15.5.1"],\
           ["prettier", "npm:3.5.3"],\
@@ -577,7 +577,7 @@ const RAW_RUNTIME_STATE =
           ["@commitlint/config-conventional", "npm:19.8.0"],\
           ["@commitlint/types", "npm:19.8.0"],\
           ["@johngeorgewright/ts-mono-repo", "workspace:."],\
-          ["@types/node", "npm:22.15.11"],\
+          ["@types/node", "npm:22.15.12"],\
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:15.5.1"],\
           ["prettier", "npm:3.5.3"],\
@@ -845,10 +845,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/node", [\
-      ["npm:22.15.11", {\
-        "packageLocation": "./.yarn/cache/@types-node-npm-22.15.11-8f800e5f21-cf10de717b.zip/node_modules/@types/node/",\
+      ["npm:22.15.12", {\
+        "packageLocation": "./.yarn/cache/@types-node-npm-22.15.12-97dce4b27b-5283535d63.zip/node_modules/@types/node/",\
         "packageDependencies": [\
-          ["@types/node", "npm:22.15.11"],\
+          ["@types/node", "npm:22.15.12"],\
           ["undici-types", "npm:6.21.0"]\
         ],\
         "linkType": "HARD"\
