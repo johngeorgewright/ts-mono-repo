@@ -27,7 +27,7 @@
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
     "@commitlint/types": "19.8.0",
-    "@types/node": "22.15.9",
+    "@types/node": "22.15.11",
     "husky": "9.1.7",
     "lint-staged": "15.5.1",
     "prettier": "3.5.3",
