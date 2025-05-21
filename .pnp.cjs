@@ -556,7 +556,7 @@ const RAW_RUNTIME_STATE =
           ["@types/rimraf", "npm:4.0.5"],\
           ["change-case", "npm:5.4.4"],\
           ["clipanion", "virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:4.0.0-rc.4"],\
-          ["clipanion-generator-command", "virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:1.2.0"],\
+          ["clipanion-generator-command", "virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:1.3.0"],\
           ["lodash", "npm:4.17.21"],\
           ["mustache", "npm:4.2.0"],\
           ["prettier", "npm:3.5.3"],\
@@ -1246,19 +1246,19 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["clipanion-generator-command", [\
-      ["npm:1.2.0", {\
-        "packageLocation": "./.yarn/cache/clipanion-generator-command-npm-1.2.0-86af2a4579-4dcb4f5256.zip/node_modules/clipanion-generator-command/",\
+      ["npm:1.3.0", {\
+        "packageLocation": "./.yarn/cache/clipanion-generator-command-npm-1.3.0-37ff942ef5-782cbef7eb.zip/node_modules/clipanion-generator-command/",\
         "packageDependencies": [\
-          ["clipanion-generator-command", "npm:1.2.0"]\
+          ["clipanion-generator-command", "npm:1.3.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:1.2.0", {\
-        "packageLocation": "./.yarn/__virtual__/clipanion-generator-command-virtual-7780753d02/0/cache/clipanion-generator-command-npm-1.2.0-86af2a4579-4dcb4f5256.zip/node_modules/clipanion-generator-command/",\
+      ["virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:1.3.0", {\
+        "packageLocation": "./.yarn/__virtual__/clipanion-generator-command-virtual-2f36af6eca/0/cache/clipanion-generator-command-npm-1.3.0-37ff942ef5-782cbef7eb.zip/node_modules/clipanion-generator-command/",\
         "packageDependencies": [\
           ["@types/clipanion", null],\
           ["clipanion", "virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:4.0.0-rc.4"],\
-          ["clipanion-generator-command", "virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:1.2.0"],\
+          ["clipanion-generator-command", "virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:1.3.0"],\
           ["enquirer", "npm:2.4.1"],\
           ["tslib", "npm:2.8.1"]\
         ],\
