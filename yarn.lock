@@ -3232,8 +3232,8 @@ __metadata:
   linkType: hard
 
 "vite-node@npm:^3.1.2":
-  version: 3.2.0
-  resolution: "vite-node@npm:3.2.0"
+  version: 3.2.1
+  resolution: "vite-node@npm:3.2.1"
   dependencies:
     cac: "npm:^6.7.14"
     debug: "npm:^4.4.1"
@@ -3242,7 +3242,7 @@ __metadata:
     vite: "npm:^5.0.0 || ^6.0.0 || ^7.0.0-0"
   bin:
     vite-node: vite-node.mjs
-  checksum: 10/72d45d71c8bfdee1209c4140ca21bdcf13da3d374b4ac400d5af1b1379555f72a467a91c05c836907747f1e58b6d0d4a1f80fdbf3f8f361c60e729ccdf38ed00
+  checksum: 10/ffe4c8b1aa14621bd006a29ccc7285ff9c17925e82eb4c46f50ff420a33fba001e10acbf9fb1a95ab8a621461dcc1ed04bdcd64772a92602bf57bcd4a747ca9a
   languageName: node
   linkType: hard
 
