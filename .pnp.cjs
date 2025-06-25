@@ -559,7 +559,7 @@ const RAW_RUNTIME_STATE =
           ["clipanion-generator-command", "virtual:89f8a21ff06ae5b0ff1d4d353c09e1160359da9d1b8a2d000d4833258ad7e296882c2950209731a7f2da678711a88e0e3e83a54322cd93510d13a0eecef8b313#npm:1.3.1"],\
           ["lodash", "npm:4.17.21"],\
           ["mustache", "npm:4.2.0"],\
-          ["prettier", "npm:3.6.0"],\
+          ["prettier", "npm:3.6.1"],\
           ["rimraf", "npm:6.0.1"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
@@ -867,7 +867,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/@types-prettier-npm-3.0.0-6c770110eb-a2a512d304.zip/node_modules/@types/prettier/",\
         "packageDependencies": [\
           ["@types/prettier", "npm:3.0.0"],\
-          ["prettier", "npm:3.6.0"]\
+          ["prettier", "npm:3.6.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3024,13 +3024,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["prettier", [\
-      ["npm:3.6.0", {\
-        "packageLocation": "./.yarn/unplugged/prettier-npm-3.6.0-a98891c29b/node_modules/prettier/",\
-        "packageDependencies": [\
-          ["prettier", "npm:3.6.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:3.6.1", {\
         "packageLocation": "./.yarn/unplugged/prettier-npm-3.6.1-19cd29005b/node_modules/prettier/",\
         "packageDependencies": [\
