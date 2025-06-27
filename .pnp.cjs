@@ -40,7 +40,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:22.15.33"],\
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:15.5.2"],\
-          ["prettier", "npm:3.6.1"],\
+          ["prettier", "npm:3.6.2"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
@@ -580,7 +580,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:22.15.33"],\
           ["husky", "npm:9.1.7"],\
           ["lint-staged", "npm:15.5.2"],\
-          ["prettier", "npm:3.6.1"],\
+          ["prettier", "npm:3.6.2"],\
           ["tslib", "npm:2.8.1"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
@@ -3028,6 +3028,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/unplugged/prettier-npm-3.6.1-19cd29005b/node_modules/prettier/",\
         "packageDependencies": [\
           ["prettier", "npm:3.6.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:3.6.2", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.6.2-2668152203/node_modules/prettier/",\
+        "packageDependencies": [\
+          ["prettier", "npm:3.6.2"]\
         ],\
         "linkType": "HARD"\
       }]\
