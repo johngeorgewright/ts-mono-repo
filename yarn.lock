@@ -448,7 +448,7 @@ __metadata:
     "@commitlint/cli": "npm:19.8.1"
     "@commitlint/config-conventional": "npm:19.8.1"
     "@commitlint/types": "npm:19.8.1"
-    "@types/node": "npm:22.15.34"
+    "@types/node": "npm:22.15.35"
     husky: "npm:9.1.7"
     lint-staged: "npm:15.5.2"
     prettier: "npm:3.6.2"
@@ -670,12 +670,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.15.34":
-  version: 22.15.34
-  resolution: "@types/node@npm:22.15.34"
+"@types/node@npm:22.15.35":
+  version: 22.15.35
+  resolution: "@types/node@npm:22.15.35"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10/b0fb6674f6c17e3d515531d7f787ccd6676641ba161a6a0e6a93a2d5bc2089fde492eac24b5152a11413bf07a818055a9ec9077d3200b03cf7ea9718470a8417
+  checksum: 10/68cbfe4bcfc20397956af69d6c01096ded6dadd87c2ae5cfd61e0a43537c09741f125738268787455b87ba831c3fbefbceb1189c09fec1c94fc6276ef7563018
   languageName: node
   linkType: hard
 
