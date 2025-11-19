@@ -21,7 +21,7 @@
     "@types/mustache": "4.2.6",
     "@types/prettier": "3.0.0",
     "@types/rimraf": "4.0.5",
-    "rimraf": "6.1.0",
+    "rimraf": "6.1.2",
     "typescript": "5.9.3"
   },
   "dependencies": {
