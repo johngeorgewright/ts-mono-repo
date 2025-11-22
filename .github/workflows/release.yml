@@ -41,7 +41,7 @@ jobs:
         run: yarn test
 
       - name: Upload dists
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           if-no-files-found: error
           name: dists
@@ -76,7 +76,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Download dists
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           name: dists
           path: ~/dists
