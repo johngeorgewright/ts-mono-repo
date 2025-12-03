@@ -24,12 +24,12 @@
   },
   "homepage": "https://github.com/johngeorgewright/ts-mono-repo#readme",
   "devDependencies": {
-    "@commitlint/cli": "19.8.1",
-    "@commitlint/config-conventional": "19.8.1",
-    "@commitlint/types": "19.8.1",
-    "@types/node": "22.19.1",
+    "@commitlint/cli": "20.1.0",
+    "@commitlint/config-conventional": "20.0.0",
+    "@commitlint/types": "20.0.0",
+    "@types/node": "24.10.1",
     "husky": "9.1.7",
-    "lint-staged": "15.5.2",
+    "lint-staged": "16.2.7",
     "prettier": "3.7.3",
     "typescript": "5.9.3"
   },
