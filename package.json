@@ -16,8 +16,8 @@
     "release": "yarn workspaces foreach --all --verbose --no-private --topological-dev run release",
     "start": "yarn build && yarn workspaces foreach --all --verbose --no-private --parallel --interlaced run start",
     "test": "yarn workspaces foreach --all --verbose run test",
-    "workspaces:list": "yarn workspaces foreach --all --topological --no-private exec 'echo $npm_package_name' 2>&1 | grep -v 'Process\\|exit\\|Done' | grep -v '^$'",
-    "workspaces:list:json": "yarn workspaces:list | jq --raw-input --slurp --compact-output 'split(\"\\n\") | map(select(length > 0))'"
+    "workspaces:list": "yarn workspaces foreach --all --topological --no-private exec 'echo \"$npm_package_name|$(pwd)\"' 2>&1 | grep -v 'Process\\|exit\\|Done' | grep -v '^$'",
+    "workspaces:list:json": "yarn workspaces:list | jq --raw-input --slurp --compact-output 'split(\"\\n\") | map(select(length > 0) | split(\"|\") | {name: .[0], location: .[1]})'"
   },
   "author": "",
   "license": "UNLICENSED",
