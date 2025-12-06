@@ -10,7 +10,7 @@ concurrency:
 jobs:
   cache:
     if: github.actor != 'renovate[bot]'
-    uses: johngeorgewright/workflows/.github/workflows/yarn-cache.yml@main
+    uses: johngeorgewright/workflows/yarn-cache.yml@main
 
   build:
     name: Build
@@ -24,7 +24,6 @@ jobs:
 
       - name: Use Node.js
         uses: actions/setup-node@v4
-        id: node
         with:
           node-version-file: .nvmrc
 
@@ -40,6 +39,10 @@ jobs:
       - name: Test
         run: yarn test
 
+      - name: Output paths
+        id: paths
+        run: echo "packages=$(yarn workspaces list --no-private --json --recursive | jq --slurp --compact-output)" >> $GITHUB_OUTPUT
+
       - name: Upload dists
         uses: actions/upload-artifact@v4
         with:
@@ -47,28 +50,13 @@ jobs:
           name: dists
           path: packages/**/dist
 
-      - name: Output paths
-        shell: python
-        id: paths
-        run: | # python
-          import json
-          from os import environ, listdir
-          packages = []
-          for packageDir in listdir('packages'):
-              with open(f'packages/{packageDir}/package.json') as f:
-                  pckg = json.load(f)
-                  if not pckg.get('private', False):
-                      packages.append(packageDir)
-          with open(environ['GITHUB_OUTPUT'], 'a') as f:
-              f.write(f'packages={json.dumps(packages)}\n')
-
-  publish-npm:
-    name: NPM
-    needs: [build, cache]
+  publish:
+    name: Publish
+    needs: [build]
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        package: ${{ fromJson(needs.build.outputs.packages) }}
+        location: ${{ fromJson(needs.build.outputs.packages).*.location }}
     steps:
       - name: Checkout project
         uses: actions/checkout@v4
@@ -95,4 +83,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         with:
           extra_plugins: '@semantic-release/exec@^7'
-          working_directory: packages/${{ matrix.package }}
+          working_directory: ${{ matrix.location }}
