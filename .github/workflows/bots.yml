@@ -19,13 +19,13 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
 
@@ -48,8 +48,10 @@ jobs:
     name: Auto Approve
     runs-on: ubuntu-latest
     if: github.actor == 'renovate[bot]' || github.actor == 'dependabot[bot]'
+    permissions:
+      pull-requests: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: hmarr/auto-approve-action@v2
+      - uses: actions/checkout@v6
+      - uses: hmarr/auto-approve-action@v4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
