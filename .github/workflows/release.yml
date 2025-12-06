@@ -41,7 +41,7 @@ jobs:
 
       - name: Output paths
         id: paths
-        run: echo "packages=$(yarn workspaces list --no-private --json --recursive | jq --slurp --compact-output)" >> $GITHUB_OUTPUT
+        run: echo "packages=$(yarn workspaces:list:json)" >> $GITHUB_OUTPUT
 
       - name: Upload dists
         uses: actions/upload-artifact@v4
