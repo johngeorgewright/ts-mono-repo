@@ -10,6 +10,9 @@ export const MODULE_NAMESPACE =
 export const moduleName = (name: string) =>
   name.startsWith('@') ? name : `${MODULE_NAMESPACE}/${name}`
 
+export const withoutNS = (name: string) =>
+  name.startsWith('@') ? name.replace(`${MODULE_NAMESPACE}/`, '') : name
+
 export const projectRootPath = path.resolve(
   module.path || __dirname,
   '..',

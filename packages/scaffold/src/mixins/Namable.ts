@@ -1,16 +1,20 @@
 import { Option } from 'clipanion'
 import { BaseConstructor } from './BaseConstructor.js'
-import { moduleName } from '../workspace.js'
+import { moduleName, withoutNS } from '../workspace.js'
 
 export function Namable<TBase extends BaseConstructor>(Base: TBase) {
   abstract class Namable extends Base {
-    readonly name = Option.String({
+    private readonly _name = Option.String({
       name: 'name',
       required: true,
     })
 
+    get name() {
+      return withoutNS(this._name)
+    }
+
     get moduleName() {
-      return moduleName(this.name)
+      return moduleName(this._name)
     }
 
     get packagePath() {
