@@ -44,7 +44,7 @@ jobs:
         run: echo "packages=$(yarn workspaces:list:json)" >> $GITHUB_OUTPUT
 
       - name: Upload dists
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           if-no-files-found: error
           name: dists
@@ -64,7 +64,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
 
       - name: Download dists
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: dists
           path: ~/dists
