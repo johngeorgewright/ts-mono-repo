@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc --build",
     "clean": "bun --workspaces run clean",
-    "scaffold": "bun --filter packages/scaffold run cli",
+    "scaffold": "bun --cwd=./packages/scaffold run cli",
     "prepare": "husky",
     "start": "bun run build --watch"
   },

@@ -1,4 +1,5 @@
 dist
 *.log
+tsconfig.tsbuildinfo
 *.validator.ts
 node_modules

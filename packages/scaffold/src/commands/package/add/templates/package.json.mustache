@@ -2,10 +2,13 @@
   "name": "{{moduleName}}",
   "version": "0.0.0",
   "description": "{{description}}",
+  "type": "module",
   {{^public}}
   "private": true,
   {{/public}}
-  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "scripts": {
     "build": "tsc",
     {{#public}}

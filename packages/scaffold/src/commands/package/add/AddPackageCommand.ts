@@ -1,11 +1,15 @@
 import * as path from 'node:path'
 import { MustacheGeneratorCommand } from '../../MustacheGeneratorCommand.js'
 import { Option } from 'clipanion'
-import { packagesPath, relativePackagePath } from '../../../workspace.js'
+import {
+  packagesPath,
+  projectRootPath,
+  relativePackagePath,
+} from '../../../workspace.js'
 import { Namable } from '../../../mixins/Namable.js'
 import { updateJSONFile } from '../../../fs.js'
 
-const modulePath = module.path || __dirname
+const modulePath = import.meta.dirname
 
 export class AddPackageCommand extends Namable(MustacheGeneratorCommand) {
   static override paths = [['package', 'add']]
@@ -62,21 +66,38 @@ export class AddPackageCommand extends Namable(MustacheGeneratorCommand) {
   }
 
   async #addTSConfigReference() {
-    await updateJSONFile<any>('tsconfig.json', (data) => {
-      data.references ??= []
-      data.references.push({ path: this.destinationDir })
-    })
+    await updateJSONFile<any>(
+      path.join(projectRootPath, 'tsconfig.json'),
+      (data) => ({
+        ...data,
+        references: [
+          ...(data.references || []),
+          { path: relativePackagePath(this.name) },
+        ],
+      }),
+    )
   }
 
   async #addReleasePleaseConfig() {
     if (!this.public) return
     await Promise.all([
-      updateJSONFile<any>('.release-please-manifest.json', (data) => {
-        data[relativePackagePath(this.moduleName)] = '0.0.0'
-      }),
-      updateJSONFile<any>('release-please-config.json', (data) => {
-        data.pacakges[relativePackagePath(this.moduleName)] = {}
-      }),
+      updateJSONFile<any>(
+        path.join(projectRootPath, '.release-please-manifest.json'),
+        (data) => ({
+          ...data,
+          [relativePackagePath(this.name)]: '0.0.0',
+        }),
+      ),
+      updateJSONFile<any>(
+        path.join(projectRootPath, 'release-please-config.json'),
+        (data) => ({
+          ...data,
+          packages: {
+            ...data.packages,
+            [relativePackagePath(this.name)]: {},
+          },
+        }),
+      ),
     ])
   }
 }

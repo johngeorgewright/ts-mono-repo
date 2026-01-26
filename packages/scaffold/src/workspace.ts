@@ -14,7 +14,7 @@ export const withoutNS = (name: string) =>
   name.startsWith('@') ? name.replace(`${MODULE_NAMESPACE}/`, '') : name
 
 export const projectRootPath = path.resolve(
-  module.path || __dirname,
+  import.meta.dirname,
   '..',
   '..',
   '..',

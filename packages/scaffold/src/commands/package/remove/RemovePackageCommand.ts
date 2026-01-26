@@ -1,5 +1,12 @@
-import { packageNames, packagePath, packagesPath } from '../../../workspace.js'
+import {
+  packageNames,
+  packagePath,
+  packagesPath,
+  projectRootPath,
+  relativePackagePath,
+} from '../../../workspace.js'
 import { rm } from 'node:fs/promises'
+import * as path from 'node:path'
 import { Option } from 'clipanion'
 import { BaseCommand } from '../../BaseCommand.js'
 import { Namable } from '../../../mixins/Namable.js'
@@ -27,6 +34,7 @@ export class RemovePackageCommand extends Namable(BaseCommand) {
     await Promise.all([
       rm(this.dir, { recursive: true }),
       this.#removeTSConfigReference(),
+      this.#removeReleasePleaseConfig(),
     ])
     await this.context.$`bun install`
   }
@@ -39,10 +47,35 @@ export class RemovePackageCommand extends Namable(BaseCommand) {
   }
 
   async #removeTSConfigReference() {
-    await updateJSONFile<any>('tsconfig.json', (data) => {
-      if (data.references) {
-        without(data.references, [this.dir])
-      }
-    })
+    await updateJSONFile<any>(
+      path.join(projectRootPath, 'tsconfig.json'),
+      (data) => ({
+        ...data,
+        references:
+          data.references?.filter(
+            (reference: any) =>
+              reference.path !== relativePackagePath(this.name),
+          ) ?? [],
+      }),
+    )
+  }
+
+  async #removeReleasePleaseConfig() {
+    await Promise.all([
+      updateJSONFile<any>(
+        path.join(projectRootPath, '.release-please-manifest.json'),
+        (data) => {
+          delete data[relativePackagePath(this.name)]
+          return data
+        },
+      ),
+      updateJSONFile<any>(
+        path.join(projectRootPath, 'release-please-config.json'),
+        (data) => {
+          delete data.packages[relativePackagePath(this.name)]
+          return data
+        },
+      ),
+    ])
   }
 }
