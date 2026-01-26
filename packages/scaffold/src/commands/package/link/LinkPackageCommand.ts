@@ -47,6 +47,6 @@ export class LinkPackageCommand extends Linkable(BaseCommand) {
 
   async #install() {
     const $$ = this.context.$({ cwd: this.destPackagePath, quote: (x) => x })
-    await $$`yarn add ${this.dev ? '-D' : ''} ${moduleName(this.src)}`
+    await $$`bun add ${this.dev ? '-D' : ''} ${moduleName(this.src)}`
   }
 }

@@ -1,13 +1,10 @@
-import {
-  packageNames,
-  packagePath,
-  packagesPath,
-  updateVSCodeWorkspace,
-} from '../../../workspace.js'
+import { packageNames, packagePath, packagesPath } from '../../../workspace.js'
 import { rm } from 'node:fs/promises'
 import { Option } from 'clipanion'
 import { BaseCommand } from '../../BaseCommand.js'
 import { Namable } from '../../../mixins/Namable.js'
+import { updateJSONFile } from '../../../fs.js'
+import { without } from 'lodash'
 
 export class RemovePackageCommand extends Namable(BaseCommand) {
   static override paths = [['package', 'remove']]
@@ -29,18 +26,9 @@ export class RemovePackageCommand extends Namable(BaseCommand) {
     await this.#unlinkAll()
     await Promise.all([
       rm(this.dir, { recursive: true }),
-      this.#updateCodeWorkspace(),
+      this.#removeTSConfigReference(),
     ])
-    await this.context.$`yarn`
-  }
-
-  async #updateCodeWorkspace() {
-    await updateVSCodeWorkspace((workspace) => ({
-      ...workspace,
-      folders: workspace.folders.filter(
-        (folder: { path: string }) => folder.path !== this.packagePath,
-      ),
-    }))
+    await this.context.$`bun install`
   }
 
   async #unlinkAll() {
@@ -48,5 +36,13 @@ export class RemovePackageCommand extends Namable(BaseCommand) {
       if (packageName === this.name) continue
       await this.cli.run(['package', 'unlink', this.name, packageName])
     }
+  }
+
+  async #removeTSConfigReference() {
+    await updateJSONFile<any>('tsconfig.json', (data) => {
+      if (data.references) {
+        without(data.references, [this.dir])
+      }
+    })
   }
 }

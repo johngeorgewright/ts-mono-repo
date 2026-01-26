@@ -1,86 +1,48 @@
-name: Publish
+name: Release
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 concurrency:
-  group: release
+  group: publish
 
 jobs:
-  cache:
-    if: github.actor != 'renovate[bot]'
-    uses: johngeorgewright/workflows/yarn-cache.yml@main
+  publish-test:
+    uses: ./.github/workflows/test.yml
 
-  build:
-    name: Build
+  release-please:
     runs-on: ubuntu-latest
-    needs: [cache]
+    needs: publish-test
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
     outputs:
-      packages: ${{ steps.paths.outputs.packages }}
+      releases_created: ${{ steps.release.outputs.releases_created }}
+      paths_released: ${{ steps.release.outputs.paths_released }}
     steps:
-      - name: Checkout project
-        uses: actions/checkout@v6
-
-      - name: Use Node.js
-        uses: actions/setup-node@v6
+      - uses: googleapis/release-please-action@v4
+        id: release
         with:
-          node-version-file: .nvmrc
-
-      - name: Restore cache
-        uses: actions/cache@v4
-        with:
-          key: ${{ needs.cache.outputs.key }}
-          path: ${{ needs.cache.outputs.path }}
-
-      - name: Build
-        run: yarn build
-
-      - name: Test
-        run: yarn test
-
-      - name: Output paths
-        id: paths
-        run: echo "packages=$(yarn workspaces:list:json)" >> $GITHUB_OUTPUT
-
-      - name: Upload dists
-        uses: actions/upload-artifact@v4
-        with:
-          if-no-files-found: error
-          name: dists
-          path: packages/**/dist
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   publish:
-    name: Publish
-    needs: [build]
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        location: ${{ fromJson(needs.build.outputs.packages).*.location }}
+    needs: release-please
+    if: needs.release-please.outputs.releases_created == 'true'
+    permissions:
+      contents: read
+      id-token: write
     steps:
-      - name: Checkout project
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
         with:
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Download dists
-        uses: actions/download-artifact@v4
-        with:
-          name: dists
-          path: ~/dists
-
-      - name: Move dists to project
-        run: | # shell
-          for package in ~/dists/*
-          do 
-            mv "$package/dist" "packages/${package/$HOME\/dists\//}"
+          bun-version: latest
+      - uses: ./.github/actions/build
+      - run: |
+          echo '${{ needs.release-please.outputs.paths_released }}' | jq -r '.[]' | while read path; do
+            cd "$path"
+            bun pm pack --filename package.tgz
+            bunx npm publish --provenance --access public package.tgz
           done
-
-      - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        with:
-          extra_plugins: '@semantic-release/exec@^7'
-          working_directory: ${{ matrix.location }}

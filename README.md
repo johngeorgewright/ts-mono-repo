@@ -6,12 +6,10 @@ This is a template repository for creating a TypeScript mono repo.
 
 1. Change all references of `@johngeorgewright` to your mono-repo namespace
 1. Change all references of `ts-mono-repo` to your new mono-repo name
-1. Install Node.js & Yarn
-1. Install dependencies `yarn`
+1. Install Bun
+1. Install dependencies `bun install`
 1. Use the [generator package](https://github.com/johngeorgewright/ts-mono-repo/tree/master/packages/generator) to create new packages
 1. If using VSCode, open the workspace and install recommended extensions
-1. Commit changes with `yarn commit`
-1. If your packages are to be published publically, change the publish command in `release.config.js` to `yarn npm publish --access public`
 
 ## Dependency management
 

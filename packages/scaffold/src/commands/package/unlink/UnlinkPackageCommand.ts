@@ -33,8 +33,6 @@ export class UnlinkPackageCommand extends Linkable(BaseCommand) {
 
   async #uninstall() {
     const $$ = this.context.$({ cwd: this.destPackagePath })
-    if ((await $$`yarn why ${moduleName(this.src)}`).stdout) {
-      await $$`yarn remove ${moduleName(this.src)}`
-    }
+    await $$`bun remove ${moduleName(this.src)}`
   }
 }

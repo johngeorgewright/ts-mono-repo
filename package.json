@@ -8,18 +8,13 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspaces foreach --all --verbose --parallel --topological-dev --exclude @johngeorgewright/scaffold run build",
-    "clean": "yarn workspaces foreach --all --verbose --parallel run clean",
-    "commit": "git-cz",
-    "scaffold": "yarn workspace @johngeorgewright/scaffold run cli",
+    "build": "tsc --build",
+    "clean": "bun --workspaces run clean",
+    "scaffold": "bun --filter packages/scaffold run cli",
     "prepare": "husky",
-    "release": "yarn workspaces foreach --all --verbose --no-private --topological-dev run release",
-    "start": "yarn build && yarn workspaces foreach --all --verbose --no-private --parallel --interlaced run start",
-    "test": "yarn workspaces foreach --all --verbose run test",
-    "workspaces:list": "yarn workspaces foreach --all --topological --no-private exec 'echo \"$npm_package_name|$(pwd)\"' 2>&1 | grep -v 'Process\\|exit\\|Done' | grep -v '^$'",
-    "workspaces:list:json": "yarn workspaces:list | jq --raw-input --slurp --compact-output 'split(\"\\n\") | map(select(length > 0) | split(\"|\") | {name: .[0], location: .[1]})'"
+    "start": "bun run build --watch"
   },
-  "author": "",
+  "author": "John Wright <johngeorge.wright@gmail.com>",
   "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/johngeorgewright/ts-mono-repo/issues"
@@ -29,6 +24,7 @@
     "@commitlint/cli": "20.2.0",
     "@commitlint/config-conventional": "20.2.0",
     "@commitlint/types": "20.2.0",
+    "@types/bun": "latest",
     "@types/node": "24.10.1",
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
@@ -37,11 +33,10 @@
   },
   "lint-staged": {
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
-      "yarn prettier --write"
+      "bunx prettier --write"
     ]
   },
   "dependencies": {
     "tslib": "^2.8.1"
-  },
-  "packageManager": "yarn@4.12.0"
+  }
 }
