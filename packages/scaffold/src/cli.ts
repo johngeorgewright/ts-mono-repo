@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 
 import { runExit } from 'clipanion'
 import { AddPackageCommand } from './commands/package/add/AddPackageCommand.js'

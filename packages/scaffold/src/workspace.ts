@@ -24,6 +24,9 @@ export const packagesPath = path.join(projectRootPath, 'packages')
 
 export const packagePath = (name: string) => path.join(packagesPath, name)
 
+export const relativePackagePath = (name: string) =>
+  path.relative(projectRootPath, packagePath(name))
+
 export const packageNames = async () => {
   const filenames = await readdir(packagesPath)
   return filenames.filter((filename) => !filename.startsWith('.'))

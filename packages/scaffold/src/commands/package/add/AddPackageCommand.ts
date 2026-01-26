@@ -1,7 +1,7 @@
 import * as path from 'node:path'
 import { MustacheGeneratorCommand } from '../../MustacheGeneratorCommand.js'
 import { Option } from 'clipanion'
-import { packagesPath } from '../../../workspace.js'
+import { packagesPath, relativePackagePath } from '../../../workspace.js'
 import { Namable } from '../../../mixins/Namable.js'
 import { updateJSONFile } from '../../../fs.js'
 
@@ -43,8 +43,11 @@ export class AddPackageCommand extends Namable(MustacheGeneratorCommand) {
       await super.execute()
     }
 
-    await this.#installDependencies()
-    await this.#addTSConfigReference()
+    await Promise.all([
+      this.#installDependencies(),
+      this.#addTSConfigReference(),
+      this.#addReleasePleaseConfig(),
+    ])
   }
 
   async #installDependencies() {
@@ -52,7 +55,7 @@ export class AddPackageCommand extends Namable(MustacheGeneratorCommand) {
       cwd: this.destinationDir,
     })
     await $$`bun install`
-    await $$`bun add tslib`
+    await $$`bun add tslib@catalog:`
     await $$`bun add --dev \
       @types/bun@catalog: \
       typescript@catalog:`
@@ -63,5 +66,17 @@ export class AddPackageCommand extends Namable(MustacheGeneratorCommand) {
       data.references ??= []
       data.references.push({ path: this.destinationDir })
     })
+  }
+
+  async #addReleasePleaseConfig() {
+    if (!this.public) return
+    await Promise.all([
+      updateJSONFile<any>('.release-please-manifest.json', (data) => {
+        data[relativePackagePath(this.moduleName)] = '0.0.0'
+      }),
+      updateJSONFile<any>('release-please-config.json', (data) => {
+        data.pacakges[relativePackagePath(this.moduleName)] = {}
+      }),
+    ])
   }
 }
