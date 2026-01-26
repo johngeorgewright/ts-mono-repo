@@ -1,0 +1,14 @@
+name: Pull Request
+
+on:
+  workflow_call:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container: oven/bun:1
+    steps:
+      - uses: actions/checkout@v6
+      - run: bun install --frozen-lockfile
+      - run: bun run build
+      - run: bun test

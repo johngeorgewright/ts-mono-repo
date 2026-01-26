@@ -14,7 +14,7 @@ export const withoutNS = (name: string) =>
   name.startsWith('@') ? name.replace(`${MODULE_NAMESPACE}/`, '') : name
 
 export const projectRootPath = path.resolve(
-  module.path || __dirname,
+  import.meta.dirname,
   '..',
   '..',
   '..',
@@ -23,6 +23,9 @@ export const projectRootPath = path.resolve(
 export const packagesPath = path.join(projectRootPath, 'packages')
 
 export const packagePath = (name: string) => path.join(packagesPath, name)
+
+export const relativePackagePath = (name: string) =>
+  path.relative(projectRootPath, packagePath(name))
 
 export const packageNames = async () => {
   const filenames = await readdir(packagesPath)

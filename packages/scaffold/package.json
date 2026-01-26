@@ -5,14 +5,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "cli": "vite-node src/cli.ts"
+    "cli": "bun run src/cli.ts"
   },
   "files": [
     "generators/package",
     "generators/remove"
-  ],
-  "keywords": [
-    "yeoman-generator"
   ],
   "author": "",
   "license": "UNLICENSED",
@@ -22,7 +19,7 @@
     "@types/prettier": "3.0.0",
     "@types/rimraf": "4.0.5",
     "rimraf": "6.1.2",
-    "typescript": "5.9.3"
+    "typescript": "catalog:"
   },
   "dependencies": {
     "change-case": "^5.4.4",
@@ -31,8 +28,7 @@
     "lodash": "^4.17.21",
     "mustache": "^4.2.0",
     "prettier": "^3.7.4",
-    "tslib": "^2.8.1",
-    "vite-node": "^5.2.0",
+    "tslib": "catalog:",
     "zx": "^8.8.5"
   }
 }

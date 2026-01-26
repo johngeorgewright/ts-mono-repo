@@ -1,20 +1,10 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "NodeNext",
-    "lib": ["ESNext"],
-    "importHelpers": true,
-    "declaration": true,
-    "sourceMap": true,
+    "composite": true,
+    "noEmit": false,
     "outDir": "./dist",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noImplicitOverride": true,
-    "moduleResolution": "NodeNext",
-    "esModuleInterop": true,
-    "resolveJsonModule": true
+    "rootDir": "./src"
   },
   "include": ["src"]
 }
