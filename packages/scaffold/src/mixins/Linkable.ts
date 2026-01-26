@@ -1,6 +1,6 @@
 import { Option } from 'clipanion'
 import { packagePath } from '../workspace.js'
-import { BaseConstructor } from './BaseConstructor.js'
+import type { BaseConstructor } from './BaseConstructor.js'
 
 export function Linkable<TBase extends BaseConstructor>(Base: TBase) {
   abstract class Linkable extends Base {
