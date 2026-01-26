@@ -20,23 +20,23 @@
     "url": "https://github.com/johngeorgewright/ts-mono-repo/issues"
   },
   "homepage": "https://github.com/johngeorgewright/ts-mono-repo#readme",
+  "catalog": {
+    "@types/bun": "latest",
+    "tslib": "^2.8.1",
+    "typescript": "5.9.3"
+  },
   "devDependencies": {
     "@commitlint/cli": "20.2.0",
     "@commitlint/config-conventional": "20.2.0",
     "@commitlint/types": "20.2.0",
-    "@types/bun": "latest",
-    "@types/node": "24.10.1",
     "husky": "9.1.7",
     "lint-staged": "16.2.7",
     "prettier": "3.7.4",
-    "typescript": "5.9.3"
+    "typescript": "catalog:"
   },
   "lint-staged": {
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
       "bunx prettier --write"
     ]
-  },
-  "dependencies": {
-    "tslib": "^2.8.1"
   }
 }

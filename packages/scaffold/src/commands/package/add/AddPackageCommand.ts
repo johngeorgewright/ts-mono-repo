@@ -54,8 +54,8 @@ export class AddPackageCommand extends Namable(MustacheGeneratorCommand) {
     await $$`bun install`
     await $$`bun add tslib`
     await $$`bun add --dev \
-      @types/bun \
-      typescript`
+      @types/bun@catalog: \
+      typescript@catalog:`
   }
 
   async #addTSConfigReference() {
